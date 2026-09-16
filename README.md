@@ -4,6 +4,67 @@
 
 # LiveKit Agents Starter - Python
 
+**KRN web app and Android/iPhone setup:** see [KRN_SETUP.md](KRN_SETUP.md).
+On this Windows PC use `start-agent.ps1` and `start-web.ps1`; the agent script
+selects the separate environment that avoids the Windows-blocked XML module.
+
+## KRN Agent: Gemini Live and cameras
+
+KRN can also search the internet with the `search_web` tool using
+`langchain-community` and `ddgs` (no separate search API key). Ask, for example:
+“Suche im Internet nach der offiziellen LiveKit-Dokumentation.” Results contain
+up to five titles, source links, and snippets; the tool does not read full pages.
+Search runs outside the audio event loop with a 20-second response timeout.
+Unavailable or empty results are reported explicitly. Queries go to external
+search providers, so do not include confidential data.
+
+Run offline search checks with `uv run pytest tests/test_web_search.py -q`.
+`tests/test_search_behavior.py` additionally uses a real Gemini session with
+mock search results to verify tool calling and German answers (inference usage).
+
+KRN now uses `gemini-3.1-flash-live-preview` with the `Charon` voice,
+German instructions, and live video input. Gemini handles speech recognition,
+responses, audio output, and turn detection. The original template description
+below describes the former STT/LLM/TTS pipeline.
+
+Set `GOOGLE_API_KEY` in `.env.local`, alongside the three LiveKit credentials
+listed in `.env.example`. Keep this file private. The Google plugin must be
+version 1.8.2 or later for Gemini 3.1's mid-session updates and greeting.
+
+From the `KRN` directory:
+
+```powershell
+uv sync --locked
+lk agent dev
+```
+
+Connect a browser frontend to the configured LiveKit project and dispatch name
+`my-agent`. The spoken assistant/company name is **KRN Agent**; the dispatch name
+remains unchanged so existing console links continue to work.
+
+For camera use:
+
+1. Connect your USB webcam, if using an external camera.
+2. In your browser frontend, allow microphone/camera access and publish your
+   camera track. Choose the built-in camera or USB webcam in its device selector
+   (or the browser's camera settings if the frontend has no selector).
+3. Ask in German, for example: “Was siehst du gerade?”
+4. To switch cameras, choose the other device and republish/reconnect if needed.
+
+The backend receives video published by the connected participant; it does not
+open Windows camera devices itself. One video track is used at a time (the most
+recently published camera or screen share). A network/IP camera requires a
+separate publisher or virtual-camera integration and is not configured here.
+Use a camera-capable frontend if your console view does not offer video
+publishing. Camera permission alone does not publish a track.
+
+See [LiveKit video input](https://docs.livekit.io/agents/multimodality/vision/video/)
+and [Gemini Live configuration](https://docs.livekit.io/agents/models/realtime/plugins/gemini/).
+
+Validation: `uv run pytest tests/test_german.py tests/test_vision.py -q` uses
+configured Google and LiveKit credentials and incurs inference usage. The vision
+test sends synthetic green frames, not images from your physical camera.
+
 A complete starter project for building voice AI apps with [LiveKit Agents for Python](https://github.com/livekit/agents) and [LiveKit Cloud](https://cloud.livekit.io/).
 
 The starter project includes:
@@ -95,6 +156,32 @@ lk app env --write --destination .env.local
 </details>
 
 ## Run the agent
+
+### Windows native runtime prerequisite
+
+Install the current **x64 Microsoft Visual C++ v14 Redistributable** from
+[Microsoft's official download page](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist).
+Restart Windows if the installer requests it.
+
+On this machine, `livekit-local-inference==0.2.7` crashed during import with
+`0xc0000005` in `C:\Windows\System32\MSVCP140.dll` version `14.0.23026.0`.
+Updating the runtime to `14.51.36247.0` fixed the import and native VAD/EOT
+inference with Python 3.12.14 and LiveKit Agents 1.8.2. No Python version change,
+package downgrade, or edits to installed packages were needed.
+
+From the `KRN` directory, verify startup with:
+
+```powershell
+uv run python -X faulthandler -c "import livekit.local_inference; import livekit.agents; print('LiveKit imports OK')"
+uv run python src/agent.py dev
+```
+
+Wait for `registered worker` before connecting a frontend. Agents 1.8.2 recommends
+`lk agent dev` for development with hot reload; the Python `dev` command still
+starts the worker but is deprecated. These commands run the backend; open the
+[LiveKit Cloud agent console](https://cloud.livekit.io/projects/p_/agents/console)
+separately, select the configured project, and use agent name `my-agent` (the
+name currently registered by `src/agent.py`).
 
 Run this command to speak to your agent directly in your terminal:
 

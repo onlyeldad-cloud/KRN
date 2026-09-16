@@ -6,6 +6,12 @@ __pycache__
 .idea
 KMS
 .venv
+.venv-windows/
+frontend/node_modules/
+frontend/.next/
+mobile/.dart_tool/
+mobile/build/
+artifacts/
 .vscode
 *.egg-info
 .pytest_cache
