@@ -15,6 +15,10 @@ Open two PowerShell terminals in the `KRN` folder:
 .\start-agent.ps1
 ```
 
+Do not run `lk agent dev` by itself. That command uses `.venv` (Python 3.12),
+which is missing Playwright and blocked from loading `pyexpat` on this PC.
+`start-agent.ps1` uses `.venv-windows` instead.
+
 ```powershell
 # Terminal 2
 .\start-web.ps1
