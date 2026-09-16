@@ -1,3 +1,4 @@
+import asyncio
 import logging
 import textwrap
 
@@ -19,6 +20,20 @@ from web_search import search_web
 logger = logging.getLogger("agent")
 
 load_dotenv(".env.local")
+
+GREETING_INSTRUCTIONS = (
+    "Warte, bis die Audioverbindung bereit ist. Sprich dann langsam und klar. "
+    "Sage genau: Hallo, ich bin KRN Agent. Wie kann ich dir helfen?"
+)
+
+
+async def greet_after_connect(session: AgentSession) -> None:
+    # Greeting before ctx.connect() drops the first audio packets.
+    await asyncio.sleep(0.8)
+    session.generate_reply(
+        instructions=GREETING_INSTRUCTIONS,
+        allow_interruptions=False,
+    )
 
 
 class Assistant(Agent):
@@ -115,15 +130,8 @@ class Assistant(Agent):
         )
 
     async def on_enter(self) -> None:
-        # Gemini generates its own audio; say() would require a separate TTS.
-        self.session.generate_reply(
-            instructions=(
-                "Begrüße dein Gegenüber jetzt auf Deutsch. Sage: "
-                "Hallo! Ich bin KRN Agent, dein digitaler Assistent von KRN Agent. "
-                "Wie kann ich dir heute helfen?"
-            ),
-            allow_interruptions=True,
-        )
+        # Greeting is issued after the room connects so the first words are not cut off.
+        return
 
     # To add tools, use the @function_tool decorator.
     # Here's an example that adds a simple weather tool.
@@ -184,8 +192,9 @@ async def my_agent(ctx: JobContext):
     # # Start the avatar and wait for it to join
     # await avatar.start(session, room=ctx.room)
 
-    # Join the room and connect to the user
     await ctx.connect()
+    await ctx.wait_for_participant()
+    await greet_after_connect(session)
 
 
 if __name__ == "__main__":

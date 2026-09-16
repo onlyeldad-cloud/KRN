@@ -1,9 +1,9 @@
-from unittest.mock import MagicMock, PropertyMock, patch
+from unittest.mock import AsyncMock, MagicMock, PropertyMock, patch
 
 import pytest
 from livekit.agents import AgentSession, inference
 
-from agent import Assistant
+from agent import GREETING_INSTRUCTIONS, Assistant, greet_after_connect
 
 
 @pytest.mark.asyncio
@@ -13,13 +13,12 @@ async def test_automatic_german_greeting():
         Assistant, "session", new_callable=PropertyMock, return_value=session
     ):
         await Assistant().on_enter()
+    session.generate_reply.assert_not_called()
+    with patch("agent.asyncio.sleep", new=AsyncMock()):
+        await greet_after_connect(session)
     session.generate_reply.assert_called_once_with(
-        instructions=(
-            "Begrüße dein Gegenüber jetzt auf Deutsch. Sage: "
-            "Hallo! Ich bin KRN Agent, dein digitaler Assistent von KRN Agent. "
-            "Wie kann ich dir heute helfen?"
-        ),
-        allow_interruptions=True,
+        instructions=GREETING_INSTRUCTIONS,
+        allow_interruptions=False,
     )
     session.say.assert_not_called()
 

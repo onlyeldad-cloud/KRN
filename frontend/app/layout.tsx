@@ -64,11 +64,17 @@ export default async function RootLayout({ children }: RootLayoutProps) {
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
         <link rel="manifest" href="/manifest.webmanifest" />
-        <meta name="theme-color" content="#071b24" />
+        <meta name="theme-color" content="#ffffff" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
       </head>
       <body className="overflow-x-hidden">
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem={false}
+          storageKey="krn-ui-theme"
+          disableTransitionOnChange
+        >
           <header className="fixed top-0 left-0 z-50 hidden w-full flex-row justify-between p-6 md:flex">
             <a
               target="_blank"
@@ -77,12 +83,16 @@ export default async function RootLayout({ children }: RootLayoutProps) {
               className="scale-100 transition-transform duration-300 hover:scale-110"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={logo} alt={`${companyName} Logo`} className="block size-6 dark:hidden" />
+              <img
+                src={logo}
+                alt={`${companyName} Logo`}
+                className="block h-10 w-auto rounded-md bg-white px-2 py-1 dark:hidden"
+              />
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={logoDark ?? logo}
                 alt={`${companyName} Logo`}
-                className="hidden size-6 dark:block"
+                className="hidden h-10 w-auto rounded-md bg-white px-2 py-1 dark:block"
               />
             </a>
           </header>

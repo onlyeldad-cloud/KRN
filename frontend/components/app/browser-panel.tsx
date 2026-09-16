@@ -45,7 +45,7 @@ export function BrowserPanel() {
   return (
     <>
       {preview && (
-        <aside className="fixed top-20 right-4 z-40 max-w-sm rounded-2xl border border-teal-500/30 bg-slate-950 p-3 shadow-xl">
+        <aside className="fixed top-20 right-4 z-40 max-w-sm rounded-2xl border border-[#D4A017]/40 bg-[#0B1F4D] p-3 shadow-xl">
           <button className="mb-2 text-sm text-white" onClick={() => setPreview('')}>
             Browser-Vorschau schließen ×
           </button>
@@ -60,7 +60,7 @@ export function BrowserPanel() {
           aria-label="Browseraktion bestätigen"
           className="fixed inset-0 z-[100] grid place-items-center bg-black/70 p-6"
         >
-          <div className="w-full max-w-lg rounded-3xl border border-teal-400/30 bg-slate-950 p-6 text-white">
+          <div className="w-full max-w-lg rounded-3xl border border-[#D4A017]/40 bg-[#0B1F4D] p-6 text-white">
             <h2 className="text-xl font-semibold">Browseraktion freigeben?</h2>
             <p className="my-4 break-words">{request.action}</p>
             <p className="mb-6 text-xs break-all text-slate-400">{request.url}</p>
@@ -73,7 +73,7 @@ export function BrowserPanel() {
                 Abbrechen
               </button>
               <button
-                className="rounded-xl bg-teal-400 px-5 py-3 text-slate-950"
+                className="rounded-xl bg-[#D4A017] px-5 py-3 text-[#0B1F4D]"
                 onClick={() => request.decide('approved')}
               >
                 Einmal erlauben

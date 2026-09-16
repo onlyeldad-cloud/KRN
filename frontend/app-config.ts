@@ -42,16 +42,16 @@ export const APP_CONFIG_DEFAULTS: AppConfig = {
   supportsScreenShare: true,
   isPreConnectBufferEnabled: false,
 
-  logo: '/krn-mark.svg',
-  accent: '#087f8c',
-  logoDark: '/krn-mark.svg',
-  accentDark: '#58e4ce',
+  logo: '/krn-logo.png',
+  accent: '#0B1F4D',
+  logoDark: '/krn-logo.png',
+  accentDark: '#D4A017',
   startButtonText: 'Gespräch starten',
 
   // optional: audio visualization configuration
   // audioVisualizerType: 'bar',
-  audioVisualizerColor: '#087f8c',
-  audioVisualizerColorDark: '#58e4ce',
+  audioVisualizerColor: '#D4A017',
+  audioVisualizerColorDark: '#D4A017',
   // audioVisualizerColorShift: 0.3,
   // audioVisualizerBarCount: 5,
   //audioVisualizerType: 'radial',
