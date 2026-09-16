@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "livekit-docs": {
+      "url": "https://docs.livekit.io/mcp"
+    },
+    "chrome-devtools": {
+      "command": "npx",
+      "args": ["-y", "chrome-devtools-mcp@latest", "--isolated"]
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@latest", "--browser", "chrome"]
+    }
+  }
+}

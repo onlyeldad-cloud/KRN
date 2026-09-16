@@ -30,7 +30,9 @@ Run `lk docs --help` to see all available commands. Key commands: `lk docs overv
 
 ### LiveKit Docs MCP Server
 
-For deeper IDE integration, LiveKit also offers an [MCP server](https://docs.livekit.io/reference/developer-tools/docs-mcp/) with the same documentation access. It uses Streamable HTTP transport at `https://docs.livekit.io/mcp`. Refer to your IDE's documentation for how to add it.
+This repo wires LiveKit documentation into OpenCode (`opencode.json`) and Cursor (`.cursor/mcp.json`) at `https://docs.livekit.io/mcp` (Streamable HTTP). Key tools: `get_docs_overview`, `get_pages`, `docs_search`, `code_search`, `get_changelog`, `get_pricing_info`. Prefer browsing (`get_docs_overview`, `get_pages`) over search, and `docs_search` over `code_search`.
+
+OpenCode in this project uses the Big Pickle model (`opencode/big-pickle`) plus isolated Chrome DevTools MCP and Playwright MCP for **developer** browser control. Do not attach those MCP servers as tools on the Gemini Live voice agent; the voice session already has its own approved Playwright tools in `src/browser_tools.py`.
 
 ### Submit docs feedback to LiveKit
 

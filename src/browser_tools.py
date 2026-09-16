@@ -4,12 +4,16 @@ import asyncio
 import base64
 import ipaddress
 import json
+import logging
+import os
 import socket
 from urllib.parse import urlsplit
 
 from livekit.agents import JobContext, function_tool
 from livekit.agents.llm import ToolError
 from playwright.async_api import async_playwright
+
+logger = logging.getLogger(__name__)
 
 
 async def validate_public_url(url: str) -> None:
@@ -58,7 +62,14 @@ class BrowserTools:
     async def _start(self):
         if self.page is None:
             self.playwright = await async_playwright().start()
-            self.browser = await self.playwright.chromium.launch(headless=True)
+            # Real sessions show a Chromium window so you can see the page.
+            # Tests stay headless. Override with KRN_BROWSER_HEADLESS=1.
+            env_headless = os.getenv("KRN_BROWSER_HEADLESS")
+            if env_headless is None:
+                headless = self.ctx is None
+            else:
+                headless = env_headless.strip().lower() in {"1", "true", "yes"}
+            self.browser = await self._launch_chromium(headless)
             context = await self.browser.new_context(
                 accept_downloads=False, service_workers="block"
             )
@@ -77,6 +88,24 @@ class BrowserTools:
             self.page.set_default_timeout(12000)
             self.page.on("dialog", lambda dialog: dialog.dismiss())
         return self.page
+
+    async def _launch_chromium(self, headless: bool):
+        errors: list[Exception] = []
+        for kwargs in (
+            {"headless": headless},
+            {"headless": headless, "channel": "chrome"},
+            {"headless": headless, "channel": "msedge"},
+        ):
+            try:
+                return await self.playwright.chromium.launch(**kwargs)
+            except Exception as exc:
+                errors.append(exc)
+                logger.warning(
+                    "Chromium launch failed (%s): %s",
+                    kwargs,
+                    type(exc).__name__,
+                )
+        raise errors[-1]
 
     async def close(self):
         async with self.lock:
@@ -108,12 +137,17 @@ class BrowserTools:
         if response != "approved":
             raise ToolError("Aktion wurde abgelehnt und nicht ausgeführt.")
 
-    async def _snapshot(self):
-        return {"url": self.page.url, "title": await self.page.title()}
+    async def _snapshot(self, page=None):
+        current = page or self.page
+        return {"url": current.url, "title": await current.title()}
 
     @function_tool
     async def open_browser(self, url: str) -> dict:
-        """Open a public URL in the isolated KRN browser, not the user's own browser.
+        """Open a public URL in a visible isolated Chromium window on this computer.
+
+        Use this when the user asks to open, show, or look up a website or official
+        docs. For LiveKit documentation use https://docs.livekit.io/. This does not
+        control the KRN app tab or the user's own Chrome.
 
         Args:
             url: Complete public https URL. Never use URLs that perform account actions.
@@ -123,8 +157,9 @@ class BrowserTools:
             async with self.lock:
                 page = await self._start()
                 await page.goto(url, wait_until="domcontentloaded")
-                return await self._snapshot()
+                return await self._snapshot(page)
         except Exception as exc:
+            logger.exception("open_browser failed")
             raise ToolError(
                 "Die öffentliche Webseite konnte nicht geöffnet werden."
             ) from exc

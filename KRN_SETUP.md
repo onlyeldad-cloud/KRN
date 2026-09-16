@@ -28,17 +28,39 @@ which is missing Playwright and blocked from loading `pyexpat` on this PC.
 `start-agent.cmd` uses `.venv-windows` instead.
 
 Open <http://127.0.0.1:3000> and select **Gespräch starten**. Allow microphone
-access. Use the camera control and its device selector for the built-in camera
-or a USB webcam recognized by Windows. The agent receives the published camera,
-not every camera attached to the PC. Screen sharing is also available in the web
-interface. Text chat can be used alongside voice.
+access. Text chat can be used alongside voice. Camera input is currently off in
+the agent because video encoding on Windows stalled speech; screen share in the
+web UI still works for the participant, but the agent will not describe the
+picture until that is re-enabled.
 
 Try: “Wie ist das Wetter in Berlin?”, “Suche die offizielle LiveKit-Dokumentation”,
 “Öffne example.com im Browser”, or “Zeig mir einen Screenshot des Browsers”.
-Browser clicks, typing, and Enter require **Einmal erlauben** in the app.
-The browser has its own temporary session; it does not control your personal
-Chrome profile or inherit passwords. Private/local addresses and file URLs are
-blocked. This is a personal development tool, not a multi-tenant browser sandbox.
+A **separate Chromium or Chrome window** should appear on this PC; that is the
+isolated KRN browser, not the KRN welcome tab. Clicks, typing, and Enter require
+**Einmal erlauben** in the app. The browser has its own temporary session; it
+does not control your personal Chrome profile or inherit passwords.
+Private/local addresses and file URLs are blocked. This is a personal
+development tool, not a multi-tenant browser sandbox.
+
+## OpenCode, Big Pickle, and MCP
+
+Coding agents (OpenCode and Cursor) get LiveKit docs and isolated Chrome here.
+This is **not** the voice conversation; do not add these MCP tools to Gemini Live.
+
+1. Install [OpenCode](https://opencode.ai) (`npm install -g opencode-ai@latest` in PowerShell
+   if `opencode` is not on PATH). Keep Node.js/`npx` plus Google Chrome on this PC.
+2. From the `KRN` folder run `opencode`. The project file `opencode.json` selects
+   `opencode/big-pickle` and these MCP servers:
+   - `livekit-docs` — `https://docs.livekit.io/mcp` (full current LiveKit docs)
+   - `chrome-devtools` — Google Chrome DevTools MCP, `--isolated` (not your login Chrome)
+   - `playwright` — `@playwright/mcp` with the Chrome channel
+3. Confirm with `opencode mcp list`. Cursor loads the same servers from `.cursor/mcp.json`
+   (reload MCP / restart Cursor if they do not appear).
+4. If both browser MCPs fight over Chrome, set `"disabled": true` on `playwright` in
+   `opencode.json` and keep `chrome-devtools`.
+
+Big Pickle is OpenCode Zen’s free stealth model; their terms may allow using traffic
+to improve it. Change `"model"` in `opencode.json` if you want a different provider.
 
 ## Windows Security workaround
 
