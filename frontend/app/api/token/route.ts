@@ -6,6 +6,27 @@ import { RoomConfiguration } from '@livekit/protocol';
 export const runtime = 'nodejs';
 export const revalidate = 0;
 
+function isLocalDevCaller(req: Request): boolean {
+  const url = new URL(req.url);
+  const origin = req.headers.get('origin');
+  if (origin === url.origin) {
+    return true;
+  }
+  if (req.headers.get('sec-fetch-site') === 'same-origin') {
+    return true;
+  }
+  const referer = req.headers.get('referer');
+  if (referer) {
+    try {
+      return new URL(referer).origin === url.origin;
+    } catch {
+      return false;
+    }
+  }
+  const host = (req.headers.get('host') ?? url.host).split(':')[0];
+  return host === '127.0.0.1' || host === 'localhost';
+}
+
 export async function POST(req: Request) {
   if (process.env.NODE_ENV !== 'development') {
     return NextResponse.json(
@@ -13,15 +34,13 @@ export async function POST(req: Request) {
       { status: 403 }
     );
   }
-  const origin = req.headers.get('origin');
-  const sameOrigin = origin === new URL(req.url).origin;
   const supplied = req.headers.get('authorization')?.replace(/^Bearer /, '') ?? '';
   const expected = process.env.KRN_MOBILE_DEV_TOKEN ?? '';
   const mobileAllowed =
     expected.length >= 32 &&
     Buffer.byteLength(supplied) === Buffer.byteLength(expected) &&
     timingSafeEqual(Buffer.from(supplied), Buffer.from(expected));
-  if (!sameOrigin && !mobileAllowed) {
+  if (!isLocalDevCaller(req) && !mobileAllowed) {
     return NextResponse.json({ error: 'Zugriff nicht erlaubt.' }, { status: 403 });
   }
   const { LIVEKIT_API_KEY, LIVEKIT_API_SECRET, LIVEKIT_URL } = process.env;

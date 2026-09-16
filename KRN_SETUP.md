@@ -10,19 +10,22 @@ Nothing has been deployed to production or an app store.
 
 Open two PowerShell terminals in the `KRN` folder:
 
+If PowerShell says running scripts is disabled, use the `.cmd` launchers
+instead (they only bypass the policy for this start command):
+
 ```powershell
 # Terminal 1: stop an older agent with Ctrl+C first to avoid duplicate workers.
-.\start-agent.ps1
+.\start-agent.cmd
+```
+
+```powershell
+# Terminal 2
+.\start-web.cmd
 ```
 
 Do not run `lk agent dev` by itself. That command uses `.venv` (Python 3.12),
 which is missing Playwright and blocked from loading `pyexpat` on this PC.
-`start-agent.ps1` uses `.venv-windows` instead.
-
-```powershell
-# Terminal 2
-.\start-web.ps1
-```
+`start-agent.cmd` uses `.venv-windows` instead.
 
 Open <http://127.0.0.1:3000> and select **Gespräch starten**. Allow microphone
 access. Use the camera control and its device selector for the built-in camera
