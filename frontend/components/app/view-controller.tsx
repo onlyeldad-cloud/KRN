@@ -56,6 +56,7 @@ export function ViewController({ appConfig }: ViewControllerProps) {
           supportsVideoInput={appConfig.supportsVideoInput}
           supportsScreenShare={appConfig.supportsScreenShare}
           isPreConnectBufferEnabled={appConfig.isPreConnectBufferEnabled}
+          preConnectMessage="KRN hört zu — du kannst schon sprechen."
           audioVisualizerType={appConfig.audioVisualizerType}
           audioVisualizerColor={
             resolvedTheme === 'dark'

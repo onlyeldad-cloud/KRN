@@ -40,7 +40,7 @@ export const APP_CONFIG_DEFAULTS: AppConfig = {
   supportsChatInput: true,
   supportsVideoInput: true,
   supportsScreenShare: true,
-  isPreConnectBufferEnabled: false,
+  isPreConnectBufferEnabled: true,
 
   logo: '/krn-logo.png',
   accent: '#0B1F4D',
