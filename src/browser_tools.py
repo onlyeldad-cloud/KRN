@@ -7,6 +7,7 @@ import json
 import logging
 import os
 import socket
+import sys
 from urllib.parse import urlsplit
 
 from livekit.agents import JobContext, function_tool
@@ -44,6 +45,13 @@ class BrowserTools:
         self.playwright = None
         self.browser = None
         self.page = None
+        self.visible = False
+
+    def _headless(self) -> bool:
+        env_headless = os.getenv("KRN_BROWSER_HEADLESS")
+        if env_headless is None:
+            return self.ctx is None
+        return env_headless.strip().lower() in {"1", "true", "yes"}
 
     @property
     def tools(self):
@@ -64,24 +72,29 @@ class BrowserTools:
             self.playwright = await async_playwright().start()
             # Real sessions show a Chromium window so you can see the page.
             # Tests stay headless. Override with KRN_BROWSER_HEADLESS=1.
-            env_headless = os.getenv("KRN_BROWSER_HEADLESS")
-            if env_headless is None:
-                headless = self.ctx is None
-            else:
-                headless = env_headless.strip().lower() in {"1", "true", "yes"}
+            headless = self._headless()
+            self.visible = not headless
             self.browser = await self._launch_chromium(headless)
             context = await self.browser.new_context(
-                accept_downloads=False, service_workers="block"
+                accept_downloads=False,
+                service_workers="block",
+                no_viewport=self.visible,
             )
 
-            # Check subresources and redirects too; do not expose local services.
+            # Block obvious local targets, but do not DNS-check every Google CDN
+            # request or the page never finishes and no window appears.
             async def guard(route):
-                try:
-                    await validate_public_url(route.request.url)
-                except (ValueError, OSError, TimeoutError):
-                    await route.abort()
-                else:
+                url = route.request.url
+                if not url.startswith(("http://", "https://")):
                     await route.continue_()
+                    return
+                host = (urlsplit(url).hostname or "").lower()
+                if host in {"localhost", "127.0.0.1", "::1"} or host.endswith(
+                    ".localhost"
+                ):
+                    await route.abort()
+                    return
+                await route.continue_()
 
             await context.route("**/*", guard)
             self.page = await context.new_page()
@@ -91,13 +104,32 @@ class BrowserTools:
 
     async def _launch_chromium(self, headless: bool):
         errors: list[Exception] = []
-        for kwargs in (
-            {"headless": headless},
-            {"headless": headless, "channel": "chrome"},
-            {"headless": headless, "channel": "msedge"},
-        ):
+        window_args = ["--start-maximized", "--new-window"] if not headless else []
+        attempts: list[dict] = []
+        if not headless:
+            if sys.platform.startswith("win"):
+                attempts.append(
+                    {
+                        "headless": False,
+                        "channel": "chrome",
+                        "args": window_args,
+                    }
+                )
+                attempts.append(
+                    {
+                        "headless": False,
+                        "channel": "msedge",
+                        "args": window_args,
+                    }
+                )
+            attempts.append({"headless": False, "args": window_args})
+        else:
+            attempts.append({"headless": True})
+        for kwargs in attempts:
             try:
-                return await self.playwright.chromium.launch(**kwargs)
+                browser = await self.playwright.chromium.launch(**kwargs)
+                logger.info("Browser launched %s", kwargs)
+                return browser
             except Exception as exc:
                 errors.append(exc)
                 logger.warning(
@@ -115,7 +147,16 @@ class BrowserTools:
                 await self.playwright.stop()
             self.page = self.browser = self.playwright = None
 
+    async def _approval_required(self) -> bool:
+        return os.getenv("KRN_BROWSER_REQUIRE_APPROVAL", "").strip().lower() in {
+            "1",
+            "true",
+            "yes",
+        }
+
     async def _approve(self, action: str):
+        if not await self._approval_required():
+            return
         if not self.ctx:
             raise ToolError(
                 "Browseraktionen benötigen eine Bestätigung in der KRN-App."
@@ -139,15 +180,20 @@ class BrowserTools:
 
     async def _snapshot(self, page=None):
         current = page or self.page
-        return {"url": current.url, "title": await current.title()}
+        return {
+            "url": current.url,
+            "title": await current.title(),
+            "visible_window": self.visible,
+        }
 
     @function_tool
     async def open_browser(self, url: str) -> dict:
         """Open a public URL in a visible isolated Chromium window on this computer.
 
-        Use this when the user asks to open, show, or look up a website or official
-        docs. For LiveKit documentation use https://docs.livekit.io/. This does not
-        control the KRN app tab or the user's own Chrome.
+        Use this when the user asks to open, show, look up, or search a website
+        they should see on screen. For LiveKit docs use https://docs.livekit.io/.
+        For Google use https://www.google.com/. A separate Chrome window must appear
+        on this computer. This does not control the KRN app tab.
 
         Args:
             url: Complete public https URL. Never use URLs that perform account actions.
@@ -157,7 +203,15 @@ class BrowserTools:
             async with self.lock:
                 page = await self._start()
                 await page.goto(url, wait_until="domcontentloaded")
-                return await self._snapshot(page)
+                bring = getattr(page, "bring_to_front", None)
+                if callable(bring):
+                    await bring()
+                snapshot = await self._snapshot(page)
+                if self.ctx is not None and not snapshot["visible_window"]:
+                    raise ToolError(
+                        "Die Seite wurde geladen, aber ohne sichtbares Fenster."
+                    )
+                return snapshot
         except Exception as exc:
             logger.exception("open_browser failed")
             raise ToolError(
@@ -186,7 +240,7 @@ class BrowserTools:
 
     @function_tool
     async def click_browser(self, role: str, name: str) -> dict:
-        """Click an inspected control after approval in the user's KRN app.
+        """Click an inspected control in the isolated browser.
 
         Args:
             role: Accessible role, such as button or link.
@@ -200,7 +254,7 @@ class BrowserTools:
 
     @function_tool
     async def type_browser(self, label: str, text: str) -> dict:
-        """Fill a labeled field after user approval. Never enter passwords or payment data.
+        """Fill a labeled field. Never enter passwords or payment data.
 
         Args:
             label: Field's accessible label.
@@ -231,7 +285,7 @@ class BrowserTools:
 
     @function_tool
     async def press_browser_key(self, key: str) -> dict:
-        """Press a navigation key; Enter requires user approval."""
+        """Press a navigation key such as Enter, Escape, Tab, or an arrow key."""
         if key not in {"Enter", "Escape", "Tab", "ArrowUp", "ArrowDown"}:
             raise ToolError("Diese Taste ist nicht freigegeben.")
         async with self.lock:

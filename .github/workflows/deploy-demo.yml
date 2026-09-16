@@ -1,0 +1,51 @@
+name: Deploy KRN demo
+
+on:
+  push:
+    branches: [main, cursor/krn-web-browser-and-mobile]
+  workflow_dispatch:
+
+concurrency:
+  group: krn-demo-deploy
+  cancel-in-progress: true
+
+jobs:
+  agent:
+    name: LiveKit Cloud agent
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install LiveKit CLI
+        run: curl -sSL https://get.livekit.io/cli | bash
+      - name: Deploy agent
+        env:
+          LIVEKIT_URL: ${{ secrets.LIVEKIT_URL }}
+          LIVEKIT_API_KEY: ${{ secrets.LIVEKIT_API_KEY }}
+          LIVEKIT_API_SECRET: ${{ secrets.LIVEKIT_API_SECRET }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+        run: |
+          lk agent deploy --yes --secrets "GOOGLE_API_KEY=${GOOGLE_API_KEY}"
+
+  web:
+    name: Vercel web app
+    runs-on: ubuntu-latest
+    needs: []
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - name: Install Vercel CLI
+        run: npm install -g vercel@latest
+      - name: Pull and deploy
+        working-directory: frontend
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: |
+          vercel pull --yes --environment=production --token "$VERCEL_TOKEN"
+          vercel build --prod --token "$VERCEL_TOKEN"
+          vercel deploy --prebuilt --prod --token "$VERCEL_TOKEN"

@@ -15,6 +15,9 @@ build/
 
 # Virtual environments
 .venv/
+.venv-windows/
+frontend/node_modules/
+frontend/.next/
 venv/
 
 # Caches and test output

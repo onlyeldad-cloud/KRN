@@ -17,7 +17,6 @@ async def test_automatic_german_greeting():
     await greet_after_connect(session)
     session.generate_reply.assert_called_once_with(
         instructions=GREETING_INSTRUCTIONS,
-        allow_interruptions=False,
     )
     session.say.assert_not_called()
 

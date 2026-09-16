@@ -1,7 +1,8 @@
 import { NextResponse } from 'next/server';
 import { AccessToken } from 'livekit-server-sdk';
-import { randomUUID, timingSafeEqual } from 'node:crypto';
+import { randomUUID } from 'node:crypto';
 import { RoomConfiguration } from '@livekit/protocol';
+import { bearerMatchesSecret } from '@/lib/demo-auth-server';
 
 export const runtime = 'nodejs';
 export const revalidate = 0;
@@ -27,21 +28,24 @@ function isLocalDevCaller(req: Request): boolean {
   return host === '127.0.0.1' || host === 'localhost';
 }
 
-export async function POST(req: Request) {
-  if (process.env.NODE_ENV !== 'development') {
-    return NextResponse.json(
-      { error: 'Für Produktion ist eine Benutzeranmeldung erforderlich.' },
-      { status: 403 }
-    );
+function isAuthorized(req: Request): boolean {
+  const supplied =
+    req.headers.get('authorization')?.replace(/^Bearer /, '') ?? '';
+  if (bearerMatchesSecret(supplied, process.env.KRN_DEMO_PASSWORD ?? '')) {
+    return true;
   }
-  const supplied = req.headers.get('authorization')?.replace(/^Bearer /, '') ?? '';
-  const expected = process.env.KRN_MOBILE_DEV_TOKEN ?? '';
-  const mobileAllowed =
-    expected.length >= 32 &&
-    Buffer.byteLength(supplied) === Buffer.byteLength(expected) &&
-    timingSafeEqual(Buffer.from(supplied), Buffer.from(expected));
-  if (!isLocalDevCaller(req) && !mobileAllowed) {
-    return NextResponse.json({ error: 'Zugriff nicht erlaubt.' }, { status: 403 });
+  if (bearerMatchesSecret(supplied, process.env.KRN_MOBILE_DEV_TOKEN ?? '')) {
+    return true;
+  }
+  return process.env.NODE_ENV === 'development' && isLocalDevCaller(req);
+}
+
+export async function POST(req: Request) {
+  if (!isAuthorized(req)) {
+    return NextResponse.json(
+      { error: 'Bitte das Demo-Passwort eingeben.' },
+      { status: 401 }
+    );
   }
   const { LIVEKIT_API_KEY, LIVEKIT_API_SECRET, LIVEKIT_URL } = process.env;
   if (!LIVEKIT_API_KEY || !LIVEKIT_API_SECRET || !LIVEKIT_URL) {
@@ -63,7 +67,9 @@ export async function POST(req: Request) {
     canSubscribe: true,
     canPublishData: true,
   });
-  token.roomConfig = RoomConfiguration.fromJson({ agents: [{ agentName: 'my-agent' }] });
+  token.roomConfig = RoomConfiguration.fromJson({
+    agents: [{ agentName: 'my-agent' }],
+  });
   return NextResponse.json(
     {
       serverUrl: LIVEKIT_URL,

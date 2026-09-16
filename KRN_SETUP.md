@@ -4,7 +4,8 @@ KRN uses Gemini Live with the Charon voice, natural German instructions, automat
 German greeting, live video input, web search, Open-Meteo weather, and an isolated
 Playwright browser. The web and Flutter interfaces are adapted from
 [jarvis-voice-butler](https://github.com/ruxakK/jarvis-voice-butler).
-Nothing has been deployed to production or an app store.
+A hosted demo (password-gated Vercel + LiveKit Cloud agent) is wired for GitHub
+Actions; complete the first `lk agent create` and Vercel project secrets to go live.
 
 ## Start on this Windows PC
 
@@ -28,18 +29,19 @@ which is missing Playwright and blocked from loading `pyexpat` on this PC.
 `start-agent.cmd` uses `.venv-windows` instead.
 
 Open <http://127.0.0.1:3000> and select **Gespräch starten**. Allow microphone
-access. Text chat can be used alongside voice. Camera input is currently off in
-the agent because video encoding on Windows stalled speech; screen share in the
-web UI still works for the participant, but the agent will not describe the
-picture until that is re-enabled.
+access. Text chat can be used alongside voice. Turn the camera on only when you
+want KRN to describe what you are holding; it uses the current frame, not
+earlier objects from the same call. If speech starts breaking up, turn the
+camera off again.
 
 Try: “Wie ist das Wetter in Berlin?”, “Suche die offizielle LiveKit-Dokumentation”,
 “Öffne example.com im Browser”, or “Zeig mir einen Screenshot des Browsers”.
 A **separate Chromium or Chrome window** should appear on this PC; that is the
-isolated KRN browser, not the KRN welcome tab. Clicks, typing, and Enter require
-**Einmal erlauben** in the app. The browser has its own temporary session; it
-does not control your personal Chrome profile or inherit passwords.
-Private/local addresses and file URLs are blocked. This is a personal
+isolated KRN browser, not the KRN welcome tab. Clicks, typing, and Enter run
+immediately (no **Einmal erlauben** prompt). Set `KRN_BROWSER_REQUIRE_APPROVAL=1`
+before `start-agent` if you want those prompts back. The browser has its own
+temporary session; it does not control your personal Chrome profile or inherit
+passwords. Private/local addresses and file URLs are blocked. This is a personal
 development tool, not a multi-tenant browser sandbox.
 
 ## OpenCode, Big Pickle, and MCP
@@ -99,11 +101,40 @@ after changing LiveKit credentials. This writes server credentials to
 `mobile/assets/.env`; it never copies the Google key into either app.
 These files are ignored by Git. Rotate any credential exposed in a screenshot.
 
-The token endpoint allows same-origin development web requests or the personal
-mobile bearer token. It is deliberately disabled in production until actual user
-authentication is implemented. A compiled mobile development token is extractable:
-do not distribute development builds publicly. The provider credentials stay on
-the server.
+The token endpoint allows same-origin development web requests, the personal
+mobile bearer token, or the shared `KRN_DEMO_PASSWORD` on the hosted demo.
+Do not send an open link without that password. A compiled mobile development
+token is extractable: do not distribute development builds publicly. Provider
+credentials stay on the server.
+
+## Hosted demo for your boss
+
+The welcome screen has a demo password. On Vercel set `KRN_DEMO_PASSWORD` and
+`NEXT_PUBLIC_KRN_REQUIRES_PASSWORD=true`. Voice, chat, weather, search, and
+camera work in the browser. Isolated Chrome still runs on the **agent host**
+(LiveKit Cloud), not on your boss’s PC.
+
+Push to `main` or `cursor/krn-web-browser-and-mobile` runs
+`.github/workflows/deploy-demo.yml` after the first cloud agent exists.
+
+First-time create (this PC, LiveKit CLI already logged in as `krn-01`):
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\create-hosted-demo.ps1
+```
+
+Commit the generated `livekit.toml`. Then add GitHub Actions secrets and a Vercel
+project for `frontend` so later pushes update the live demo automatically.
+
+Add these GitHub Actions secrets on `onlyeldad-cloud/KRN`:
+`LIVEKIT_URL`, `LIVEKIT_API_KEY`, `LIVEKIT_API_SECRET`, `GOOGLE_API_KEY`,
+`VERCEL_TOKEN`, `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID`.
+
+On Vercel also set `LIVEKIT_URL`, `LIVEKIT_API_KEY`, `LIVEKIT_API_SECRET`,
+`KRN_DEMO_PASSWORD`, and `NEXT_PUBLIC_KRN_REQUIRES_PASSWORD=true`.
+
+Send your boss the Vercel URL plus the demo password (not the GitHub repo).
+After you push code, wait for the Actions run to finish, then they refresh.
 
 The web app uses npm and Node 24. Reinstall with `npm ci` in `frontend`.
 `npm run build` checks compilation; use `npm run dev` for the development token

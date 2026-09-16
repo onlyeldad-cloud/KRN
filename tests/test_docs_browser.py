@@ -14,6 +14,9 @@ class _FakePage:
     async def goto(self, url, **kwargs):
         self.url = url
 
+    async def bring_to_front(self):
+        return None
+
     async def title(self):
         return "LiveKit Documentation"
 

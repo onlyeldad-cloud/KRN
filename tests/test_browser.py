@@ -1,9 +1,14 @@
-from unittest.mock import AsyncMock
+from unittest.mock import MagicMock
 
 import pytest
 from livekit.agents.llm import ToolError
 
 from browser_tools import BrowserTools, validate_public_url
+
+
+def test_job_session_browser_is_headed():
+    assert BrowserTools()._headless() is True
+    assert BrowserTools(MagicMock())._headless() is False
 
 
 @pytest.mark.asyncio
@@ -23,24 +28,16 @@ async def test_browser_rejects_local_and_credential_urls(url):
 
 
 @pytest.mark.asyncio
-async def test_browser_denial_prevents_fill_and_approval_allows_it():
-    browser = BrowserTools()
-    try:
-        page = await browser._start()
-        await page.set_content(
-            '<label>Name<input aria-label="Name"></label><button>Weiter</button>'
-        )
-        controls = await browser.inspect_browser()
-        assert "Weiter" in controls["controls"]
-        with pytest.raises(ToolError):
-            await browser.type_browser("Name", "KRN")
-        assert await page.get_by_label("Name").input_value() == ""
-        browser._approve = AsyncMock()
-        await browser.type_browser("Name", "KRN")
-        assert await page.get_by_label("Name").input_value() == "KRN"
-        browser._approve.assert_awaited_once_with("In Name eingeben: KRN")
-    finally:
-        await browser.close()
+async def test_clicks_and_typing_run_without_app_prompt(monkeypatch):
+    monkeypatch.delenv("KRN_BROWSER_REQUIRE_APPROVAL", raising=False)
+    await BrowserTools()._approve("Klicken: KRN: Home (link)")
+
+
+@pytest.mark.asyncio
+async def test_optional_approval_blocks_without_frontend(monkeypatch):
+    monkeypatch.setenv("KRN_BROWSER_REQUIRE_APPROVAL", "1")
+    with pytest.raises(ToolError):
+        await BrowserTools()._approve("Klicken: KRN: Home (link)")
 
 
 @pytest.mark.asyncio
