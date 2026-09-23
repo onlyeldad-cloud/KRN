@@ -1,12 +1,13 @@
 $ErrorActionPreference = 'Stop'
 Set-Location -LiteralPath $PSScriptRoot
-$env:UV_PROJECT_ENVIRONMENT = '.venv-windows'
-if (-not (Test-Path -LiteralPath '.venv-windows\Scripts\python.exe')) {
+$env:UV_PROJECT_ENVIRONMENT = '.venv-windows313'
+if (-not (Test-Path -LiteralPath '.venv-windows313\Scripts\python.exe')) {
     throw 'Trusted environment missing. See KRN_SETUP.md for setup.'
 }
 # LiveKit CLI prefers .venv, which is blocked on this PC. Keep the working
-# Python 3.14 environment first so the agent loads Playwright and pyexpat.
-$venv = (Resolve-Path -LiteralPath '.venv-windows').Path
+# official Python 3.13 environment first. The Python 3.14 grpcio binary
+# is blocked by Smart App Control on this PC.
+$venv = (Resolve-Path -LiteralPath '.venv-windows313').Path
 $env:VIRTUAL_ENV = $venv
 # Use the user-wide Playwright cache, not a Cursor sandbox path.
 if (-not $env:PLAYWRIGHT_BROWSERS_PATH) {
@@ -22,3 +23,4 @@ $env:PATH = @(
 uv sync --locked
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 uv run python src/agent.py dev
+exit $LASTEXITCODE

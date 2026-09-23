@@ -155,12 +155,26 @@ class Assistant(Agent):
     #     return "sunny with a temperature of 70 degrees."
 
 
-server = AgentServer()
+# Prepare the first runner before a caller arrives. Cold Windows imports can
+# exceed the SDK's default 10-second initialization deadline.
+server = AgentServer(num_idle_processes=1, initialize_process_timeout=120.0)
 
 
 def prewarm(proc: JobProcess) -> None:
-    # First-session imports were blocking the Windows audio loop for 1-2s.
+    # First-session SSL and Google client setup can take tens of seconds on
+    # this Windows PC. Doing it before a caller arrives avoids "Session ended".
+    import os
+    import ssl
+
+    ssl.create_default_context()
     import anyio._core._synchronization  # noqa: F401
+    from google.genai import Client
+    from livekit.plugins import google as _google  # noqa: F401
+
+    api_key = os.getenv("GOOGLE_API_KEY") or os.getenv("GEMINI_API_KEY")
+    if api_key:
+        Client(api_key=api_key)
+    Assistant()
 
 
 server.setup_fnc = prewarm

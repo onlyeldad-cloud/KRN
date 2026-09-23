@@ -7,6 +7,7 @@ __pycache__
 KMS
 .venv
 .venv-windows/
+.venv-windows313/
 frontend/node_modules/
 frontend/.next/
 mobile/.dart_tool/

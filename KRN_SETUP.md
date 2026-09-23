@@ -26,13 +26,28 @@ instead (they only bypass the policy for this start command):
 
 Do not run `lk agent dev` by itself. That command uses `.venv` (Python 3.12),
 which is missing Playwright and blocked from loading `pyexpat` on this PC.
-`start-agent.cmd` uses `.venv-windows` instead.
+`start-agent.cmd` uses `.venv-windows313` instead.
 
 Open <http://127.0.0.1:3000> and select **Gespräch starten**. Allow microphone
 access. Text chat can be used alongside voice. Turn the camera on only when you
 want KRN to describe what you are holding; it uses the current frame, not
 earlier objects from the same call. If speech starts breaking up, turn the
 camera off again.
+
+Normal `start-web.cmd` now builds the app once and reuses the compiled build
+until source/configuration files change. The first build takes longer; later
+starts do not compile pages or the token endpoint on the first request.
+For UI development with hot reload, run
+`powershell -ExecutionPolicy Bypass -File .\start-web.ps1 -Dev` instead.
+Run only one frontend at a time; the launcher always uses port 3000.
+The local launcher enables password-free loopback access (`KRN_LOCAL_MODE=true`)
+and does not show a demo password field. Hosted demo authentication remains
+optional for a public Vercel URL.
+The backend keeps one runner warm and allows 120 seconds for cold Windows
+initialization, preventing the previous 10-second initialization timeout.
+
+To verify a real call with synthetic microphone input and incoming agent audio:
+`uv run python scripts/check_web.py` (uses configured LiveKit/Google services).
 
 Try: “Wie ist das Wetter in Berlin?”, “Suche die offizielle LiveKit-Dokumentation”,
 “Öffne example.com im Browser”, or “Zeig mir einen Screenshot des Browsers”.
@@ -74,10 +89,12 @@ loads successfully. Both XML and LiveKit imports were verified. The original
 This addresses the new module-blocking message; it is separate from the earlier
 LiveKit native-library crash fixed by updating the Microsoft C++ runtime.
 
-The launch script selects `.venv-windows`. For manual commands:
+On 2026-09-23, Smart App Control also blocked the Python 3.14 gRPC binary (`cygrpc.cp314-win_amd64.pyd`). The launcher now uses `.venv-windows313`, created with official Python 3.13.15 through Python Install Manager. XML, gRPC, LiveKit, and Google plugin imports passed with the same locked dependencies. Both previous environments are preserved; Windows security settings remain unchanged.
+
+The launch script selects `.venv-windows313`. For manual commands:
 
 ```powershell
-$env:UV_PROJECT_ENVIRONMENT = '.venv-windows'
+$env:UV_PROJECT_ENVIRONMENT = '.venv-windows313'
 uv sync --locked
 uv run python src/agent.py dev
 # For hot reload, prefer: lk agent dev
@@ -86,8 +103,9 @@ uv run python src/agent.py dev
 If recreating only this optional environment on this PC:
 
 ```powershell
-uv venv --python "$env:LOCALAPPDATA\Python\pythoncore-3.14-64\python.exe" .venv-windows
-$env:UV_PROJECT_ENVIRONMENT = '.venv-windows'
+py install 3.13
+uv venv --python "$env:LOCALAPPDATA\Python\pythoncore-3.13-64\python.exe" .venv-windows313
+$env:UV_PROJECT_ENVIRONMENT = '.venv-windows313'
 uv sync --locked
 uv run playwright install chromium
 ```
@@ -183,7 +201,7 @@ use the web app for screen sharing.
 ## Checks
 
 ```powershell
-$env:UV_PROJECT_ENVIRONMENT = '.venv-windows'
+$env:UV_PROJECT_ENVIRONMENT = '.venv-windows313'
 uv run python -c "import pyexpat, livekit.agents; print('Imports OK')"
 uv run pytest tests/test_browser.py tests/test_weather.py tests/test_web_search.py -q
 uv run ruff check src tests scripts

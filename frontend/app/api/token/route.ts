@@ -29,6 +29,17 @@ function isLocalDevCaller(req: Request): boolean {
 }
 
 function isAuthorized(req: Request): boolean {
+  const url = new URL(req.url);
+  const origin = req.headers.get('origin');
+  const host = (req.headers.get('host') ?? url.host).split(':')[0];
+  if (
+    process.env.KRN_LOCAL_MODE === 'true' &&
+    (host === '127.0.0.1' || host === 'localhost') &&
+    (!origin || origin === `http://${req.headers.get('host') ?? url.host}`) &&
+    req.headers.get('sec-fetch-site') !== 'cross-site'
+  ) {
+    return true;
+  }
   const supplied =
     req.headers.get('authorization')?.replace(/^Bearer /, '') ?? '';
   if (bearerMatchesSecret(supplied, process.env.KRN_DEMO_PASSWORD ?? '')) {

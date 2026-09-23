@@ -1,8 +1,10 @@
 'use client';
 
 import { type ComponentProps } from 'react';
-import { Streamdown } from 'streamdown';
-import { type AgentState, type ReceivedMessage } from '@livekit/components-react';
+import {
+  type AgentState,
+  type ReceivedMessage,
+} from '@livekit/components-react';
 import { AgentChatIndicator } from '@/components/agents-ui/agent-chat-indicator';
 import { Bubble, BubbleContent } from '@/components/ui/bubble';
 import { Marker, MarkerContent, MarkerIcon } from '@/components/ui/marker';
@@ -20,7 +22,8 @@ import {
  * Props for the AgentChatTranscript component.
  */
 export interface AgentChatTranscriptProps
-  extends ComponentProps<'div'>,
+  extends
+    ComponentProps<'div'>,
     ComponentProps<typeof MessageScrollerProvider>,
     ComponentProps<typeof MessageScrollerViewport>,
     ComponentProps<typeof MessageScrollerContent> {
@@ -41,11 +44,15 @@ export interface AgentChatTranscriptProps
   /**
    * The scroll button behavior
    */
-  scrollButtonBehavior?: ComponentProps<typeof MessageScrollerButton>['behavior'];
+  scrollButtonBehavior?: ComponentProps<
+    typeof MessageScrollerButton
+  >['behavior'];
   /**
    * The scroll button direction
    */
-  scrollButtonDirection?: ComponentProps<typeof MessageScrollerButton>['direction'];
+  scrollButtonDirection?: ComponentProps<
+    typeof MessageScrollerButton
+  >['direction'];
   /**
    * The current state of the agent. When 'thinking', displays a loading indicator.
    */
@@ -103,7 +110,9 @@ export function AgentChatTranscript({
       scrollPreviousItemPeek={scrollPreviousItemPeek}
     >
       <MessageScroller className={className} {...props}>
-        <MessageScrollerViewport preserveScrollOnPrepend={preserveScrollOnPrepend}>
+        <MessageScrollerViewport
+          preserveScrollOnPrepend={preserveScrollOnPrepend}
+        >
           <MessageScrollerContent
             spacerClassName={spacerClassName}
             aria-busy={agentState === 'thinking'}
@@ -112,8 +121,11 @@ export function AgentChatTranscript({
               const { id, timestamp, from, message } = receivedMessage;
               const time = new Date(timestamp);
               const isUser = from?.isLocal;
-              const locale = typeof navigator !== 'undefined' ? navigator.language : 'en-US';
-              const title = time.toLocaleTimeString(locale, { timeStyle: 'full' });
+              const locale =
+                typeof navigator !== 'undefined' ? navigator.language : 'en-US';
+              const title = time.toLocaleTimeString(locale, {
+                timeStyle: 'full',
+              });
               let _scrollAnchor = false;
 
               if (
@@ -125,7 +137,11 @@ export function AgentChatTranscript({
               }
 
               return (
-                <MessageScrollerItem key={id} messageId={id} scrollAnchor={_scrollAnchor}>
+                <MessageScrollerItem
+                  key={id}
+                  messageId={id}
+                  scrollAnchor={_scrollAnchor}
+                >
                   <Message align={isUser ? 'end' : 'start'} title={title}>
                     <MessageContent>
                       <Bubble
@@ -133,7 +149,9 @@ export function AgentChatTranscript({
                         variant={isUser ? 'secondary' : 'ghost'}
                       >
                         <BubbleContent>
-                          <Streamdown>{message}</Streamdown>
+                          <div className="break-words whitespace-pre-wrap">
+                            {message}
+                          </div>
                         </BubbleContent>
                       </Bubble>
                     </MessageContent>
