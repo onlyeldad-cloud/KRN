@@ -1,0 +1,1419 @@
+{
+  "filename": "DOC-20260920-WA0002.pdf",
+  "source_sha256": "68468e78ada688ac8c5cbc1a2cf6dcd1f50fccd5f57de4fb2b786c23f861404b",
+  "reviewed_at": "2026-09-25",
+  "review": "All 25 explicitly numbered trip columns, 18 outbound and 21 inbound stop rows and printed restrictions checked against 230-dpi original rendering. Blank cells preserved; intermediate repeat trips not assigned invented IDs.",
+  "pages": {
+    "1": {
+      "text": "Linie 216 Fahrplan: Bad Kreuznach Bahnhof - Michelin - Planig Industriegebiet - Bosenheim Sportplatz/Ippesheim Mitte und Gegenrichtung.\nFahrt 125 montags bis freitags: Bad Kreuznach Bahnhof ab 5:32 Uhr, Michelin 5:39 Uhr.\nZeichen S: Die Fahrt verkehrt nur an Schultagen in Rheinland-Pfalz.\nAm 24. und 31.12. Verkehr wie an Samstagen, an Rosenmontag, Fastnachtsdienstag sowie an den Freitagen nach Christi Himmelfahrt und Fronleichnam Verkehr wie in den Ferien.\nIn beiden Richtungen steht zwischen den 9-Uhr- und 12-Uhr-Spalten: alle 60 Min. Fahrt 104 trägt S (nur an Schultagen in Rheinland-Pfalz).\n\nFahrt 125, Linie 216, Richtung Bosenheim/Ippesheim, Montag bis Freitag:\nBad Kreuznach, Bahnhof: 5:32 Uhr\nBad Kreuznach, Gensinger Straße: 5:33 Uhr\nBad Kreuznach, Heidenmauer: 5:34 Uhr\nBad Kreuznach, Seitz-Werke: 5:35 Uhr\nBad Kreuznach, Sandweg: 5:36 Uhr\nBad Kreuznach, Otto-Meffert-Str./oddAG: 5:37 Uhr\nBad Kreuznach, Michelin: 5:39 Uhr\n\nFahrt 101, Linie 216, Richtung Bosenheim/Ippesheim, Montag bis Freitag:\nBad Kreuznach, Bahnhof: 6:42 Uhr\nBad Kreuznach, Gensinger Straße: 6:43 Uhr\nBad Kreuznach, Heidenmauer: 6:44 Uhr\nBad Kreuznach, Seitz-Werke: 6:45 Uhr\nBad Kreuznach, Sandweg: 6:46 Uhr\nBad Kreuznach, Otto-Meffert-Str./oddAG: 6:47 Uhr\nBad Kreuznach, Michelin: 6:49 Uhr\nBad Kreuznach, Mercedes: 6:52 Uhr\nPlanig, Industriegebiet: 6:53 Uhr\nPlanig, Mitte: 6:54 Uhr\nPlanig, Grundschule: 6:55 Uhr\n\nFahrt 103, Linie 216, Richtung Bosenheim/Ippesheim, Montag bis Freitag:\nBad Kreuznach, Bahnhof: 8:12 Uhr\nBad Kreuznach, Gensinger Straße: 8:13 Uhr\nBad Kreuznach, Heidenmauer: 8:14 Uhr\nBad Kreuznach, Seitz-Werke: 8:15 Uhr\nBad Kreuznach, Sandweg: 8:16 Uhr\nBad Kreuznach, Otto-Meffert-Str./oddAG: 8:17 Uhr\nBad Kreuznach, Michelin: 8:19 Uhr\nBad Kreuznach, Mercedes: 8:22 Uhr\nPlanig, Industriegebiet: 8:23 Uhr\nPlanig, Bosenbergstraße: 8:24 Uhr\nBosenheim, A. d. Pforte: 8:26 Uhr\nBosenheim, Rheingaustraße: 8:27 Uhr\nBosenheim, Sportplatz: 8:30 Uhr\n\nFahrt 105, Linie 216, Richtung Bosenheim/Ippesheim, Montag bis Freitag:\nBad Kreuznach, Bahnhof: 9:12 Uhr\nBad Kreuznach, Gensinger Straße: 9:13 Uhr\nBad Kreuznach, Heidenmauer: 9:14 Uhr\nBad Kreuznach, Seitz-Werke: 9:15 Uhr\nBad Kreuznach, Sandweg: 9:16 Uhr\nBad Kreuznach, Otto-Meffert-Str./oddAG: 9:17 Uhr\nBad Kreuznach, Michelin: 9:19 Uhr\nBad Kreuznach, Mercedes: 9:22 Uhr\nPlanig, Industriegebiet: 9:23 Uhr\nPlanig, Bosenbergstraße: 9:24 Uhr\nBosenheim, A. d. Pforte: 9:26 Uhr\nBosenheim, Rheingaustraße: 9:27 Uhr\nBosenheim, Sportplatz: 9:30 Uhr\n\nFahrt 111, Linie 216, Richtung Bosenheim/Ippesheim, Montag bis Freitag:\nBad Kreuznach, Bahnhof: 12:12 Uhr\nBad Kreuznach, Gensinger Straße: 12:13 Uhr\nBad Kreuznach, Heidenmauer: 12:14 Uhr\nBad Kreuznach, Seitz-Werke: 12:15 Uhr\nBad Kreuznach, Sandweg: 12:16 Uhr\nBad Kreuznach, Otto-Meffert-Str./oddAG: 12:17 Uhr\nBad Kreuznach, Michelin: 12:19 Uhr\nBad Kreuznach, Mercedes: 12:22 Uhr\nPlanig, Industriegebiet: 12:23 Uhr\nPlanig, Bosenbergstraße: 12:24 Uhr\nBosenheim, A. d. Pforte: 12:26 Uhr\nBosenheim, Rheingaustraße: 12:27 Uhr\nBosenheim, Sportplatz: 12:30 Uhr\n\nFahrt 113, Linie 216, Richtung Bosenheim/Ippesheim, Montag bis Freitag:\nBad Kreuznach, Bahnhof: 13:12 Uhr\nBad Kreuznach, Gensinger Straße: 13:13 Uhr\nBad Kreuznach, Heidenmauer: 13:14 Uhr\nBad Kreuznach, Seitz-Werke: 13:15 Uhr\nBad Kreuznach, Sandweg: 13:16 Uhr\nBad Kreuznach, Otto-Meffert-Str./oddAG: 13:17 Uhr\nBad Kreuznach, Michelin: 13:19 Uhr\nBad Kreuznach, Mercedes: 13:22 Uhr\nPlanig, Industriegebiet: 13:23 Uhr\nPlanig, Mitte: 13:24 Uhr\nPlanig, Römerdorf: 13:25 Uhr\nPlanig, Bahnhof: 13:27 Uhr\nIppesheim, Junkerstraße: 13:30 Uhr\n\nFahrt 127, Linie 216, Richtung Bosenheim/Ippesheim, Montag bis Freitag:\nBad Kreuznach, Bahnhof: 13:32 Uhr\nBad Kreuznach, Gensinger Straße: 13:33 Uhr\nBad Kreuznach, Heidenmauer: 13:34 Uhr\nBad Kreuznach, Seitz-Werke: 13:35 Uhr\nBad Kreuznach, Sandweg: 13:36 Uhr\nBad Kreuznach, Otto-Meffert-Str./oddAG: 13:37 Uhr\nBad Kreuznach, Michelin: 13:39 Uhr\n\nFahrt 115, Linie 216, Richtung Bosenheim/Ippesheim, Montag bis Freitag:\nBad Kreuznach, Bahnhof: 14:12 Uhr\nBad Kreuznach, Gensinger Straße: 14:13 Uhr\nBad Kreuznach, Heidenmauer: 14:14 Uhr\nBad Kreuznach, Seitz-Werke: 14:15 Uhr\nBad Kreuznach, Sandweg: 14:16 Uhr\nBad Kreuznach, Otto-Meffert-Str./oddAG: 14:17 Uhr\nBad Kreuznach, Michelin: 14:19 Uhr\nBad Kreuznach, Mercedes: 14:22 Uhr\nPlanig, Industriegebiet: 14:23 Uhr\nPlanig, Bosenbergstraße: 14:24 Uhr\nBosenheim, A. d. Pforte: 14:26 Uhr\nBosenheim, Rheingaustraße: 14:27 Uhr\nBosenheim, Sportplatz: 14:30 Uhr\n\nFahrt 117, Linie 216, Richtung Bosenheim/Ippesheim, Montag bis Freitag:\nBad Kreuznach, Bahnhof: 15:12 Uhr\nBad Kreuznach, Gensinger Straße: 15:13 Uhr\nBad Kreuznach, Heidenmauer: 15:14 Uhr\nBad Kreuznach, Seitz-Werke: 15:15 Uhr\nBad Kreuznach, Sandweg: 15:16 Uhr\nBad Kreuznach, Otto-Meffert-Str./oddAG: 15:17 Uhr\nBad Kreuznach, Michelin: 15:19 Uhr\nBad Kreuznach, Mercedes: 15:22 Uhr\nPlanig, Industriegebiet: 15:23 Uhr\nPlanig, Bosenbergstraße: 15:24 Uhr\nBosenheim, A. d. Pforte: 15:26 Uhr\nBosenheim, Rheingaustraße: 15:27 Uhr\nBosenheim, Sportplatz: 15:30 Uhr\n\nFahrt 119, Linie 216, Richtung Bosenheim/Ippesheim, Montag bis Freitag:\nBad Kreuznach, Bahnhof: 16:12 Uhr\nBad Kreuznach, Gensinger Straße: 16:13 Uhr\nBad Kreuznach, Heidenmauer: 16:14 Uhr\nBad Kreuznach, Seitz-Werke: 16:15 Uhr\nBad Kreuznach, Sandweg: 16:16 Uhr\nBad Kreuznach, Otto-Meffert-Str./oddAG: 16:17 Uhr\nBad Kreuznach, Michelin: 16:19 Uhr\nBad Kreuznach, Mercedes: 16:22 Uhr\nPlanig, Industriegebiet: 16:23 Uhr\nPlanig, Mitte: 16:24 Uhr\nPlanig, Römerdorf: 16:25 Uhr\nPlanig, Bahnhof: 16:27 Uhr\nIppesheim, Junkerstraße: 16:30 Uhr\n\nFahrt 121, Linie 216, Richtung Bosenheim/Ippesheim, Montag bis Freitag:\nBad Kreuznach, Bahnhof: 17:12 Uhr\nBad Kreuznach, Gensinger Straße: 17:13 Uhr\nBad Kreuznach, Heidenmauer: 17:14 Uhr\nBad Kreuznach, Seitz-Werke: 17:15 Uhr\nBad Kreuznach, Sandweg: 17:16 Uhr\nBad Kreuznach, Otto-Meffert-Str./oddAG: 17:17 Uhr\nBad Kreuznach, Michelin: 17:19 Uhr\nBad Kreuznach, Mercedes: 17:22 Uhr\nPlanig, Industriegebiet: 17:23 Uhr\nPlanig, Bosenbergstraße: 17:24 Uhr\nBosenheim, A. d. Pforte: 17:26 Uhr\nBosenheim, Rheingaustraße: 17:27 Uhr\nBosenheim, Sportplatz: 17:30 Uhr\n\nFahrt 123, Linie 216, Richtung Bosenheim/Ippesheim, Montag bis Freitag:\nBad Kreuznach, Bahnhof: 18:12 Uhr\nBad Kreuznach, Gensinger Straße: 18:13 Uhr\nBad Kreuznach, Heidenmauer: 18:14 Uhr\nBad Kreuznach, Seitz-Werke: 18:15 Uhr\nBad Kreuznach, Sandweg: 18:16 Uhr\nBad Kreuznach, Otto-Meffert-Str./oddAG: 18:17 Uhr\nBad Kreuznach, Michelin: 18:19 Uhr\nBad Kreuznach, Mercedes: 18:22 Uhr\nPlanig, Industriegebiet: 18:23 Uhr\nPlanig, Bosenbergstraße: 18:24 Uhr\nBosenheim, A. d. Pforte: 18:26 Uhr\nBosenheim, Rheingaustraße: 18:27 Uhr\nBosenheim, Sportplatz: 18:30 Uhr\n\nFahrt 102, Linie 216, Richtung Bad Kreuznach Bahnhof, Montag bis Freitag:\nPlanig, Grundschule: 7:02 Uhr\nPlanig, Kirche: 7:03 Uhr\nPlanig, Mitte: 7:04 Uhr\nPlanig, Industriegebiet: 7:05 Uhr\nBad Kreuznach, Mercedes: 7:06 Uhr\nBad Kreuznach, Michelin: 7:09 Uhr\nBad Kreuznach, Otto-Meffert-Str./oddAG: 7:10 Uhr\nBad Kreuznach, Sandweg: 7:11 Uhr\nBad Kreuznach, Seitz-Werke: 7:12 Uhr\nBad Kreuznach, Heidenmauer: 7:13 Uhr\nBad Kreuznach, Gensinger Straße: 7:14 Uhr\nBad Kreuznach, Bahnhof: 7:17 Uhr\n\nFahrt 104, Linie 216, Richtung Bad Kreuznach Bahnhof, Montag bis Freitag; nur an Schultagen in Rheinland-Pfalz:\nIppesheim, Ernst-Ludwig-Straße: 7:21 Uhr\nPlanig, Bahnhof: 7:23 Uhr\nPlanig, Römerdorf: 7:25 Uhr\nPlanig, Kirche: 7:26 Uhr\nPlanig, Mitte: 7:27 Uhr\nPlanig, Industriegebiet: 7:28 Uhr\nBad Kreuznach, Mercedes: 7:29 Uhr\nBad Kreuznach, Michelin: 7:32 Uhr\nBad Kreuznach, Otto-Meffert-Str./oddAG: 7:33 Uhr\nBad Kreuznach, Sandweg: 7:34 Uhr\nBad Kreuznach, Seitz-Werke: 7:35 Uhr\nBad Kreuznach, Heidenmauer: 7:36 Uhr\nBad Kreuznach, Gensinger Straße: 7:37 Uhr\nBad Kreuznach, Bahnhof: 7:40 Uhr\n\nFahrt 106, Linie 216, Richtung Bad Kreuznach Bahnhof, Montag bis Freitag:\nBosenheim, Sportplatz: 8:30 Uhr\nBosenheim, Parkstraße: 8:31 Uhr\nBosenheim, Mitte: 8:32 Uhr\nBosenheim, An der Pforte: 8:33 Uhr\nPlanig, Bosenbergstraße: 8:34 Uhr\nPlanig, Industriegebiet: 8:35 Uhr\nBad Kreuznach, Mercedes: 8:36 Uhr\nBad Kreuznach, Michelin: 8:39 Uhr\nBad Kreuznach, Otto-Meffert-Str./oddAG: 8:40 Uhr\nBad Kreuznach, Sandweg: 8:41 Uhr\nBad Kreuznach, Seitz-Werke: 8:42 Uhr\nBad Kreuznach, Heidenmauer: 8:43 Uhr\nBad Kreuznach, Gensinger Straße: 8:44 Uhr\nBad Kreuznach, Bahnhof: 8:47 Uhr\n\nFahrt 108, Linie 216, Richtung Bad Kreuznach Bahnhof, Montag bis Freitag:\nBosenheim, Sportplatz: 9:30 Uhr\nBosenheim, Parkstraße: 9:31 Uhr\nBosenheim, Mitte: 9:32 Uhr\nBosenheim, An der Pforte: 9:33 Uhr\nPlanig, Bosenbergstraße: 9:34 Uhr\nPlanig, Industriegebiet: 9:35 Uhr\nBad Kreuznach, Mercedes: 9:36 Uhr\nBad Kreuznach, Michelin: 9:39 Uhr\nBad Kreuznach, Otto-Meffert-Str./oddAG: 9:40 Uhr\nBad Kreuznach, Sandweg: 9:41 Uhr\nBad Kreuznach, Seitz-Werke: 9:42 Uhr\nBad Kreuznach, Heidenmauer: 9:43 Uhr\nBad Kreuznach, Gensinger Straße: 9:44 Uhr\nBad Kreuznach, Bahnhof: 9:47 Uhr\n\nFahrt 114, Linie 216, Richtung Bad Kreuznach Bahnhof, Montag bis Freitag:\nBosenheim, Sportplatz: 12:30 Uhr\nBosenheim, Parkstraße: 12:31 Uhr\nBosenheim, Mitte: 12:32 Uhr\nBosenheim, An der Pforte: 12:33 Uhr\nPlanig, Bosenbergstraße: 12:34 Uhr\nPlanig, Industriegebiet: 12:35 Uhr\nBad Kreuznach, Mercedes: 12:36 Uhr\nBad Kreuznach, Michelin: 12:39 Uhr\nBad Kreuznach, Otto-Meffert-Str./oddAG: 12:40 Uhr\nBad Kreuznach, Sandweg: 12:41 Uhr\nBad Kreuznach, Seitz-Werke: 12:42 Uhr\nBad Kreuznach, Heidenmauer: 12:43 Uhr\nBad Kreuznach, Gensinger Straße: 12:44 Uhr\nBad Kreuznach, Bahnhof: 12:47 Uhr\n\nFahrt 116, Linie 216, Richtung Bad Kreuznach Bahnhof, Montag bis Freitag:\nIppesheim, Ernst-Ludwig-Straße: 13:30 Uhr\nPlanig, Bahnhof: 13:32 Uhr\nPlanig, Römerdorf: 13:34 Uhr\nPlanig, Kirche: 13:35 Uhr\nPlanig, Mitte: 13:36 Uhr\nPlanig, Industriegebiet: 13:37 Uhr\nBad Kreuznach, Mercedes: 13:38 Uhr\nBad Kreuznach, Michelin: 13:41 Uhr\nBad Kreuznach, Otto-Meffert-Str./oddAG: 13:42 Uhr\nBad Kreuznach, Sandweg: 13:43 Uhr\nBad Kreuznach, Seitz-Werke: 13:44 Uhr\nBad Kreuznach, Heidenmauer: 13:45 Uhr\nBad Kreuznach, Gensinger Straße: 13:46 Uhr\nBad Kreuznach, Bahnhof: 13:49 Uhr\n\nFahrt 126, Linie 216, Richtung Bad Kreuznach Bahnhof, Montag bis Freitag:\nBad Kreuznach, Michelin: 14:19 Uhr\nBad Kreuznach, Otto-Meffert-Str./oddAG: 14:20 Uhr\nBad Kreuznach, Sandweg: 14:21 Uhr\nBad Kreuznach, Seitz-Werke: 14:22 Uhr\nBad Kreuznach, Heidenmauer: 14:23 Uhr\nBad Kreuznach, Gensinger Straße: 14:24 Uhr\nBad Kreuznach, Bahnhof: 14:27 Uhr\n\nFahrt 118, Linie 216, Richtung Bad Kreuznach Bahnhof, Montag bis Freitag:\nBosenheim, Sportplatz: 14:30 Uhr\nBosenheim, Parkstraße: 14:31 Uhr\nBosenheim, Mitte: 14:32 Uhr\nBosenheim, An der Pforte: 14:33 Uhr\nPlanig, Bosenbergstraße: 14:34 Uhr\nPlanig, Industriegebiet: 14:35 Uhr\nBad Kreuznach, Mercedes: 14:36 Uhr\nBad Kreuznach, Michelin: 14:39 Uhr\nBad Kreuznach, Otto-Meffert-Str./oddAG: 14:40 Uhr\nBad Kreuznach, Sandweg: 14:41 Uhr\nBad Kreuznach, Seitz-Werke: 14:42 Uhr\nBad Kreuznach, Heidenmauer: 14:43 Uhr\nBad Kreuznach, Gensinger Straße: 14:44 Uhr\nBad Kreuznach, Bahnhof: 14:47 Uhr\n\nFahrt 120, Linie 216, Richtung Bad Kreuznach Bahnhof, Montag bis Freitag:\nBosenheim, Sportplatz: 15:30 Uhr\nBosenheim, Parkstraße: 15:31 Uhr\nBosenheim, Mitte: 15:32 Uhr\nBosenheim, An der Pforte: 15:33 Uhr\nPlanig, Bosenbergstraße: 15:34 Uhr\nPlanig, Industriegebiet: 15:35 Uhr\nBad Kreuznach, Mercedes: 15:36 Uhr\nBad Kreuznach, Michelin: 15:39 Uhr\nBad Kreuznach, Otto-Meffert-Str./oddAG: 15:40 Uhr\nBad Kreuznach, Sandweg: 15:41 Uhr\nBad Kreuznach, Seitz-Werke: 15:42 Uhr\nBad Kreuznach, Heidenmauer: 15:43 Uhr\nBad Kreuznach, Gensinger Straße: 15:44 Uhr\nBad Kreuznach, Bahnhof: 15:47 Uhr\n\nFahrt 130, Linie 216, Richtung Bad Kreuznach Bahnhof, Montag bis Freitag:\nBad Kreuznach, Michelin: 15:49 Uhr\nBad Kreuznach, Otto-Meffert-Str./oddAG: 15:50 Uhr\nBad Kreuznach, Sandweg: 15:51 Uhr\nBad Kreuznach, Seitz-Werke: 15:52 Uhr\nBad Kreuznach, Heidenmauer: 15:53 Uhr\nBad Kreuznach, Gensinger Straße: 15:54 Uhr\nBad Kreuznach, Bahnhof: 15:57 Uhr\n\nFahrt 122, Linie 216, Richtung Bad Kreuznach Bahnhof, Montag bis Freitag:\nIppesheim, Junkerstraße: 16:30 Uhr\nPlanig, Bahnhof: 16:32 Uhr\nPlanig, Römerdorf: 16:34 Uhr\nPlanig, Kirche: 16:35 Uhr\nPlanig, Mitte: 16:36 Uhr\nPlanig, Industriegebiet: 16:37 Uhr\nBad Kreuznach, Mercedes: 16:38 Uhr\nBad Kreuznach, Michelin: 16:41 Uhr\nBad Kreuznach, Otto-Meffert-Str./oddAG: 16:42 Uhr\nBad Kreuznach, Sandweg: 16:43 Uhr\nBad Kreuznach, Seitz-Werke: 16:44 Uhr\nBad Kreuznach, Heidenmauer: 16:45 Uhr\nBad Kreuznach, Gensinger Straße: 16:46 Uhr\nBad Kreuznach, Bahnhof: 16:49 Uhr\n\nFahrt 124, Linie 216, Richtung Bad Kreuznach Bahnhof, Montag bis Freitag:\nBosenheim, Sportplatz: 17:30 Uhr\nBosenheim, Parkstraße: 17:31 Uhr\nBosenheim, Mitte: 17:32 Uhr\nBosenheim, An der Pforte: 17:33 Uhr\nPlanig, Bosenbergstraße: 17:34 Uhr\nPlanig, Industriegebiet: 17:35 Uhr\nBad Kreuznach, Mercedes: 17:36 Uhr\nBad Kreuznach, Michelin: 17:39 Uhr\nBad Kreuznach, Otto-Meffert-Str./oddAG: 17:40 Uhr\nBad Kreuznach, Sandweg: 17:41 Uhr\nBad Kreuznach, Seitz-Werke: 17:42 Uhr\nBad Kreuznach, Heidenmauer: 17:43 Uhr\nBad Kreuznach, Gensinger Straße: 17:44 Uhr\nBad Kreuznach, Bahnhof: 17:47 Uhr\n\nFahrt 128, Linie 216, Richtung Bad Kreuznach Bahnhof, Montag bis Freitag:\nBad Kreuznach, Michelin: 22:19 Uhr\nBad Kreuznach, Otto-Meffert-Str./oddAG: 22:20 Uhr\nBad Kreuznach, Sandweg: 22:21 Uhr\nBad Kreuznach, Seitz-Werke: 22:22 Uhr\nBad Kreuznach, Heidenmauer: 22:23 Uhr\nBad Kreuznach, Gensinger Straße: 22:24 Uhr\nBad Kreuznach, Bahnhof: 22:27 Uhr",
+      "method": "ocr_reviewed",
+      "quality": "visually_verified",
+      "trips": [
+        {
+          "trip": 125,
+          "direction": "Richtung Bosenheim/Ippesheim",
+          "days": "Montag bis Freitag",
+          "school_only": false,
+          "stops": [
+            {
+              "stop": "Bad Kreuznach, Bahnhof",
+              "time": "5:32"
+            },
+            {
+              "stop": "Bad Kreuznach, Gensinger Straße",
+              "time": "5:33"
+            },
+            {
+              "stop": "Bad Kreuznach, Heidenmauer",
+              "time": "5:34"
+            },
+            {
+              "stop": "Bad Kreuznach, Seitz-Werke",
+              "time": "5:35"
+            },
+            {
+              "stop": "Bad Kreuznach, Sandweg",
+              "time": "5:36"
+            },
+            {
+              "stop": "Bad Kreuznach, Otto-Meffert-Str./oddAG",
+              "time": "5:37"
+            },
+            {
+              "stop": "Bad Kreuznach, Michelin",
+              "time": "5:39"
+            }
+          ]
+        },
+        {
+          "trip": 101,
+          "direction": "Richtung Bosenheim/Ippesheim",
+          "days": "Montag bis Freitag",
+          "school_only": false,
+          "stops": [
+            {
+              "stop": "Bad Kreuznach, Bahnhof",
+              "time": "6:42"
+            },
+            {
+              "stop": "Bad Kreuznach, Gensinger Straße",
+              "time": "6:43"
+            },
+            {
+              "stop": "Bad Kreuznach, Heidenmauer",
+              "time": "6:44"
+            },
+            {
+              "stop": "Bad Kreuznach, Seitz-Werke",
+              "time": "6:45"
+            },
+            {
+              "stop": "Bad Kreuznach, Sandweg",
+              "time": "6:46"
+            },
+            {
+              "stop": "Bad Kreuznach, Otto-Meffert-Str./oddAG",
+              "time": "6:47"
+            },
+            {
+              "stop": "Bad Kreuznach, Michelin",
+              "time": "6:49"
+            },
+            {
+              "stop": "Bad Kreuznach, Mercedes",
+              "time": "6:52"
+            },
+            {
+              "stop": "Planig, Industriegebiet",
+              "time": "6:53"
+            },
+            {
+              "stop": "Planig, Mitte",
+              "time": "6:54"
+            },
+            {
+              "stop": "Planig, Grundschule",
+              "time": "6:55"
+            }
+          ]
+        },
+        {
+          "trip": 103,
+          "direction": "Richtung Bosenheim/Ippesheim",
+          "days": "Montag bis Freitag",
+          "school_only": false,
+          "stops": [
+            {
+              "stop": "Bad Kreuznach, Bahnhof",
+              "time": "8:12"
+            },
+            {
+              "stop": "Bad Kreuznach, Gensinger Straße",
+              "time": "8:13"
+            },
+            {
+              "stop": "Bad Kreuznach, Heidenmauer",
+              "time": "8:14"
+            },
+            {
+              "stop": "Bad Kreuznach, Seitz-Werke",
+              "time": "8:15"
+            },
+            {
+              "stop": "Bad Kreuznach, Sandweg",
+              "time": "8:16"
+            },
+            {
+              "stop": "Bad Kreuznach, Otto-Meffert-Str./oddAG",
+              "time": "8:17"
+            },
+            {
+              "stop": "Bad Kreuznach, Michelin",
+              "time": "8:19"
+            },
+            {
+              "stop": "Bad Kreuznach, Mercedes",
+              "time": "8:22"
+            },
+            {
+              "stop": "Planig, Industriegebiet",
+              "time": "8:23"
+            },
+            {
+              "stop": "Planig, Bosenbergstraße",
+              "time": "8:24"
+            },
+            {
+              "stop": "Bosenheim, A. d. Pforte",
+              "time": "8:26"
+            },
+            {
+              "stop": "Bosenheim, Rheingaustraße",
+              "time": "8:27"
+            },
+            {
+              "stop": "Bosenheim, Sportplatz",
+              "time": "8:30"
+            }
+          ]
+        },
+        {
+          "trip": 105,
+          "direction": "Richtung Bosenheim/Ippesheim",
+          "days": "Montag bis Freitag",
+          "school_only": false,
+          "stops": [
+            {
+              "stop": "Bad Kreuznach, Bahnhof",
+              "time": "9:12"
+            },
+            {
+              "stop": "Bad Kreuznach, Gensinger Straße",
+              "time": "9:13"
+            },
+            {
+              "stop": "Bad Kreuznach, Heidenmauer",
+              "time": "9:14"
+            },
+            {
+              "stop": "Bad Kreuznach, Seitz-Werke",
+              "time": "9:15"
+            },
+            {
+              "stop": "Bad Kreuznach, Sandweg",
+              "time": "9:16"
+            },
+            {
+              "stop": "Bad Kreuznach, Otto-Meffert-Str./oddAG",
+              "time": "9:17"
+            },
+            {
+              "stop": "Bad Kreuznach, Michelin",
+              "time": "9:19"
+            },
+            {
+              "stop": "Bad Kreuznach, Mercedes",
+              "time": "9:22"
+            },
+            {
+              "stop": "Planig, Industriegebiet",
+              "time": "9:23"
+            },
+            {
+              "stop": "Planig, Bosenbergstraße",
+              "time": "9:24"
+            },
+            {
+              "stop": "Bosenheim, A. d. Pforte",
+              "time": "9:26"
+            },
+            {
+              "stop": "Bosenheim, Rheingaustraße",
+              "time": "9:27"
+            },
+            {
+              "stop": "Bosenheim, Sportplatz",
+              "time": "9:30"
+            }
+          ]
+        },
+        {
+          "trip": 111,
+          "direction": "Richtung Bosenheim/Ippesheim",
+          "days": "Montag bis Freitag",
+          "school_only": false,
+          "stops": [
+            {
+              "stop": "Bad Kreuznach, Bahnhof",
+              "time": "12:12"
+            },
+            {
+              "stop": "Bad Kreuznach, Gensinger Straße",
+              "time": "12:13"
+            },
+            {
+              "stop": "Bad Kreuznach, Heidenmauer",
+              "time": "12:14"
+            },
+            {
+              "stop": "Bad Kreuznach, Seitz-Werke",
+              "time": "12:15"
+            },
+            {
+              "stop": "Bad Kreuznach, Sandweg",
+              "time": "12:16"
+            },
+            {
+              "stop": "Bad Kreuznach, Otto-Meffert-Str./oddAG",
+              "time": "12:17"
+            },
+            {
+              "stop": "Bad Kreuznach, Michelin",
+              "time": "12:19"
+            },
+            {
+              "stop": "Bad Kreuznach, Mercedes",
+              "time": "12:22"
+            },
+            {
+              "stop": "Planig, Industriegebiet",
+              "time": "12:23"
+            },
+            {
+              "stop": "Planig, Bosenbergstraße",
+              "time": "12:24"
+            },
+            {
+              "stop": "Bosenheim, A. d. Pforte",
+              "time": "12:26"
+            },
+            {
+              "stop": "Bosenheim, Rheingaustraße",
+              "time": "12:27"
+            },
+            {
+              "stop": "Bosenheim, Sportplatz",
+              "time": "12:30"
+            }
+          ]
+        },
+        {
+          "trip": 113,
+          "direction": "Richtung Bosenheim/Ippesheim",
+          "days": "Montag bis Freitag",
+          "school_only": false,
+          "stops": [
+            {
+              "stop": "Bad Kreuznach, Bahnhof",
+              "time": "13:12"
+            },
+            {
+              "stop": "Bad Kreuznach, Gensinger Straße",
+              "time": "13:13"
+            },
+            {
+              "stop": "Bad Kreuznach, Heidenmauer",
+              "time": "13:14"
+            },
+            {
+              "stop": "Bad Kreuznach, Seitz-Werke",
+              "time": "13:15"
+            },
+            {
+              "stop": "Bad Kreuznach, Sandweg",
+              "time": "13:16"
+            },
+            {
+              "stop": "Bad Kreuznach, Otto-Meffert-Str./oddAG",
+              "time": "13:17"
+            },
+            {
+              "stop": "Bad Kreuznach, Michelin",
+              "time": "13:19"
+            },
+            {
+              "stop": "Bad Kreuznach, Mercedes",
+              "time": "13:22"
+            },
+            {
+              "stop": "Planig, Industriegebiet",
+              "time": "13:23"
+            },
+            {
+              "stop": "Planig, Mitte",
+              "time": "13:24"
+            },
+            {
+              "stop": "Planig, Römerdorf",
+              "time": "13:25"
+            },
+            {
+              "stop": "Planig, Bahnhof",
+              "time": "13:27"
+            },
+            {
+              "stop": "Ippesheim, Junkerstraße",
+              "time": "13:30"
+            }
+          ]
+        },
+        {
+          "trip": 127,
+          "direction": "Richtung Bosenheim/Ippesheim",
+          "days": "Montag bis Freitag",
+          "school_only": false,
+          "stops": [
+            {
+              "stop": "Bad Kreuznach, Bahnhof",
+              "time": "13:32"
+            },
+            {
+              "stop": "Bad Kreuznach, Gensinger Straße",
+              "time": "13:33"
+            },
+            {
+              "stop": "Bad Kreuznach, Heidenmauer",
+              "time": "13:34"
+            },
+            {
+              "stop": "Bad Kreuznach, Seitz-Werke",
+              "time": "13:35"
+            },
+            {
+              "stop": "Bad Kreuznach, Sandweg",
+              "time": "13:36"
+            },
+            {
+              "stop": "Bad Kreuznach, Otto-Meffert-Str./oddAG",
+              "time": "13:37"
+            },
+            {
+              "stop": "Bad Kreuznach, Michelin",
+              "time": "13:39"
+            }
+          ]
+        },
+        {
+          "trip": 115,
+          "direction": "Richtung Bosenheim/Ippesheim",
+          "days": "Montag bis Freitag",
+          "school_only": false,
+          "stops": [
+            {
+              "stop": "Bad Kreuznach, Bahnhof",
+              "time": "14:12"
+            },
+            {
+              "stop": "Bad Kreuznach, Gensinger Straße",
+              "time": "14:13"
+            },
+            {
+              "stop": "Bad Kreuznach, Heidenmauer",
+              "time": "14:14"
+            },
+            {
+              "stop": "Bad Kreuznach, Seitz-Werke",
+              "time": "14:15"
+            },
+            {
+              "stop": "Bad Kreuznach, Sandweg",
+              "time": "14:16"
+            },
+            {
+              "stop": "Bad Kreuznach, Otto-Meffert-Str./oddAG",
+              "time": "14:17"
+            },
+            {
+              "stop": "Bad Kreuznach, Michelin",
+              "time": "14:19"
+            },
+            {
+              "stop": "Bad Kreuznach, Mercedes",
+              "time": "14:22"
+            },
+            {
+              "stop": "Planig, Industriegebiet",
+              "time": "14:23"
+            },
+            {
+              "stop": "Planig, Bosenbergstraße",
+              "time": "14:24"
+            },
+            {
+              "stop": "Bosenheim, A. d. Pforte",
+              "time": "14:26"
+            },
+            {
+              "stop": "Bosenheim, Rheingaustraße",
+              "time": "14:27"
+            },
+            {
+              "stop": "Bosenheim, Sportplatz",
+              "time": "14:30"
+            }
+          ]
+        },
+        {
+          "trip": 117,
+          "direction": "Richtung Bosenheim/Ippesheim",
+          "days": "Montag bis Freitag",
+          "school_only": false,
+          "stops": [
+            {
+              "stop": "Bad Kreuznach, Bahnhof",
+              "time": "15:12"
+            },
+            {
+              "stop": "Bad Kreuznach, Gensinger Straße",
+              "time": "15:13"
+            },
+            {
+              "stop": "Bad Kreuznach, Heidenmauer",
+              "time": "15:14"
+            },
+            {
+              "stop": "Bad Kreuznach, Seitz-Werke",
+              "time": "15:15"
+            },
+            {
+              "stop": "Bad Kreuznach, Sandweg",
+              "time": "15:16"
+            },
+            {
+              "stop": "Bad Kreuznach, Otto-Meffert-Str./oddAG",
+              "time": "15:17"
+            },
+            {
+              "stop": "Bad Kreuznach, Michelin",
+              "time": "15:19"
+            },
+            {
+              "stop": "Bad Kreuznach, Mercedes",
+              "time": "15:22"
+            },
+            {
+              "stop": "Planig, Industriegebiet",
+              "time": "15:23"
+            },
+            {
+              "stop": "Planig, Bosenbergstraße",
+              "time": "15:24"
+            },
+            {
+              "stop": "Bosenheim, A. d. Pforte",
+              "time": "15:26"
+            },
+            {
+              "stop": "Bosenheim, Rheingaustraße",
+              "time": "15:27"
+            },
+            {
+              "stop": "Bosenheim, Sportplatz",
+              "time": "15:30"
+            }
+          ]
+        },
+        {
+          "trip": 119,
+          "direction": "Richtung Bosenheim/Ippesheim",
+          "days": "Montag bis Freitag",
+          "school_only": false,
+          "stops": [
+            {
+              "stop": "Bad Kreuznach, Bahnhof",
+              "time": "16:12"
+            },
+            {
+              "stop": "Bad Kreuznach, Gensinger Straße",
+              "time": "16:13"
+            },
+            {
+              "stop": "Bad Kreuznach, Heidenmauer",
+              "time": "16:14"
+            },
+            {
+              "stop": "Bad Kreuznach, Seitz-Werke",
+              "time": "16:15"
+            },
+            {
+              "stop": "Bad Kreuznach, Sandweg",
+              "time": "16:16"
+            },
+            {
+              "stop": "Bad Kreuznach, Otto-Meffert-Str./oddAG",
+              "time": "16:17"
+            },
+            {
+              "stop": "Bad Kreuznach, Michelin",
+              "time": "16:19"
+            },
+            {
+              "stop": "Bad Kreuznach, Mercedes",
+              "time": "16:22"
+            },
+            {
+              "stop": "Planig, Industriegebiet",
+              "time": "16:23"
+            },
+            {
+              "stop": "Planig, Mitte",
+              "time": "16:24"
+            },
+            {
+              "stop": "Planig, Römerdorf",
+              "time": "16:25"
+            },
+            {
+              "stop": "Planig, Bahnhof",
+              "time": "16:27"
+            },
+            {
+              "stop": "Ippesheim, Junkerstraße",
+              "time": "16:30"
+            }
+          ]
+        },
+        {
+          "trip": 121,
+          "direction": "Richtung Bosenheim/Ippesheim",
+          "days": "Montag bis Freitag",
+          "school_only": false,
+          "stops": [
+            {
+              "stop": "Bad Kreuznach, Bahnhof",
+              "time": "17:12"
+            },
+            {
+              "stop": "Bad Kreuznach, Gensinger Straße",
+              "time": "17:13"
+            },
+            {
+              "stop": "Bad Kreuznach, Heidenmauer",
+              "time": "17:14"
+            },
+            {
+              "stop": "Bad Kreuznach, Seitz-Werke",
+              "time": "17:15"
+            },
+            {
+              "stop": "Bad Kreuznach, Sandweg",
+              "time": "17:16"
+            },
+            {
+              "stop": "Bad Kreuznach, Otto-Meffert-Str./oddAG",
+              "time": "17:17"
+            },
+            {
+              "stop": "Bad Kreuznach, Michelin",
+              "time": "17:19"
+            },
+            {
+              "stop": "Bad Kreuznach, Mercedes",
+              "time": "17:22"
+            },
+            {
+              "stop": "Planig, Industriegebiet",
+              "time": "17:23"
+            },
+            {
+              "stop": "Planig, Bosenbergstraße",
+              "time": "17:24"
+            },
+            {
+              "stop": "Bosenheim, A. d. Pforte",
+              "time": "17:26"
+            },
+            {
+              "stop": "Bosenheim, Rheingaustraße",
+              "time": "17:27"
+            },
+            {
+              "stop": "Bosenheim, Sportplatz",
+              "time": "17:30"
+            }
+          ]
+        },
+        {
+          "trip": 123,
+          "direction": "Richtung Bosenheim/Ippesheim",
+          "days": "Montag bis Freitag",
+          "school_only": false,
+          "stops": [
+            {
+              "stop": "Bad Kreuznach, Bahnhof",
+              "time": "18:12"
+            },
+            {
+              "stop": "Bad Kreuznach, Gensinger Straße",
+              "time": "18:13"
+            },
+            {
+              "stop": "Bad Kreuznach, Heidenmauer",
+              "time": "18:14"
+            },
+            {
+              "stop": "Bad Kreuznach, Seitz-Werke",
+              "time": "18:15"
+            },
+            {
+              "stop": "Bad Kreuznach, Sandweg",
+              "time": "18:16"
+            },
+            {
+              "stop": "Bad Kreuznach, Otto-Meffert-Str./oddAG",
+              "time": "18:17"
+            },
+            {
+              "stop": "Bad Kreuznach, Michelin",
+              "time": "18:19"
+            },
+            {
+              "stop": "Bad Kreuznach, Mercedes",
+              "time": "18:22"
+            },
+            {
+              "stop": "Planig, Industriegebiet",
+              "time": "18:23"
+            },
+            {
+              "stop": "Planig, Bosenbergstraße",
+              "time": "18:24"
+            },
+            {
+              "stop": "Bosenheim, A. d. Pforte",
+              "time": "18:26"
+            },
+            {
+              "stop": "Bosenheim, Rheingaustraße",
+              "time": "18:27"
+            },
+            {
+              "stop": "Bosenheim, Sportplatz",
+              "time": "18:30"
+            }
+          ]
+        },
+        {
+          "trip": 102,
+          "direction": "Richtung Bad Kreuznach Bahnhof",
+          "days": "Montag bis Freitag",
+          "school_only": false,
+          "stops": [
+            {
+              "stop": "Planig, Grundschule",
+              "time": "7:02"
+            },
+            {
+              "stop": "Planig, Kirche",
+              "time": "7:03"
+            },
+            {
+              "stop": "Planig, Mitte",
+              "time": "7:04"
+            },
+            {
+              "stop": "Planig, Industriegebiet",
+              "time": "7:05"
+            },
+            {
+              "stop": "Bad Kreuznach, Mercedes",
+              "time": "7:06"
+            },
+            {
+              "stop": "Bad Kreuznach, Michelin",
+              "time": "7:09"
+            },
+            {
+              "stop": "Bad Kreuznach, Otto-Meffert-Str./oddAG",
+              "time": "7:10"
+            },
+            {
+              "stop": "Bad Kreuznach, Sandweg",
+              "time": "7:11"
+            },
+            {
+              "stop": "Bad Kreuznach, Seitz-Werke",
+              "time": "7:12"
+            },
+            {
+              "stop": "Bad Kreuznach, Heidenmauer",
+              "time": "7:13"
+            },
+            {
+              "stop": "Bad Kreuznach, Gensinger Straße",
+              "time": "7:14"
+            },
+            {
+              "stop": "Bad Kreuznach, Bahnhof",
+              "time": "7:17"
+            }
+          ]
+        },
+        {
+          "trip": 104,
+          "direction": "Richtung Bad Kreuznach Bahnhof",
+          "days": "Montag bis Freitag",
+          "school_only": true,
+          "stops": [
+            {
+              "stop": "Ippesheim, Ernst-Ludwig-Straße",
+              "time": "7:21"
+            },
+            {
+              "stop": "Planig, Bahnhof",
+              "time": "7:23"
+            },
+            {
+              "stop": "Planig, Römerdorf",
+              "time": "7:25"
+            },
+            {
+              "stop": "Planig, Kirche",
+              "time": "7:26"
+            },
+            {
+              "stop": "Planig, Mitte",
+              "time": "7:27"
+            },
+            {
+              "stop": "Planig, Industriegebiet",
+              "time": "7:28"
+            },
+            {
+              "stop": "Bad Kreuznach, Mercedes",
+              "time": "7:29"
+            },
+            {
+              "stop": "Bad Kreuznach, Michelin",
+              "time": "7:32"
+            },
+            {
+              "stop": "Bad Kreuznach, Otto-Meffert-Str./oddAG",
+              "time": "7:33"
+            },
+            {
+              "stop": "Bad Kreuznach, Sandweg",
+              "time": "7:34"
+            },
+            {
+              "stop": "Bad Kreuznach, Seitz-Werke",
+              "time": "7:35"
+            },
+            {
+              "stop": "Bad Kreuznach, Heidenmauer",
+              "time": "7:36"
+            },
+            {
+              "stop": "Bad Kreuznach, Gensinger Straße",
+              "time": "7:37"
+            },
+            {
+              "stop": "Bad Kreuznach, Bahnhof",
+              "time": "7:40"
+            }
+          ]
+        },
+        {
+          "trip": 106,
+          "direction": "Richtung Bad Kreuznach Bahnhof",
+          "days": "Montag bis Freitag",
+          "school_only": false,
+          "stops": [
+            {
+              "stop": "Bosenheim, Sportplatz",
+              "time": "8:30"
+            },
+            {
+              "stop": "Bosenheim, Parkstraße",
+              "time": "8:31"
+            },
+            {
+              "stop": "Bosenheim, Mitte",
+              "time": "8:32"
+            },
+            {
+              "stop": "Bosenheim, An der Pforte",
+              "time": "8:33"
+            },
+            {
+              "stop": "Planig, Bosenbergstraße",
+              "time": "8:34"
+            },
+            {
+              "stop": "Planig, Industriegebiet",
+              "time": "8:35"
+            },
+            {
+              "stop": "Bad Kreuznach, Mercedes",
+              "time": "8:36"
+            },
+            {
+              "stop": "Bad Kreuznach, Michelin",
+              "time": "8:39"
+            },
+            {
+              "stop": "Bad Kreuznach, Otto-Meffert-Str./oddAG",
+              "time": "8:40"
+            },
+            {
+              "stop": "Bad Kreuznach, Sandweg",
+              "time": "8:41"
+            },
+            {
+              "stop": "Bad Kreuznach, Seitz-Werke",
+              "time": "8:42"
+            },
+            {
+              "stop": "Bad Kreuznach, Heidenmauer",
+              "time": "8:43"
+            },
+            {
+              "stop": "Bad Kreuznach, Gensinger Straße",
+              "time": "8:44"
+            },
+            {
+              "stop": "Bad Kreuznach, Bahnhof",
+              "time": "8:47"
+            }
+          ]
+        },
+        {
+          "trip": 108,
+          "direction": "Richtung Bad Kreuznach Bahnhof",
+          "days": "Montag bis Freitag",
+          "school_only": false,
+          "stops": [
+            {
+              "stop": "Bosenheim, Sportplatz",
+              "time": "9:30"
+            },
+            {
+              "stop": "Bosenheim, Parkstraße",
+              "time": "9:31"
+            },
+            {
+              "stop": "Bosenheim, Mitte",
+              "time": "9:32"
+            },
+            {
+              "stop": "Bosenheim, An der Pforte",
+              "time": "9:33"
+            },
+            {
+              "stop": "Planig, Bosenbergstraße",
+              "time": "9:34"
+            },
+            {
+              "stop": "Planig, Industriegebiet",
+              "time": "9:35"
+            },
+            {
+              "stop": "Bad Kreuznach, Mercedes",
+              "time": "9:36"
+            },
+            {
+              "stop": "Bad Kreuznach, Michelin",
+              "time": "9:39"
+            },
+            {
+              "stop": "Bad Kreuznach, Otto-Meffert-Str./oddAG",
+              "time": "9:40"
+            },
+            {
+              "stop": "Bad Kreuznach, Sandweg",
+              "time": "9:41"
+            },
+            {
+              "stop": "Bad Kreuznach, Seitz-Werke",
+              "time": "9:42"
+            },
+            {
+              "stop": "Bad Kreuznach, Heidenmauer",
+              "time": "9:43"
+            },
+            {
+              "stop": "Bad Kreuznach, Gensinger Straße",
+              "time": "9:44"
+            },
+            {
+              "stop": "Bad Kreuznach, Bahnhof",
+              "time": "9:47"
+            }
+          ]
+        },
+        {
+          "trip": 114,
+          "direction": "Richtung Bad Kreuznach Bahnhof",
+          "days": "Montag bis Freitag",
+          "school_only": false,
+          "stops": [
+            {
+              "stop": "Bosenheim, Sportplatz",
+              "time": "12:30"
+            },
+            {
+              "stop": "Bosenheim, Parkstraße",
+              "time": "12:31"
+            },
+            {
+              "stop": "Bosenheim, Mitte",
+              "time": "12:32"
+            },
+            {
+              "stop": "Bosenheim, An der Pforte",
+              "time": "12:33"
+            },
+            {
+              "stop": "Planig, Bosenbergstraße",
+              "time": "12:34"
+            },
+            {
+              "stop": "Planig, Industriegebiet",
+              "time": "12:35"
+            },
+            {
+              "stop": "Bad Kreuznach, Mercedes",
+              "time": "12:36"
+            },
+            {
+              "stop": "Bad Kreuznach, Michelin",
+              "time": "12:39"
+            },
+            {
+              "stop": "Bad Kreuznach, Otto-Meffert-Str./oddAG",
+              "time": "12:40"
+            },
+            {
+              "stop": "Bad Kreuznach, Sandweg",
+              "time": "12:41"
+            },
+            {
+              "stop": "Bad Kreuznach, Seitz-Werke",
+              "time": "12:42"
+            },
+            {
+              "stop": "Bad Kreuznach, Heidenmauer",
+              "time": "12:43"
+            },
+            {
+              "stop": "Bad Kreuznach, Gensinger Straße",
+              "time": "12:44"
+            },
+            {
+              "stop": "Bad Kreuznach, Bahnhof",
+              "time": "12:47"
+            }
+          ]
+        },
+        {
+          "trip": 116,
+          "direction": "Richtung Bad Kreuznach Bahnhof",
+          "days": "Montag bis Freitag",
+          "school_only": false,
+          "stops": [
+            {
+              "stop": "Ippesheim, Ernst-Ludwig-Straße",
+              "time": "13:30"
+            },
+            {
+              "stop": "Planig, Bahnhof",
+              "time": "13:32"
+            },
+            {
+              "stop": "Planig, Römerdorf",
+              "time": "13:34"
+            },
+            {
+              "stop": "Planig, Kirche",
+              "time": "13:35"
+            },
+            {
+              "stop": "Planig, Mitte",
+              "time": "13:36"
+            },
+            {
+              "stop": "Planig, Industriegebiet",
+              "time": "13:37"
+            },
+            {
+              "stop": "Bad Kreuznach, Mercedes",
+              "time": "13:38"
+            },
+            {
+              "stop": "Bad Kreuznach, Michelin",
+              "time": "13:41"
+            },
+            {
+              "stop": "Bad Kreuznach, Otto-Meffert-Str./oddAG",
+              "time": "13:42"
+            },
+            {
+              "stop": "Bad Kreuznach, Sandweg",
+              "time": "13:43"
+            },
+            {
+              "stop": "Bad Kreuznach, Seitz-Werke",
+              "time": "13:44"
+            },
+            {
+              "stop": "Bad Kreuznach, Heidenmauer",
+              "time": "13:45"
+            },
+            {
+              "stop": "Bad Kreuznach, Gensinger Straße",
+              "time": "13:46"
+            },
+            {
+              "stop": "Bad Kreuznach, Bahnhof",
+              "time": "13:49"
+            }
+          ]
+        },
+        {
+          "trip": 126,
+          "direction": "Richtung Bad Kreuznach Bahnhof",
+          "days": "Montag bis Freitag",
+          "school_only": false,
+          "stops": [
+            {
+              "stop": "Bad Kreuznach, Michelin",
+              "time": "14:19"
+            },
+            {
+              "stop": "Bad Kreuznach, Otto-Meffert-Str./oddAG",
+              "time": "14:20"
+            },
+            {
+              "stop": "Bad Kreuznach, Sandweg",
+              "time": "14:21"
+            },
+            {
+              "stop": "Bad Kreuznach, Seitz-Werke",
+              "time": "14:22"
+            },
+            {
+              "stop": "Bad Kreuznach, Heidenmauer",
+              "time": "14:23"
+            },
+            {
+              "stop": "Bad Kreuznach, Gensinger Straße",
+              "time": "14:24"
+            },
+            {
+              "stop": "Bad Kreuznach, Bahnhof",
+              "time": "14:27"
+            }
+          ]
+        },
+        {
+          "trip": 118,
+          "direction": "Richtung Bad Kreuznach Bahnhof",
+          "days": "Montag bis Freitag",
+          "school_only": false,
+          "stops": [
+            {
+              "stop": "Bosenheim, Sportplatz",
+              "time": "14:30"
+            },
+            {
+              "stop": "Bosenheim, Parkstraße",
+              "time": "14:31"
+            },
+            {
+              "stop": "Bosenheim, Mitte",
+              "time": "14:32"
+            },
+            {
+              "stop": "Bosenheim, An der Pforte",
+              "time": "14:33"
+            },
+            {
+              "stop": "Planig, Bosenbergstraße",
+              "time": "14:34"
+            },
+            {
+              "stop": "Planig, Industriegebiet",
+              "time": "14:35"
+            },
+            {
+              "stop": "Bad Kreuznach, Mercedes",
+              "time": "14:36"
+            },
+            {
+              "stop": "Bad Kreuznach, Michelin",
+              "time": "14:39"
+            },
+            {
+              "stop": "Bad Kreuznach, Otto-Meffert-Str./oddAG",
+              "time": "14:40"
+            },
+            {
+              "stop": "Bad Kreuznach, Sandweg",
+              "time": "14:41"
+            },
+            {
+              "stop": "Bad Kreuznach, Seitz-Werke",
+              "time": "14:42"
+            },
+            {
+              "stop": "Bad Kreuznach, Heidenmauer",
+              "time": "14:43"
+            },
+            {
+              "stop": "Bad Kreuznach, Gensinger Straße",
+              "time": "14:44"
+            },
+            {
+              "stop": "Bad Kreuznach, Bahnhof",
+              "time": "14:47"
+            }
+          ]
+        },
+        {
+          "trip": 120,
+          "direction": "Richtung Bad Kreuznach Bahnhof",
+          "days": "Montag bis Freitag",
+          "school_only": false,
+          "stops": [
+            {
+              "stop": "Bosenheim, Sportplatz",
+              "time": "15:30"
+            },
+            {
+              "stop": "Bosenheim, Parkstraße",
+              "time": "15:31"
+            },
+            {
+              "stop": "Bosenheim, Mitte",
+              "time": "15:32"
+            },
+            {
+              "stop": "Bosenheim, An der Pforte",
+              "time": "15:33"
+            },
+            {
+              "stop": "Planig, Bosenbergstraße",
+              "time": "15:34"
+            },
+            {
+              "stop": "Planig, Industriegebiet",
+              "time": "15:35"
+            },
+            {
+              "stop": "Bad Kreuznach, Mercedes",
+              "time": "15:36"
+            },
+            {
+              "stop": "Bad Kreuznach, Michelin",
+              "time": "15:39"
+            },
+            {
+              "stop": "Bad Kreuznach, Otto-Meffert-Str./oddAG",
+              "time": "15:40"
+            },
+            {
+              "stop": "Bad Kreuznach, Sandweg",
+              "time": "15:41"
+            },
+            {
+              "stop": "Bad Kreuznach, Seitz-Werke",
+              "time": "15:42"
+            },
+            {
+              "stop": "Bad Kreuznach, Heidenmauer",
+              "time": "15:43"
+            },
+            {
+              "stop": "Bad Kreuznach, Gensinger Straße",
+              "time": "15:44"
+            },
+            {
+              "stop": "Bad Kreuznach, Bahnhof",
+              "time": "15:47"
+            }
+          ]
+        },
+        {
+          "trip": 130,
+          "direction": "Richtung Bad Kreuznach Bahnhof",
+          "days": "Montag bis Freitag",
+          "school_only": false,
+          "stops": [
+            {
+              "stop": "Bad Kreuznach, Michelin",
+              "time": "15:49"
+            },
+            {
+              "stop": "Bad Kreuznach, Otto-Meffert-Str./oddAG",
+              "time": "15:50"
+            },
+            {
+              "stop": "Bad Kreuznach, Sandweg",
+              "time": "15:51"
+            },
+            {
+              "stop": "Bad Kreuznach, Seitz-Werke",
+              "time": "15:52"
+            },
+            {
+              "stop": "Bad Kreuznach, Heidenmauer",
+              "time": "15:53"
+            },
+            {
+              "stop": "Bad Kreuznach, Gensinger Straße",
+              "time": "15:54"
+            },
+            {
+              "stop": "Bad Kreuznach, Bahnhof",
+              "time": "15:57"
+            }
+          ]
+        },
+        {
+          "trip": 122,
+          "direction": "Richtung Bad Kreuznach Bahnhof",
+          "days": "Montag bis Freitag",
+          "school_only": false,
+          "stops": [
+            {
+              "stop": "Ippesheim, Junkerstraße",
+              "time": "16:30"
+            },
+            {
+              "stop": "Planig, Bahnhof",
+              "time": "16:32"
+            },
+            {
+              "stop": "Planig, Römerdorf",
+              "time": "16:34"
+            },
+            {
+              "stop": "Planig, Kirche",
+              "time": "16:35"
+            },
+            {
+              "stop": "Planig, Mitte",
+              "time": "16:36"
+            },
+            {
+              "stop": "Planig, Industriegebiet",
+              "time": "16:37"
+            },
+            {
+              "stop": "Bad Kreuznach, Mercedes",
+              "time": "16:38"
+            },
+            {
+              "stop": "Bad Kreuznach, Michelin",
+              "time": "16:41"
+            },
+            {
+              "stop": "Bad Kreuznach, Otto-Meffert-Str./oddAG",
+              "time": "16:42"
+            },
+            {
+              "stop": "Bad Kreuznach, Sandweg",
+              "time": "16:43"
+            },
+            {
+              "stop": "Bad Kreuznach, Seitz-Werke",
+              "time": "16:44"
+            },
+            {
+              "stop": "Bad Kreuznach, Heidenmauer",
+              "time": "16:45"
+            },
+            {
+              "stop": "Bad Kreuznach, Gensinger Straße",
+              "time": "16:46"
+            },
+            {
+              "stop": "Bad Kreuznach, Bahnhof",
+              "time": "16:49"
+            }
+          ]
+        },
+        {
+          "trip": 124,
+          "direction": "Richtung Bad Kreuznach Bahnhof",
+          "days": "Montag bis Freitag",
+          "school_only": false,
+          "stops": [
+            {
+              "stop": "Bosenheim, Sportplatz",
+              "time": "17:30"
+            },
+            {
+              "stop": "Bosenheim, Parkstraße",
+              "time": "17:31"
+            },
+            {
+              "stop": "Bosenheim, Mitte",
+              "time": "17:32"
+            },
+            {
+              "stop": "Bosenheim, An der Pforte",
+              "time": "17:33"
+            },
+            {
+              "stop": "Planig, Bosenbergstraße",
+              "time": "17:34"
+            },
+            {
+              "stop": "Planig, Industriegebiet",
+              "time": "17:35"
+            },
+            {
+              "stop": "Bad Kreuznach, Mercedes",
+              "time": "17:36"
+            },
+            {
+              "stop": "Bad Kreuznach, Michelin",
+              "time": "17:39"
+            },
+            {
+              "stop": "Bad Kreuznach, Otto-Meffert-Str./oddAG",
+              "time": "17:40"
+            },
+            {
+              "stop": "Bad Kreuznach, Sandweg",
+              "time": "17:41"
+            },
+            {
+              "stop": "Bad Kreuznach, Seitz-Werke",
+              "time": "17:42"
+            },
+            {
+              "stop": "Bad Kreuznach, Heidenmauer",
+              "time": "17:43"
+            },
+            {
+              "stop": "Bad Kreuznach, Gensinger Straße",
+              "time": "17:44"
+            },
+            {
+              "stop": "Bad Kreuznach, Bahnhof",
+              "time": "17:47"
+            }
+          ]
+        },
+        {
+          "trip": 128,
+          "direction": "Richtung Bad Kreuznach Bahnhof",
+          "days": "Montag bis Freitag",
+          "school_only": false,
+          "stops": [
+            {
+              "stop": "Bad Kreuznach, Michelin",
+              "time": "22:19"
+            },
+            {
+              "stop": "Bad Kreuznach, Otto-Meffert-Str./oddAG",
+              "time": "22:20"
+            },
+            {
+              "stop": "Bad Kreuznach, Sandweg",
+              "time": "22:21"
+            },
+            {
+              "stop": "Bad Kreuznach, Seitz-Werke",
+              "time": "22:22"
+            },
+            {
+              "stop": "Bad Kreuznach, Heidenmauer",
+              "time": "22:23"
+            },
+            {
+              "stop": "Bad Kreuznach, Gensinger Straße",
+              "time": "22:24"
+            },
+            {
+              "stop": "Bad Kreuznach, Bahnhof",
+              "time": "22:27"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

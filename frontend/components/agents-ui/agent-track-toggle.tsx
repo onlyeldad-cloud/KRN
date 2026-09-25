@@ -43,7 +43,11 @@ export const agentTrackToggleVariants = cva(['size-9'], {
   },
 });
 
-function getSourceIcon(source: Track.Source, enabled: boolean, pending = false) {
+function getSourceIcon(
+  source: Track.Source,
+  enabled: boolean,
+  pending = false
+) {
   if (pending) {
     return LoaderIcon;
   }
@@ -63,7 +67,9 @@ function getSourceIcon(source: Track.Source, enabled: boolean, pending = false) 
 /**
  * Props for the AgentTrackToggle component.
  */
-export type AgentTrackToggleProps = VariantProps<typeof agentTrackToggleVariants> &
+export type AgentTrackToggleProps = VariantProps<
+  typeof agentTrackToggleVariants
+> &
   ComponentProps<'button'> & {
     /**
      * The size of the toggle.
@@ -126,13 +132,19 @@ export function AgentTrackToggle({
   onPressedChange,
   ...props
 }: AgentTrackToggleProps) {
-  const [uncontrolledPressed, setUncontrolledPressed] = useState(defaultPressed ?? false);
+  const [uncontrolledPressed, setUncontrolledPressed] = useState(
+    defaultPressed ?? false
+  );
   const isControlled = pressed !== undefined;
   const resolvedPressed = useMemo(
     () => (isControlled ? pressed : uncontrolledPressed) ?? false,
     [isControlled, pressed, uncontrolledPressed]
   );
-  const IconComponent = getSourceIcon(source as Track.Source, resolvedPressed, pending);
+  const IconComponent = getSourceIcon(
+    source as Track.Source,
+    resolvedPressed,
+    pending
+  );
   const handlePressedChange = (nextPressed: boolean) => {
     if (!isControlled) {
       setUncontrolledPressed(nextPressed);

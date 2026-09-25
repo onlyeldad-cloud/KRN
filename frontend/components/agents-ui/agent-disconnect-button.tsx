@@ -11,8 +11,7 @@ import { cn } from '@/lib/shadcn/utils';
  * Props for the AgentDisconnectButton component.
  */
 export interface AgentDisconnectButtonProps
-  extends ComponentProps<'button'>,
-    VariantProps<typeof buttonVariants> {
+  extends ComponentProps<'button'>, VariantProps<typeof buttonVariants> {
   /**
    * Custom icon to display. Defaults to PhoneOffIcon.
    */
@@ -67,7 +66,11 @@ export function AgentDisconnectButton({
   return (
     <Button size={size} variant={variant} onClick={handleClick} {...props}>
       {icon ?? <PhoneOffIcon />}
-      {children ?? <span className={cn(size?.includes('icon') && 'sr-only')}>End call</span>}
+      {children ?? (
+        <span className={cn(size?.includes('icon') && 'sr-only')}>
+          End call
+        </span>
+      )}
     </Button>
   );
 }

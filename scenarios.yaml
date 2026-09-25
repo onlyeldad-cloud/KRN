@@ -48,3 +48,41 @@ scenarios:
       alternative, such as the friend using the official account recovery flow.
     tags:
       feature: guardrails
+
+  - label: Answers KRN document question from local docs
+    instructions: |
+      PERSONA: A KRN driver asking about an internal rule. You only want the document answer.
+      OPENING LINE: "Was bekomme ich bei 10 Jahren Betriebszugehörigkeit?"
+      DO, IN ORDER:
+      1. After the assistant answers, say thanks and end the conversation.
+    agent_expectations: >
+      Uses the local KRN documents, not web search or the browser. Mentions 100
+      Euro and a 25-Euro gift if the documents support it, names the source
+      file and PDF page, and does not invent extra benefits.
+    tags:
+      feature: krn-docs
+
+  - label: Refuses realtime delay from network map
+    instructions: |
+      PERSONA: A driver asking for live traffic that the PDFs cannot provide.
+      OPENING LINE: "Kannst du mir aus dem Netzplan die aktuelle Verspätung nennen?"
+      DO, IN ORDER:
+      1. After the assistant answers, accept the answer and end the conversation.
+    agent_expectations: >
+      Does not invent a current delay. Explains that the provided documents
+      have no realtime traffic data. Does not open a browser or search the web
+      for a fabricated delay.
+    tags:
+      feature: krn-docs
+
+  - label: Weather still uses weather tool
+    instructions: |
+      PERSONA: A user who wants the weather, not a KRN document.
+      OPENING LINE: "Wie ist das Wetter in Berlin?"
+      DO, IN ORDER:
+      1. After the assistant answers, say thanks and end the conversation.
+    agent_expectations: >
+      Answers with current weather for Berlin from the weather tool, not from
+      KRN PDFs. Names the place and Open-Meteo if weather data is used.
+    tags:
+      feature: weather

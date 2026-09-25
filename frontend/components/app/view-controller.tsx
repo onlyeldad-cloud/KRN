@@ -66,8 +66,12 @@ export function ViewController({ appConfig }: ViewControllerProps) {
           audioVisualizerColorShift={appConfig.audioVisualizerColorShift}
           audioVisualizerBarCount={appConfig.audioVisualizerBarCount}
           audioVisualizerGridRowCount={appConfig.audioVisualizerGridRowCount}
-          audioVisualizerGridColumnCount={appConfig.audioVisualizerGridColumnCount}
-          audioVisualizerRadialBarCount={appConfig.audioVisualizerRadialBarCount}
+          audioVisualizerGridColumnCount={
+            appConfig.audioVisualizerGridColumnCount
+          }
+          audioVisualizerRadialBarCount={
+            appConfig.audioVisualizerRadialBarCount
+          }
           audioVisualizerRadialRadius={appConfig.audioVisualizerRadialRadius}
           audioVisualizerWaveLineWidth={appConfig.audioVisualizerWaveLineWidth}
           className="fixed inset-0"

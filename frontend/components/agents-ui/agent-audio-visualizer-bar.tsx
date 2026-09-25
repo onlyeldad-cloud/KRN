@@ -43,13 +43,19 @@ function cloneSingleChild(
       if (childProps.className) {
         // make sure we retain classnames of both passed props and child
         props ??= {};
-        props.className = cn(childProps.className as string, props.className as string);
+        props.className = cn(
+          childProps.className as string,
+          props.className as string
+        );
         props.style = {
           ...(childProps.style as CSSProperties),
           ...(props.style as CSSProperties),
         };
       }
-      return cloneElement(child, { ...props, key: key ? String(key) : undefined });
+      return cloneElement(child, {
+        ...props,
+        key: key ? String(key) : undefined,
+      });
     }
     return child;
   });
@@ -76,20 +82,23 @@ export const AgentAudioVisualizerBarElementVariants = cva(
   }
 );
 
-export const AgentAudioVisualizerBarVariants = cva('relative flex items-center justify-center', {
-  variants: {
-    size: {
-      icon: 'h-[24px] gap-[2px]',
-      sm: 'h-[56px] gap-[4px]',
-      md: 'h-[112px] gap-[8px]',
-      lg: 'h-[224px] gap-[16px]',
-      xl: 'h-[448px] gap-[32px]',
+export const AgentAudioVisualizerBarVariants = cva(
+  'relative flex items-center justify-center',
+  {
+    variants: {
+      size: {
+        icon: 'h-[24px] gap-[2px]',
+        sm: 'h-[56px] gap-[4px]',
+        md: 'h-[112px] gap-[8px]',
+        lg: 'h-[224px] gap-[16px]',
+        xl: 'h-[448px] gap-[32px]',
+      },
     },
-  },
-  defaultVariants: {
-    size: 'md',
-  },
-});
+    defaultVariants: {
+      size: 'md',
+    },
+  }
+);
 
 /**
  * Props for the AgentAudioVisualizerBar component.
@@ -208,12 +217,15 @@ export function AgentAudioVisualizerBar({
   );
 
   const bands = useMemo(
-    () => (state === 'speaking' ? resolvedVolumeBands : new Array(_barCount).fill(0)),
+    () =>
+      state === 'speaking' ? resolvedVolumeBands : new Array(_barCount).fill(0),
     [state, resolvedVolumeBands, _barCount]
   );
 
   if (children && Array.isArray(children)) {
-    throw new Error('AgentAudioVisualizerBar children must be a single element.');
+    throw new Error(
+      'AgentAudioVisualizerBar children must be a single element.'
+    );
   }
 
   return (

@@ -22,6 +22,7 @@ class _FakePage:
 
 
 @pytest.mark.asyncio
+@pytest.mark.live
 async def test_official_livekit_docs_open_browser():
     browser = BrowserTools()
     browser._start = AsyncMock(return_value=_FakePage())

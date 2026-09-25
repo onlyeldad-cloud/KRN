@@ -10,6 +10,20 @@ selects the separate environment that avoids the Windows-blocked XML module.
 
 ## KRN Agent: Gemini Live and cameras
 
+KRN answers internal KRN/RNN document questions from a local lexical/BM25 index
+(`search_krn_docs` in `src/krn_docs.py`). Source PDFs stay in `data/pdf-quellen/`;
+rebuild with `uv run python scripts/prepare_krn_docs.py`. The tool does not use
+the web or Playwright. Ask, for example: “Was bekomme ich bei 10 Jahren
+Betriebszugehörigkeit?” Answers must cite `[Quelle: Dateiname, Seite N]`.
+
+`list_krn_docs` enumerates the actual indexed PDF metadata, including page counts
+and OCR status. Recognized typed document questions run local retrieval before
+generation; external web/browser tools are blocked for recognized internal turns.
+Restart the worker after changes: the installed Python `dev` command has no hot reload.
+See [the integration audit](docs/KRN_INTEGRATION_AUDIT.md) for test results,
+all nine source filenames, manual acceptance questions and the remaining native-audio
+timing boundary. Retrieval tests alone do not establish live answer correctness.
+
 KRN can also search the internet with the `search_web` tool using
 `langchain-community` and `ddgs` (no separate search API key). Ask, for example:
 “Suche im Internet nach der offiziellen LiveKit-Dokumentation.” Results contain

@@ -30,18 +30,21 @@ const motionAnimationProps = {
   exit: 'hidden',
 };
 
-const agentChatIndicatorVariants = cva('bg-muted-foreground inline-block size-2.5 rounded-full', {
-  variants: {
-    size: {
-      sm: 'size-3',
-      md: 'size-4',
-      lg: 'size-6',
+const agentChatIndicatorVariants = cva(
+  'bg-muted-foreground inline-block size-2.5 rounded-full',
+  {
+    variants: {
+      size: {
+        sm: 'size-3',
+        md: 'size-4',
+        lg: 'size-6',
+      },
     },
-  },
-  defaultVariants: {
-    size: 'md',
-  },
-});
+    defaultVariants: {
+      size: 'md',
+    },
+  }
+);
 
 /**
  * Props for the AgentChatIndicator component.

@@ -14,7 +14,10 @@ function toastAlert(toast: ToastProps) {
 
   return sonnerToast.custom(
     (id) => (
-      <Alert onClick={() => sonnerToast.dismiss(id)} className="bg-accent w-full md:w-[364px]">
+      <Alert
+        onClick={() => sonnerToast.dismiss(id)}
+        className="bg-accent w-full md:w-[364px]"
+      >
         <WarningIcon weight="bold" />
         <AlertTitle>{title}</AlertTitle>
         {description && <AlertDescription>{description}</AlertDescription>}

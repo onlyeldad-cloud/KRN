@@ -19,7 +19,11 @@ export function ThemeToggle({ className }: ThemeToggleProps) {
       )}
     >
       <span className="sr-only">Color scheme toggle</span>
-      <button type="button" onClick={() => setTheme('dark')} className="cursor-pointer p-1 pl-1.5">
+      <button
+        type="button"
+        onClick={() => setTheme('dark')}
+        className="cursor-pointer p-1 pl-1.5"
+      >
         <span className="sr-only">Enable dark color scheme</span>
         <MoonIcon
           suppressHydrationWarning

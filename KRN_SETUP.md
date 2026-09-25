@@ -1,8 +1,9 @@
 # KRN Agent: local web and phone development
 
 KRN uses Gemini Live with the Charon voice, natural German instructions, automatic
-German greeting, live video input, web search, Open-Meteo weather, and an isolated
-Playwright browser. The web and Flutter interfaces are adapted from
+German greeting, live video input, local KRN/RNN document search, web search,
+Open-Meteo weather, and an isolated Playwright browser. The web and Flutter
+interfaces are adapted from
 [jarvis-voice-butler](https://github.com/ruxakK/jarvis-voice-butler).
 A hosted demo (password-gated Vercel + LiveKit Cloud agent) is wired for GitHub
 Actions; complete the first `lk agent create` and Vercel project secrets to go live.
@@ -49,8 +50,15 @@ initialization, preventing the previous 10-second initialization timeout.
 To verify a real call with synthetic microphone input and incoming agent audio:
 `uv run python scripts/check_web.py` (uses configured LiveKit/Google services).
 
-Try: “Wie ist das Wetter in Berlin?”, “Suche die offizielle LiveKit-Dokumentation”,
+Try: “Was bekomme ich bei 10 Jahren Betriebszugehörigkeit?”,
+“Wie ist das Wetter in Berlin?”, “Suche die offizielle LiveKit-Dokumentation”,
 “Öffne example.com im Browser”, or “Zeig mir einen Screenshot des Browsers”.
+Internal KRN/RNN rules, tariffs, and the Linie-216 timetable come from the local
+index via `search_krn_docs` (not the web or browser). Rebuild the index after
+replacing PDFs with
+`$env:UV_PROJECT_ENVIRONMENT = '.venv-windows313'; uv run python scripts/prepare_krn_docs.py`.
+Retrieval checks: `uv run pytest tests/test_krn_docs.py -q` and
+`uv run python scripts/run_krn_catalog.py`.
 A **separate Chromium or Chrome window** should appear on this PC; that is the
 isolated KRN browser, not the KRN welcome tab. Clicks, typing, and Enter run
 immediately (no **Einmal erlauben** prompt). Set `KRN_BROWSER_REQUIRE_APPROVAL=1`
@@ -203,7 +211,8 @@ use the web app for screen sharing.
 ```powershell
 $env:UV_PROJECT_ENVIRONMENT = '.venv-windows313'
 uv run python -c "import pyexpat, livekit.agents; print('Imports OK')"
-uv run pytest tests/test_browser.py tests/test_weather.py tests/test_web_search.py -q
+uv run pytest tests/test_browser.py tests/test_weather.py tests/test_web_search.py tests/test_krn_docs.py -q
+uv run python scripts/run_krn_catalog.py
 uv run ruff check src tests scripts
 cd frontend
 npm run build

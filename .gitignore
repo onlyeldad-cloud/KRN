@@ -17,6 +17,8 @@ artifacts/
 *.egg-info
 .pytest_cache
 .ruff_cache
+data/ocr-tmp/
+data/previews/
 
 # Claude Code
 .claude/settings.local.json

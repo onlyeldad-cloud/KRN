@@ -47,13 +47,19 @@ function cloneSingleChild(
       if (childProps.className) {
         // make sure we retain classnames of both passed props and child
         props ??= {};
-        props.className = cn(childProps.className as string, props.className as string);
+        props.className = cn(
+          childProps.className as string,
+          props.className as string
+        );
         props.style = {
           ...(childProps.style as CSSProperties),
           ...(props.style as CSSProperties),
         };
       }
-      return cloneElement(child, { ...props, key: key ? String(key) : undefined });
+      return cloneElement(child, {
+        ...props,
+        key: key ? String(key) : undefined,
+      });
     }
     return child;
   });
@@ -140,7 +146,9 @@ function useGrid(
   return useMemo(() => {
     const _columnCount = columnCount;
     const _rowCount = rowCount ?? columnCount;
-    const items = new Array(_columnCount * _rowCount).fill(0).map((_, idx) => idx);
+    const items = new Array(_columnCount * _rowCount)
+      .fill(0)
+      .map((_, idx) => idx);
 
     return { columnCount: _columnCount, rowCount: _rowCount, items };
   }, [columnCount, rowCount]);
@@ -267,7 +275,11 @@ export function AgentAudioVisualizerGrid({
   style,
   ...props
 }: AgentAudioVisualizerGridProps & ComponentProps<'div'>) {
-  const { columnCount, rowCount, items } = useGrid(size, _columnCount, _rowCount);
+  const { columnCount, rowCount, items } = useGrid(
+    size,
+    _columnCount,
+    _rowCount
+  );
   const highlightedCoordinate = useAgentAudioVisualizerGridAnimator(
     state,
     rowCount,
@@ -285,7 +297,9 @@ export function AgentAudioVisualizerGrid({
     : multibandVolume;
 
   if (children && Array.isArray(children)) {
-    throw new Error('AgentAudioVisualizerGrid children must be a single element.');
+    throw new Error(
+      'AgentAudioVisualizerGrid children must be a single element.'
+    );
   }
 
   return (
@@ -293,7 +307,11 @@ export function AgentAudioVisualizerGrid({
       data-lk-state={state}
       className={cn(AgentAudioVisualizerGridVariants({ size }), className)}
       style={
-        { ...style, gridTemplateColumns: `repeat(${columnCount}, 1fr)`, color } as CSSProperties
+        {
+          ...style,
+          gridTemplateColumns: `repeat(${columnCount}, 1fr)`,
+          color,
+        } as CSSProperties
       }
       {...props}
     >
@@ -308,7 +326,9 @@ export function AgentAudioVisualizerGrid({
           volumeBands={resolvedVolumeBands}
           highlightedCoordinate={highlightedCoordinate}
         >
-          {children ?? <div className={AgentAudioVisualizerGridCellVariants({ size })} />}
+          {children ?? (
+            <div className={AgentAudioVisualizerGridCellVariants({ size })} />
+          )}
         </GridCell>
       ))}
     </div>

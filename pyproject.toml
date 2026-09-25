@@ -14,8 +14,12 @@ dependencies = [
     "langchain-community>=0.4.2",
     "livekit-agents[google,images]>=1.8.2,<2",
     "livekit-plugins-ai-coustics~=0.2",
+    "onnxruntime>=1.24.3",
     "playwright>=1.63.0",
+    "pymupdf>=1.28.2",
     "python-dotenv",
+    "rank-bm25>=0.2.2",
+    "rapidocr>=3.9.2",
 ]
 
 [dependency-groups]
@@ -37,6 +41,7 @@ where = ["src"]
 "" = "src"
 
 [tool.pytest.ini_options]
+testpaths = ["tests"]
 asyncio_mode = "auto"
 asyncio_default_fixture_loop_scope = "function"
 

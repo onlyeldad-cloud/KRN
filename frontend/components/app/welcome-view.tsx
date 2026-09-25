@@ -29,8 +29,8 @@ export const WelcomeView = ({
         </h1>
 
         <p className="text-foreground max-w-prose pt-1 leading-6 font-medium">
-          Sprich auf Deutsch mit KRN. Stelle Fragen, teile deine Kamera oder lass dir im Alltag
-          helfen.
+          Sprich auf Deutsch mit KRN. Stelle Fragen, teile deine Kamera oder
+          lass dir im Alltag helfen.
         </p>
 
         <Button
@@ -41,19 +41,23 @@ export const WelcomeView = ({
           {startButtonText}
         </Button>
         <div className="mt-10 grid max-w-xl grid-cols-2 gap-3 text-sm md:grid-cols-4">
-          {['Sprache & Chat', 'Kamera & Bildschirm', 'Suche & Wetter', 'Browser-Assistent'].map(
-            (feature) => (
-              <div
-                key={feature}
-                className="rounded-2xl border border-[#0B1F4D]/12 bg-white px-4 py-3 text-[#0B1F4D] shadow-sm"
-              >
-                {feature}
-              </div>
-            )
-          )}
+          {[
+            'Sprache & Chat',
+            'Kamera & Bildschirm',
+            'Suche & Wetter',
+            'Browser-Assistent',
+          ].map((feature) => (
+            <div
+              key={feature}
+              className="rounded-2xl border border-[#0B1F4D]/12 bg-white px-4 py-3 text-[#0B1F4D] shadow-sm"
+            >
+              {feature}
+            </div>
+          ))}
         </div>
         <p className="mt-6 max-w-md text-xs opacity-60">
-          Du entscheidest, wann Mikrofon und Kamera aktiv sind. Zum Beenden einfach auflegen.
+          Du entscheidest, wann Mikrofon und Kamera aktiv sind. Zum Beenden
+          einfach auflegen.
         </p>
       </section>
     </div>

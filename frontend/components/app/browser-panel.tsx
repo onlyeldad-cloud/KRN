@@ -14,28 +14,49 @@ export function BrowserPanel() {
   } | null>(null);
   useEffect(() => {
     let pending: ((value: string) => void) | undefined;
-    room.localParticipant.registerRpcMethod('krn.browser.confirm', async (data) => {
-      if (room.remoteParticipants.get(data.callerIdentity)?.kind !== ParticipantKind.AGENT)
-        return 'denied';
-      if (pending) return 'denied';
-      const payload = JSON.parse(data.payload);
-      return new Promise<string>((resolve) => {
-        const timer = setTimeout(() => finish('denied'), 25000);
-        const finish = (value: string) => {
-          clearTimeout(timer);
-          pending = undefined;
-          setRequest(null);
-          resolve(value);
-        };
-        pending = finish;
-        setRequest({ action: String(payload.action), url: String(payload.url), decide: finish });
-      });
-    });
-    room.registerTextStreamHandler('krn.browser.preview', async (reader, participant) => {
-      if (room.remoteParticipants.get(participant.identity)?.kind !== ParticipantKind.AGENT) return;
-      const image = await reader.readAll();
-      if (image.startsWith('data:image/jpeg;base64,') && image.length < 4000000) setPreview(image);
-    });
+    room.localParticipant.registerRpcMethod(
+      'krn.browser.confirm',
+      async (data) => {
+        if (
+          room.remoteParticipants.get(data.callerIdentity)?.kind !==
+          ParticipantKind.AGENT
+        )
+          return 'denied';
+        if (pending) return 'denied';
+        const payload = JSON.parse(data.payload);
+        return new Promise<string>((resolve) => {
+          const timer = setTimeout(() => finish('denied'), 25000);
+          const finish = (value: string) => {
+            clearTimeout(timer);
+            pending = undefined;
+            setRequest(null);
+            resolve(value);
+          };
+          pending = finish;
+          setRequest({
+            action: String(payload.action),
+            url: String(payload.url),
+            decide: finish,
+          });
+        });
+      }
+    );
+    room.registerTextStreamHandler(
+      'krn.browser.preview',
+      async (reader, participant) => {
+        if (
+          room.remoteParticipants.get(participant.identity)?.kind !==
+          ParticipantKind.AGENT
+        )
+          return;
+        const image = await reader.readAll();
+        if (
+          image.startsWith('data:image/jpeg;base64,') &&
+          image.length < 4000000
+        )
+          setPreview(image);
+      }
+    );
     return () => {
       pending?.('denied');
       room.localParticipant.unregisterRpcMethod('krn.browser.confirm');
@@ -46,11 +67,18 @@ export function BrowserPanel() {
     <>
       {preview && (
         <aside className="fixed top-20 right-4 z-40 max-w-sm rounded-2xl border border-[#D4A017]/40 bg-[#0B1F4D] p-3 shadow-xl">
-          <button className="mb-2 text-sm text-white" onClick={() => setPreview('')}>
+          <button
+            className="mb-2 text-sm text-white"
+            onClick={() => setPreview('')}
+          >
             Browser-Vorschau schließen ×
           </button>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={preview} alt="Aktuelle KRN-Browseransicht" className="rounded-xl" />
+          <img
+            src={preview}
+            alt="Aktuelle KRN-Browseransicht"
+            className="rounded-xl"
+          />
         </aside>
       )}
       {request && (
@@ -63,7 +91,9 @@ export function BrowserPanel() {
           <div className="w-full max-w-lg rounded-3xl border border-[#D4A017]/40 bg-[#0B1F4D] p-6 text-white">
             <h2 className="text-xl font-semibold">Browseraktion freigeben?</h2>
             <p className="my-4 break-words">{request.action}</p>
-            <p className="mb-6 text-xs break-all text-slate-400">{request.url}</p>
+            <p className="mb-6 text-xs break-all text-slate-400">
+              {request.url}
+            </p>
             <div className="flex gap-3">
               <button
                 autoFocus

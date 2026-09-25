@@ -30,7 +30,10 @@ function generateConnectingSequenceBar(columns: number): number[][] {
 }
 
 function generateListeningSequenceBar(columns: number): number[][] {
-  const divisor = columns > 8 ? columns / findGcdLessThan(columns, 4) : findGcdLessThan(columns, 2);
+  const divisor =
+    columns > 8
+      ? columns / findGcdLessThan(columns, 4)
+      : findGcdLessThan(columns, 2);
 
   return Array.from({ length: divisor }, (_, idx) => [
     ...Array(Math.floor(columns / divisor))

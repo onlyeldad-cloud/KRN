@@ -181,7 +181,9 @@ export function AgentAudioVisualizerRadial({
   }, [size, radius]);
 
   if (_barCount % 4 !== 0) {
-    console.warn('barCount should be divisible by 4 for optimal visual results');
+    console.warn(
+      'barCount should be divisible by 4 for optimal visual results'
+    );
   }
 
   const highlightedIndices = useAgentAudioVisualizerRadialAnimator(
@@ -197,7 +199,11 @@ export function AgentAudioVisualizerRadial({
   return (
     <div
       data-lk-state={state}
-      className={cn(AgentAudioVisualizerRadialVariants({ size }), 'relative', className)}
+      className={cn(
+        AgentAudioVisualizerRadialVariants({ size }),
+        'relative',
+        className
+      )}
       style={{ ...style, color } as CSSProperties}
       {...props}
     >

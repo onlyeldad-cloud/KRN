@@ -3,7 +3,10 @@
 import { type ComponentProps, useMemo } from 'react';
 import { type VariantProps, cva } from 'class-variance-authority';
 import type { LocalAudioTrack, RemoteAudioTrack } from 'livekit-client';
-import { type AgentState, type TrackReferenceOrPlaceholder } from '@livekit/components-react';
+import {
+  type AgentState,
+  type TrackReferenceOrPlaceholder,
+} from '@livekit/components-react';
 import { ReactShaderToy } from '@/components/agents-ui/react-shader-toy';
 import { useAgentAudioVisualizerWave } from '@/hooks/agents-ui/use-agent-audio-visualizer-wave';
 import { cn } from '@/lib/shadcn/utils';
@@ -12,7 +15,9 @@ const DEFAULT_COLOR = '#1FD5F9';
 
 function hexToRgb(hexColor: string) {
   try {
-    const rgbColor = hexColor.match(/^#([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})$/);
+    const rgbColor = hexColor.match(
+      /^#([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})$/
+    );
 
     if (rgbColor) {
       const [, r, g, b] = rgbColor;

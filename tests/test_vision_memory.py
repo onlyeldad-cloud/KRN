@@ -7,6 +7,7 @@ from agent import Assistant
 
 
 @pytest.mark.asyncio
+@pytest.mark.live
 async def test_does_not_reuse_old_camera_objects():
     async with (
         inference.LLM(model="google/gemma-4-31b-it") as judge,

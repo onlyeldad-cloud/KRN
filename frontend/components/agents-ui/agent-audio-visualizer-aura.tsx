@@ -14,7 +14,10 @@
 import React, { type ComponentProps, useMemo } from 'react';
 import { type VariantProps, cva } from 'class-variance-authority';
 import { type LocalAudioTrack, type RemoteAudioTrack } from 'livekit-client';
-import { type AgentState, type TrackReferenceOrPlaceholder } from '@livekit/components-react';
+import {
+  type AgentState,
+  type TrackReferenceOrPlaceholder,
+} from '@livekit/components-react';
 import { ReactShaderToy } from '@/components/agents-ui/react-shader-toy';
 import { useAgentAudioVisualizerAura } from '@/hooks/agents-ui/use-agent-audio-visualizer-aura';
 import { cn } from '@/lib/shadcn/utils';
@@ -23,7 +26,9 @@ const DEFAULT_COLOR = '#1FD5F9';
 
 function hexToRgb(hexColor: string) {
   try {
-    const rgbColor = hexColor.match(/^#([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})$/);
+    const rgbColor = hexColor.match(
+      /^#([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})$/
+    );
 
     if (rgbColor) {
       const [, r, g, b] = rgbColor;
@@ -287,7 +292,8 @@ function AuraShader({
   color = DEFAULT_COLOR,
   colorShift = 1.0,
   brightness = 1.0,
-  themeMode = typeof window !== 'undefined' && document.documentElement.classList.contains('dark')
+  themeMode = typeof window !== 'undefined' &&
+  document.documentElement.classList.contains('dark')
     ? 'dark'
     : 'light',
   ref,
@@ -426,11 +432,8 @@ export function AgentAudioVisualizerAura({
 }: AgentAudioVisualizerAuraProps &
   ComponentProps<'div'> &
   VariantProps<typeof AgentAudioVisualizerAuraVariants>) {
-  const { speed, scale, amplitude, frequency, brightness } = useAgentAudioVisualizerAura(
-    state,
-    audioTrack,
-    volume
-  );
+  const { speed, scale, amplitude, frequency, brightness } =
+    useAgentAudioVisualizerAura(state, audioTrack, volume);
 
   return (
     <AuraShader

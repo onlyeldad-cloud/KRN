@@ -17,7 +17,10 @@ import {
 const DEFAULT_SPEED = 5;
 const DEFAULT_AMPLITUDE = 0.025;
 const DEFAULT_FREQUENCY = 10;
-const DEFAULT_TRANSITION: ValueAnimationTransition = { duration: 0.2, ease: 'easeOut' };
+const DEFAULT_TRANSITION: ValueAnimationTransition = {
+  duration: 0.2,
+  ease: 'easeOut',
+};
 
 function useAnimatedValue<T>(initialValue: T) {
   const [value, setValue] = useState(initialValue);
@@ -47,8 +50,10 @@ export function useAgentAudioVisualizerWave({
   volume: volumeProp,
 }: UseAgentAudioVisualizerWaveAnimatorArgs) {
   const [speed, setSpeed] = useState(DEFAULT_SPEED);
-  const { value: amplitude, animate: animateAmplitude } = useAnimatedValue(DEFAULT_AMPLITUDE);
-  const { value: frequency, animate: animateFrequency } = useAnimatedValue(DEFAULT_FREQUENCY);
+  const { value: amplitude, animate: animateAmplitude } =
+    useAnimatedValue(DEFAULT_AMPLITUDE);
+  const { value: frequency, animate: animateFrequency } =
+    useAnimatedValue(DEFAULT_FREQUENCY);
   const { value: opacity, animate: animateOpacity } = useAnimatedValue(1.0);
 
   const trackVolume = useTrackVolume(audioTrack as TrackReference, {

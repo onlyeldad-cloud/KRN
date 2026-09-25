@@ -8,6 +8,7 @@ from agent import Assistant
 
 
 @pytest.mark.asyncio
+@pytest.mark.live
 async def test_gemini_calls_search_and_uses_result():
     # Deterministic search evidence, but a real Gemini session and tool call.
     rows = [

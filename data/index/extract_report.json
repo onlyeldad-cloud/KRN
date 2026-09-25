@@ -1,0 +1,356 @@
+[
+  {
+    "filename": "BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf",
+    "pages": 5,
+    "ocr_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "unreadable_pages": [],
+    "used_ocr": true,
+    "source_sha256": "9d0f431a505f45092bd4cc9d1f2ebab270cccab0edb84d17ed968e375557d066",
+    "page_details": [
+      {
+        "page": 1,
+        "method": "ocr_reviewed",
+        "quality": "visually_verified",
+        "native_characters": 0,
+        "text_characters": 444,
+        "indexed": true
+      },
+      {
+        "page": 2,
+        "method": "ocr_reviewed",
+        "quality": "visually_verified",
+        "native_characters": 0,
+        "text_characters": 904,
+        "indexed": true
+      },
+      {
+        "page": 3,
+        "method": "ocr_reviewed",
+        "quality": "visually_verified",
+        "native_characters": 0,
+        "text_characters": 1371,
+        "indexed": true
+      },
+      {
+        "page": 4,
+        "method": "ocr_reviewed",
+        "quality": "visually_verified",
+        "native_characters": 0,
+        "text_characters": 1613,
+        "indexed": true
+      },
+      {
+        "page": 5,
+        "method": "ocr_reviewed",
+        "quality": "visually_verified",
+        "native_characters": 0,
+        "text_characters": 1135,
+        "indexed": true
+      }
+    ],
+    "processing_status": "processed"
+  },
+  {
+    "filename": "BV_Regelung von Fahrzeugverspätungen.pdf",
+    "pages": 4,
+    "ocr_pages": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "unreadable_pages": [],
+    "used_ocr": true,
+    "source_sha256": "4a386aaed3d4e6d435eced5d4349dbed3889d52f3263c47cde839a8027b5207c",
+    "page_details": [
+      {
+        "page": 1,
+        "method": "ocr_reviewed",
+        "quality": "visually_verified",
+        "native_characters": 0,
+        "text_characters": 422,
+        "indexed": true
+      },
+      {
+        "page": 2,
+        "method": "ocr_reviewed",
+        "quality": "visually_verified",
+        "native_characters": 0,
+        "text_characters": 684,
+        "indexed": true
+      },
+      {
+        "page": 3,
+        "method": "ocr_reviewed",
+        "quality": "visually_verified",
+        "native_characters": 0,
+        "text_characters": 1634,
+        "indexed": true
+      },
+      {
+        "page": 4,
+        "method": "ocr_reviewed",
+        "quality": "visually_verified",
+        "native_characters": 0,
+        "text_characters": 902,
+        "indexed": true
+      }
+    ],
+    "processing_status": "processed"
+  },
+  {
+    "filename": "DA001-2026 Schülerbeförderung.pdf",
+    "pages": 1,
+    "ocr_pages": [],
+    "unreadable_pages": [],
+    "used_ocr": false,
+    "source_sha256": "bc895d7d43c133579f25a4ad88f0e25973bdc5955e46d7f300cdff43a0c2aaee",
+    "page_details": [
+      {
+        "page": 1,
+        "method": "native",
+        "quality": "native_text",
+        "native_characters": 1700,
+        "text_characters": 1982,
+        "indexed": true
+      }
+    ],
+    "processing_status": "processed"
+  },
+  {
+    "filename": "DA003-2026_KRN_Umgang_mit_defekten_EC-Geräten_Alternative 2.pdf",
+    "pages": 1,
+    "ocr_pages": [],
+    "unreadable_pages": [],
+    "used_ocr": false,
+    "source_sha256": "68ed89eb7234f0044913699d4c84deba59c9a8da5bdc69ef190963b540bd31d9",
+    "page_details": [
+      {
+        "page": 1,
+        "method": "native",
+        "quality": "native_text",
+        "native_characters": 1465,
+        "text_characters": 1745,
+        "indexed": true
+      }
+    ],
+    "processing_status": "processed"
+  },
+  {
+    "filename": "DOC-20260920-WA0002.pdf",
+    "pages": 1,
+    "ocr_pages": [
+      1
+    ],
+    "unreadable_pages": [],
+    "used_ocr": true,
+    "source_sha256": "68468e78ada688ac8c5cbc1a2cf6dcd1f50fccd5f57de4fb2b786c23f861404b",
+    "page_details": [
+      {
+        "page": 1,
+        "method": "ocr_reviewed",
+        "quality": "visually_verified",
+        "native_characters": 0,
+        "text_characters": 13369,
+        "indexed": true
+      }
+    ],
+    "processing_status": "processed"
+  },
+  {
+    "filename": "DOC-20260920-WA0003.pdf",
+    "pages": 1,
+    "ocr_pages": [],
+    "unreadable_pages": [],
+    "used_ocr": false,
+    "source_sha256": "18870419f483f877fa1ac8ec960d50e5f28a8584ff052959126f74295509c3d5",
+    "page_details": [
+      {
+        "page": 1,
+        "method": "native",
+        "quality": "native_text",
+        "native_characters": 41955,
+        "text_characters": 42227,
+        "indexed": true
+      }
+    ],
+    "processing_status": "processed"
+  },
+  {
+    "filename": "DOC-20260920-WA0004.pdf",
+    "pages": 1,
+    "ocr_pages": [],
+    "unreadable_pages": [],
+    "used_ocr": false,
+    "source_sha256": "2e154ae5003650aaa39e7b2d2d411860b03a2db2d37aebc5cafe4f4359ab93de",
+    "page_details": [
+      {
+        "page": 1,
+        "method": "native",
+        "quality": "native_text",
+        "native_characters": 4166,
+        "text_characters": 7030,
+        "indexed": true
+      }
+    ],
+    "processing_status": "processed"
+  },
+  {
+    "filename": "DOC-20260920-WA0005.pdf",
+    "pages": 15,
+    "ocr_pages": [],
+    "unreadable_pages": [],
+    "used_ocr": false,
+    "source_sha256": "54d74cc82a721c017ff70bc21d13521c93543ff8448d610e41b6b50f1f118bfa",
+    "page_details": [
+      {
+        "page": 1,
+        "method": "native",
+        "quality": "native_text",
+        "native_characters": 87,
+        "text_characters": 87,
+        "indexed": true
+      },
+      {
+        "page": 2,
+        "method": "native",
+        "quality": "native_text",
+        "native_characters": 2576,
+        "text_characters": 2576,
+        "indexed": true
+      },
+      {
+        "page": 3,
+        "method": "native",
+        "quality": "native_text",
+        "native_characters": 2695,
+        "text_characters": 3050,
+        "indexed": true
+      },
+      {
+        "page": 4,
+        "method": "native",
+        "quality": "native_text",
+        "native_characters": 2011,
+        "text_characters": 2211,
+        "indexed": true
+      },
+      {
+        "page": 5,
+        "method": "native",
+        "quality": "native_text",
+        "native_characters": 1310,
+        "text_characters": 1310,
+        "indexed": true
+      },
+      {
+        "page": 6,
+        "method": "native",
+        "quality": "native_text",
+        "native_characters": 1687,
+        "text_characters": 1687,
+        "indexed": true
+      },
+      {
+        "page": 7,
+        "method": "native",
+        "quality": "native_text",
+        "native_characters": 1866,
+        "text_characters": 2699,
+        "indexed": true
+      },
+      {
+        "page": 8,
+        "method": "native",
+        "quality": "native_text",
+        "native_characters": 1225,
+        "text_characters": 1225,
+        "indexed": true
+      },
+      {
+        "page": 9,
+        "method": "native",
+        "quality": "native_text",
+        "native_characters": 2222,
+        "text_characters": 2222,
+        "indexed": true
+      },
+      {
+        "page": 10,
+        "method": "native",
+        "quality": "native_text",
+        "native_characters": 2079,
+        "text_characters": 2079,
+        "indexed": true
+      },
+      {
+        "page": 11,
+        "method": "native",
+        "quality": "native_text",
+        "native_characters": 1481,
+        "text_characters": 1481,
+        "indexed": true
+      },
+      {
+        "page": 12,
+        "method": "native",
+        "quality": "native_text",
+        "native_characters": 1325,
+        "text_characters": 1325,
+        "indexed": true
+      },
+      {
+        "page": 13,
+        "method": "native",
+        "quality": "native_text",
+        "native_characters": 2410,
+        "text_characters": 2410,
+        "indexed": true
+      },
+      {
+        "page": 14,
+        "method": "native",
+        "quality": "native_text",
+        "native_characters": 2725,
+        "text_characters": 2725,
+        "indexed": true
+      },
+      {
+        "page": 15,
+        "method": "native",
+        "quality": "native_text",
+        "native_characters": 370,
+        "text_characters": 370,
+        "indexed": true
+      }
+    ],
+    "processing_status": "processed"
+  },
+  {
+    "filename": "DOC-20260920-WA0006.pdf",
+    "pages": 1,
+    "ocr_pages": [
+      1
+    ],
+    "unreadable_pages": [],
+    "used_ocr": true,
+    "source_sha256": "bea4b8bd563e939cea56a977201cacde0b4b619f002796efd3483b2e1e9bf742",
+    "page_details": [
+      {
+        "page": 1,
+        "method": "native+ocr_reviewed",
+        "quality": "ocr_confidence_checked_and_reviewed",
+        "native_characters": 1905,
+        "text_characters": 8513,
+        "indexed": true
+      }
+    ],
+    "processing_status": "processed"
+  }
+]

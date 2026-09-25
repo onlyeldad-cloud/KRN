@@ -43,7 +43,10 @@ async def main():
         if os.environ.get("KRN_CHECK_PRODUCTION") == "1":
             rejected = await context.request.post(
                 f"{base}/api/token",
-                headers={"Origin": "https://example.com", "Sec-Fetch-Site": "cross-site"},
+                headers={
+                    "Origin": "https://example.com",
+                    "Sec-Fetch-Site": "cross-site",
+                },
             )
             assert rejected.status == 401, rejected.status
         started = time.monotonic()

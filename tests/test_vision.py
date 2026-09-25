@@ -22,6 +22,7 @@ class ColorVideo(io.VideoInput):
 
 
 @pytest.mark.asyncio
+@pytest.mark.live
 async def test_gemini_understands_video():
     async with (
         inference.LLM(model="google/gemma-4-31b-it") as judge,

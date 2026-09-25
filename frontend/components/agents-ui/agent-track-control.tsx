@@ -155,14 +155,24 @@ function TrackDeviceSelect({
       onOpenChange={handleOpenChange}
       onValueChange={onActiveDeviceChange}
     >
-      <SelectTrigger className={cn(selectVariants({ size, variant }), className)} {...props}>
+      <SelectTrigger
+        className={cn(selectVariants({ size, variant }), className)}
+        {...props}
+      >
         {size !== 'sm' && (
-          <SelectValue className="font-mono text-sm" placeholder={`Select a ${kind}`} />
+          <SelectValue
+            className="font-mono text-sm"
+            placeholder={`Select a ${kind}`}
+          />
         )}
       </SelectTrigger>
       <SelectContent position="popper">
         {devices.map((device) => (
-          <SelectItem key={device.deviceId} value={device.deviceId} className="font-mono text-xs">
+          <SelectItem
+            key={device.deviceId}
+            value={device.deviceId}
+            className="font-mono text-xs"
+          >
             {device.label}
           </SelectItem>
         ))}
@@ -249,12 +259,13 @@ export function AgentTrackControl({
 }: AgentTrackControlProps) {
   const room = useMaybeRoomContext();
   const [requestPermissionsState, setRequestPermissionsState] = useState(false);
-  const { devices, activeDeviceId, setActiveMediaDevice } = useMediaDeviceSelect({
-    room,
-    kind,
-    requestPermissions: requestPermissionsState,
-    onError: onMediaDeviceError,
-  });
+  const { devices, activeDeviceId, setActiveMediaDevice } =
+    useMediaDeviceSelect({
+      room,
+      kind,
+      requestPermissions: requestPermissionsState,
+      onError: onMediaDeviceError,
+    });
 
   useEffect(() => {
     // A track was already acquired elsewhere (e.g. session.start()), so permission is already
@@ -278,12 +289,16 @@ export function AgentTrackControl({
     onActiveDeviceChange?.(deviceId);
   };
 
-  const filteredDevices = useMemo(() => devices.filter((d) => d.deviceId !== ''), [devices]);
+  const filteredDevices = useMemo(
+    () => devices.filter((d) => d.deviceId !== ''),
+    [devices]
+  );
   // Before permission is granted, the browser reports devices with blank ids, which get filtered
   // out here — that's an *unknown* device count, not a confirmed empty one. Only treat it as
   // "no devices" once a permission-gated check has actually run and still come up empty;
   // otherwise the toggle disables itself before the user ever gets a chance to grant permission.
-  const noDevices = Boolean(kind) && requestPermissionsState && filteredDevices.length === 0;
+  const noDevices =
+    Boolean(kind) && requestPermissionsState && filteredDevices.length === 0;
   const resolvedPressed = pressed && !noDevices;
 
   return (

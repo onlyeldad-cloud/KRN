@@ -138,15 +138,28 @@ export function JarvisBackground() {
               r="188"
               className="jarvis-background__ring jarvis-background__ring--segments"
             />
-            <circle cx="720" cy="466" r="162" className="jarvis-background__ring" />
+            <circle
+              cx="720"
+              cy="466"
+              r="162"
+              className="jarvis-background__ring"
+            />
             <circle
               cx="720"
               cy="466"
               r="104"
               className="jarvis-background__ring jarvis-background__ring--inner"
             />
-            <circle cx="720" cy="466" r="7" className="jarvis-background__core-dot" />
-            <path d="M460 466H980M720 206V726" className="jarvis-background__crosshair" />
+            <circle
+              cx="720"
+              cy="466"
+              r="7"
+              className="jarvis-background__core-dot"
+            />
+            <path
+              d="M460 466H980M720 206V726"
+              className="jarvis-background__crosshair"
+            />
             <path
               d="M540 286L584 330M900 286L856 330M540 646L584 602M900 646L856 602"
               className="jarvis-background__crosshair"
@@ -170,9 +183,20 @@ export function JarvisBackground() {
           <g className="jarvis-background__orbit">
             <circle cx="1230" cy="170" r="96" />
             <circle cx="1230" cy="170" r="66" />
-            <path d="M1230 74A96 96 0 0 1 1326 170" className="jarvis-background__arc" />
-            <path d="M1134 170A96 96 0 0 1 1230 74" className="jarvis-background__arc" />
-            <circle cx="1230" cy="170" r="18" className="jarvis-background__core-dot" />
+            <path
+              d="M1230 74A96 96 0 0 1 1326 170"
+              className="jarvis-background__arc"
+            />
+            <path
+              d="M1134 170A96 96 0 0 1 1230 74"
+              className="jarvis-background__arc"
+            />
+            <circle
+              cx="1230"
+              cy="170"
+              r="18"
+              className="jarvis-background__core-dot"
+            />
           </g>
         </g>
       </svg>

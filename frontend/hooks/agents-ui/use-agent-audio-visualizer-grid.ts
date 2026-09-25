@@ -6,7 +6,11 @@ export interface Coordinate {
   y: number;
 }
 
-export function generateConnectingSequence(rows: number, columns: number, radius: number) {
+export function generateConnectingSequence(
+  rows: number,
+  columns: number,
+  radius: number
+) {
   const seq = [];
   const centerY = Math.floor(rows / 2);
 
@@ -47,7 +51,17 @@ export function generateListeningSequence(rows: number, columns: number) {
   const center = { x: Math.floor(columns / 2), y: Math.floor(rows / 2) };
   const noIndex = { x: -1, y: -1 };
 
-  return [center, noIndex, noIndex, noIndex, noIndex, noIndex, noIndex, noIndex, noIndex];
+  return [
+    center,
+    noIndex,
+    noIndex,
+    noIndex,
+    noIndex,
+    noIndex,
+    noIndex,
+    noIndex,
+    noIndex,
+  ];
 }
 
 export function generateThinkingSequence(rows: number, columns: number) {
@@ -86,7 +100,9 @@ export function useAgentAudioVisualizerGridAnimator(
     if (state === 'thinking') {
       setSequence(generateThinkingSequence(rows, columns));
     } else if (state === 'connecting' || state === 'initializing') {
-      const sequence = [...generateConnectingSequence(rows, columns, clampedRadius)];
+      const sequence = [
+        ...generateConnectingSequence(rows, columns, clampedRadius),
+      ];
       setSequence(sequence);
     } else if (state === 'listening') {
       setSequence(generateListeningSequence(rows, columns));
@@ -111,6 +127,9 @@ export function useAgentAudioVisualizerGridAnimator(
   }, [interval, columns, rows, state, sequence.length]);
 
   return (
-    sequence[index % sequence.length] ?? { x: Math.floor(columns / 2), y: Math.floor(rows / 2) }
+    sequence[index % sequence.length] ?? {
+      x: Math.floor(columns / 2),
+      y: Math.floor(rows / 2),
+    }
   );
 }

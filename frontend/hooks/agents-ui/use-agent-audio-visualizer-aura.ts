@@ -19,7 +19,10 @@ const DEFAULT_AMPLITUDE = 2;
 const DEFAULT_FREQUENCY = 0.5;
 const DEFAULT_SCALE = 0.2;
 const DEFAULT_BRIGHTNESS = 1.5;
-const DEFAULT_TRANSITION: ValueAnimationTransition = { duration: 0.5, ease: 'easeOut' };
+const DEFAULT_TRANSITION: ValueAnimationTransition = {
+  duration: 0.5,
+  ease: 'easeOut',
+};
 const DEFAULT_PULSE_TRANSITION: ValueAnimationTransition = {
   duration: 0.35,
   ease: 'easeOut',
@@ -54,9 +57,12 @@ export function useAgentAudioVisualizerAura(
     animate: animateScale,
     motionValue: scaleMotionValue,
   } = useAnimatedValue(DEFAULT_SCALE);
-  const { value: amplitude, animate: animateAmplitude } = useAnimatedValue(DEFAULT_AMPLITUDE);
-  const { value: frequency, animate: animateFrequency } = useAnimatedValue(DEFAULT_FREQUENCY);
-  const { value: brightness, animate: animateBrightness } = useAnimatedValue(DEFAULT_BRIGHTNESS);
+  const { value: amplitude, animate: animateAmplitude } =
+    useAnimatedValue(DEFAULT_AMPLITUDE);
+  const { value: frequency, animate: animateFrequency } =
+    useAnimatedValue(DEFAULT_FREQUENCY);
+  const { value: brightness, animate: animateBrightness } =
+    useAnimatedValue(DEFAULT_BRIGHTNESS);
 
   const trackVolume = useTrackVolume(audioTrack as TrackReference, {
     fftSize: 512,
@@ -100,7 +106,13 @@ export function useAgentAudioVisualizerAura(
         animateBrightness(1.5, DEFAULT_TRANSITION);
         return;
     }
-  }, [state, animateScale, animateAmplitude, animateFrequency, animateBrightness]);
+  }, [
+    state,
+    animateScale,
+    animateAmplitude,
+    animateFrequency,
+    animateBrightness,
+  ]);
 
   useEffect(() => {
     if (state === 'speaking' && volume > 0 && !scaleMotionValue.isAnimating()) {

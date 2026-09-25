@@ -1,0 +1,2010 @@
+{
+  "scope": "All PDFs in original transfer ZIP and project source directory; exact SHA256 comparison",
+  "documents": [
+    {
+      "filename": "BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf",
+      "source_error": null,
+      "pages": 5,
+      "original_matches": true,
+      "processed": true,
+      "chunks": 17,
+      "page_details": [
+        {
+          "page": 1,
+          "method": "ocr_reviewed",
+          "quality": "visually_verified",
+          "native_characters": 0,
+          "text_characters": 444,
+          "indexed": true,
+          "chunks": 1,
+          "search_probe": "Betriebsvereinbarung 2026 04 Regelung von Betriebsjubiläen Ehrungen und Genesungspakete der KRN Kommunalverkehr Rhein Nahe GmbH Zwischen der KRN",
+          "searchable": true
+        },
+        {
+          "page": 2,
+          "method": "ocr_reviewed",
+          "quality": "visually_verified",
+          "native_characters": 0,
+          "text_characters": 904,
+          "indexed": true,
+          "chunks": 1,
+          "search_probe": "Präambel Arbeitgeber und Betriebsrat sind sich darüber einig dass die Anerkennung von Betriebstreue besonderen Leistungen sowie die wertschätzende",
+          "searchable": true
+        },
+        {
+          "page": 3,
+          "method": "ocr_reviewed",
+          "quality": "visually_verified",
+          "native_characters": 0,
+          "text_characters": 1371,
+          "indexed": true,
+          "chunks": 10,
+          "search_probe": "1 Geltungsbereich Diese Betriebsvereinbarung gilt für alle Beschäftigten der KRN Kommunalverkehr Rhein Nahe GmbH Ausgenommen sind geringfügig Beschäftigte",
+          "searchable": true
+        },
+        {
+          "page": 4,
+          "method": "ocr_reviewed",
+          "quality": "visually_verified",
+          "native_characters": 0,
+          "text_characters": 1613,
+          "indexed": true,
+          "chunks": 4,
+          "search_probe": "20 Geburtstag 30 Geburtstag 40 Geburtstag 50 Geburtstag 60 Geburtstag 70 Geburtstag 80 Geburtstag 5 Genesungspäckchen Mitarbeitende erhalten",
+          "searchable": true
+        },
+        {
+          "page": 5,
+          "method": "ocr_reviewed",
+          "quality": "visually_verified",
+          "native_characters": 0,
+          "text_characters": 1135,
+          "indexed": true,
+          "chunks": 1,
+          "search_probe": "Kommt es bezüglich den in dieser Vereinbarung beschriebenen Regelungen zu Meinungsverschiedenheiten die nicht ausgeräumt werden können kann jede",
+          "searchable": true
+        }
+      ],
+      "extraction": "OCR reviewed",
+      "retrieval_pass": true,
+      "citation_pass": true,
+      "answer_pass": true,
+      "all_pages_searchable": true,
+      "factual_tests_passed": 12,
+      "factual_tests_total": 12,
+      "answer_tests_passed": 12,
+      "in_overview": true,
+      "status": "PASS"
+    },
+    {
+      "filename": "BV_Regelung von Fahrzeugverspätungen.pdf",
+      "source_error": null,
+      "pages": 4,
+      "original_matches": true,
+      "processed": true,
+      "chunks": 5,
+      "page_details": [
+        {
+          "page": 1,
+          "method": "ocr_reviewed",
+          "quality": "visually_verified",
+          "native_characters": 0,
+          "text_characters": 422,
+          "indexed": true,
+          "chunks": 1,
+          "search_probe": "Betriebsvereinbarung 2026 06 Regelung von Fahrzeugverspätungen bei der KRN Kommunalverkehr Rhein Nahe GmbH Zwischen der KRN Kommunalverkehr Rhein",
+          "searchable": true
+        },
+        {
+          "page": 2,
+          "method": "ocr_reviewed",
+          "quality": "visually_verified",
+          "native_characters": 0,
+          "text_characters": 684,
+          "indexed": true,
+          "chunks": 1,
+          "search_probe": "Präambel Arbeitgeber und Betriebsrat vereinbaren mit dieser Betriebsvereinbarung eine transparente und faire Regelung zur Vergütung von Fahrzeugverspätungen Ziel",
+          "searchable": true
+        },
+        {
+          "page": 3,
+          "method": "ocr_reviewed",
+          "quality": "visually_verified",
+          "native_characters": 0,
+          "text_characters": 1634,
+          "indexed": true,
+          "chunks": 2,
+          "search_probe": "1 Geltungsbereich Diese Betriebsvereinbarung gilt für alle Beschäftigten der KRN Kommunalverkehr Rhein Nahe GmbH 2 Rechtliche Grundlagen Die",
+          "searchable": true
+        },
+        {
+          "page": 4,
+          "method": "ocr_reviewed",
+          "quality": "visually_verified",
+          "native_characters": 0,
+          "text_characters": 902,
+          "indexed": true,
+          "chunks": 1,
+          "search_probe": "besteht aus je zwei Vertretern des Arbeitgebers und des Betriebsrats sowie einem externen Schlichtungsstellenvorsitzenden bzw einer vorsitzenden auf",
+          "searchable": true
+        }
+      ],
+      "extraction": "OCR reviewed",
+      "retrieval_pass": true,
+      "citation_pass": true,
+      "answer_pass": true,
+      "all_pages_searchable": true,
+      "factual_tests_passed": 8,
+      "factual_tests_total": 8,
+      "answer_tests_passed": 8,
+      "in_overview": true,
+      "status": "PASS"
+    },
+    {
+      "filename": "DA001-2026 Schülerbeförderung.pdf",
+      "source_error": null,
+      "pages": 1,
+      "original_matches": true,
+      "processed": true,
+      "chunks": 6,
+      "page_details": [
+        {
+          "page": 1,
+          "method": "native",
+          "quality": "native_text",
+          "native_characters": 1700,
+          "text_characters": 1982,
+          "indexed": true,
+          "chunks": 6,
+          "search_probe": "DA001 2026 Schülerbeförderung pdf Seite 1 Verteiler KRN Kommunalverkehr Rhein Nahe GmbH Ausgabedatum",
+          "searchable": true
+        }
+      ],
+      "extraction": "native",
+      "retrieval_pass": true,
+      "citation_pass": true,
+      "answer_pass": true,
+      "all_pages_searchable": true,
+      "factual_tests_passed": 9,
+      "factual_tests_total": 9,
+      "answer_tests_passed": 9,
+      "in_overview": true,
+      "status": "PASS"
+    },
+    {
+      "filename": "DA003-2026_KRN_Umgang_mit_defekten_EC-Geräten_Alternative 2.pdf",
+      "source_error": null,
+      "pages": 1,
+      "original_matches": true,
+      "processed": true,
+      "chunks": 7,
+      "page_details": [
+        {
+          "page": 1,
+          "method": "native",
+          "quality": "native_text",
+          "native_characters": 1465,
+          "text_characters": 1745,
+          "indexed": true,
+          "chunks": 7,
+          "search_probe": "DA003 2026_KRN_Umgang_mit_defekten_EC Geräten_Alternative 2 pdf Seite 1 Verteiler KRN Kommunalverkehr Rhein Nahe GmbH Ausgabedatum 01 06 2026",
+          "searchable": true
+        }
+      ],
+      "extraction": "native",
+      "retrieval_pass": true,
+      "citation_pass": true,
+      "answer_pass": true,
+      "all_pages_searchable": true,
+      "factual_tests_passed": 9,
+      "factual_tests_total": 9,
+      "answer_tests_passed": 9,
+      "in_overview": true,
+      "status": "PASS"
+    },
+    {
+      "filename": "DOC-20260920-WA0002.pdf",
+      "source_error": null,
+      "pages": 1,
+      "original_matches": true,
+      "processed": true,
+      "chunks": 34,
+      "page_details": [
+        {
+          "page": 1,
+          "method": "ocr_reviewed",
+          "quality": "visually_verified",
+          "native_characters": 0,
+          "text_characters": 13369,
+          "indexed": true,
+          "chunks": 34,
+          "search_probe": "Linie 216 Fahrplan Bad Kreuznach Bahnhof Michelin Planig Industriegebiet Bosenheim Sportplatz Ippesheim Mitte und Gegenrichtung Fahrt 125 montags",
+          "searchable": true
+        }
+      ],
+      "extraction": "OCR reviewed",
+      "retrieval_pass": true,
+      "citation_pass": true,
+      "answer_pass": true,
+      "all_pages_searchable": true,
+      "factual_tests_passed": 4,
+      "factual_tests_total": 4,
+      "answer_tests_passed": 4,
+      "in_overview": true,
+      "status": "PASS"
+    },
+    {
+      "filename": "DOC-20260920-WA0003.pdf",
+      "source_error": null,
+      "pages": 1,
+      "original_matches": true,
+      "processed": true,
+      "chunks": 25,
+      "page_details": [
+        {
+          "page": 1,
+          "method": "native",
+          "quality": "native_text",
+          "native_characters": 41955,
+          "text_characters": 42227,
+          "indexed": true,
+          "chunks": 25,
+          "search_probe": "RNN Gesamtnetz 2025 Gültig ab 15 12 2024 Der Netzplan zeigt Liniennummern Bahnhöfe und Ortsnamen Er enthält keine",
+          "searchable": true
+        }
+      ],
+      "extraction": "native",
+      "retrieval_pass": true,
+      "citation_pass": true,
+      "answer_pass": true,
+      "all_pages_searchable": true,
+      "factual_tests_passed": 1,
+      "factual_tests_total": 1,
+      "answer_tests_passed": 1,
+      "in_overview": true,
+      "status": "PASS"
+    },
+    {
+      "filename": "DOC-20260920-WA0004.pdf",
+      "source_error": null,
+      "pages": 1,
+      "original_matches": true,
+      "processed": true,
+      "chunks": 84,
+      "page_details": [
+        {
+          "page": 1,
+          "method": "native",
+          "quality": "native_text",
+          "native_characters": 4166,
+          "text_characters": 7030,
+          "indexed": true,
+          "chunks": 84,
+          "search_probe": "DOC 20260920 WA0004 pdf Seite 1 Waben Einzelfahrkarte Mehrfahrtenkarte Single Tageskarte Gruppen Tageskarte",
+          "searchable": true
+        }
+      ],
+      "extraction": "native",
+      "retrieval_pass": true,
+      "citation_pass": true,
+      "answer_pass": true,
+      "all_pages_searchable": true,
+      "factual_tests_passed": 4,
+      "factual_tests_total": 4,
+      "answer_tests_passed": 4,
+      "in_overview": true,
+      "status": "PASS"
+    },
+    {
+      "filename": "DOC-20260920-WA0005.pdf",
+      "source_error": null,
+      "pages": 15,
+      "original_matches": true,
+      "processed": true,
+      "chunks": 55,
+      "page_details": [
+        {
+          "page": 1,
+          "method": "native",
+          "quality": "native_text",
+          "native_characters": 87,
+          "text_characters": 87,
+          "indexed": true,
+          "chunks": 1,
+          "search_probe": "rnn info Preise Fahrkarten Mit Wabenplan und Preisübersicht Gültig ab 1 August 2026",
+          "searchable": true
+        },
+        {
+          "page": 2,
+          "method": "native",
+          "quality": "native_text",
+          "native_characters": 2576,
+          "text_characters": 2576,
+          "indexed": true,
+          "chunks": 2,
+          "search_probe": "Inhaltsverzeichnis EINZEL UND TAGESKARTEN 3 Prinzip Wabe der RNN Verbundtarif 4 Übergangsbereiche Mainz Wiesbaden und Alzey Worms 5",
+          "searchable": true
+        },
+        {
+          "page": 3,
+          "method": "native",
+          "quality": "native_text",
+          "native_characters": 2695,
+          "text_characters": 3050,
+          "indexed": true,
+          "chunks": 6,
+          "search_probe": "DOC 20260920 WA0005 pdf Seite 3 Preisstufen 21 Preise für die Stadt Ingelheim",
+          "searchable": true
+        },
+        {
+          "page": 4,
+          "method": "native",
+          "quality": "native_text",
+          "native_characters": 2011,
+          "text_characters": 2211,
+          "indexed": true,
+          "chunks": 7,
+          "search_probe": "DOC 20260920 WA0005 pdf Seite 4 in den Preisstufen 1 2 21 31 41 1 5 Stunden",
+          "searchable": true
+        },
+        {
+          "page": 5,
+          "method": "native",
+          "quality": "native_text",
+          "native_characters": 1310,
+          "text_characters": 1310,
+          "indexed": true,
+          "chunks": 4,
+          "search_probe": "Wichtig",
+          "searchable": true
+        },
+        {
+          "page": 6,
+          "method": "native",
+          "quality": "native_text",
+          "native_characters": 1687,
+          "text_characters": 1687,
+          "indexed": true,
+          "chunks": 2,
+          "search_probe": "Das Rheinland Pfalz Ticket gilt Wann An allen Tagen der Woche für jeweils 1 Tag von 9 Uhr",
+          "searchable": true
+        },
+        {
+          "page": 7,
+          "method": "native",
+          "quality": "native_text",
+          "native_characters": 1866,
+          "text_characters": 2699,
+          "indexed": true,
+          "chunks": 14,
+          "search_probe": "DOC 20260920 WA0005 pdf Seite 7 Preis 63 Euro Monat",
+          "searchable": true
+        },
+        {
+          "page": 8,
+          "method": "native",
+          "quality": "native_text",
+          "native_characters": 1225,
+          "text_characters": 1225,
+          "indexed": true,
+          "chunks": 1,
+          "search_probe": "Sie arbeiten bei einem Unternehmen und möchten die Vorteile des D Tickets genießen Dann gibt es eine Lösung",
+          "searchable": true
+        },
+        {
+          "page": 9,
+          "method": "native",
+          "quality": "native_text",
+          "native_characters": 2222,
+          "text_characters": 2222,
+          "indexed": true,
+          "chunks": 4,
+          "search_probe": "Alle Zeitkarten gelten ab 1 8 2026 im gesamten RNN Verbund gebiet und bieten damit volle Flexibilität unabhängig",
+          "searchable": true
+        },
+        {
+          "page": 10,
+          "method": "native",
+          "quality": "native_text",
+          "native_characters": 2079,
+          "text_characters": 2079,
+          "indexed": true,
+          "chunks": 3,
+          "search_probe": "Einfach flexibel unterwegs Als persönliche Plastikkarte oder mit übertragbarer Papierkarte erhältlich Mit Mitnahmemöglichkeiten für 1 Erwachsenen und alle",
+          "searchable": true
+        },
+        {
+          "page": 11,
+          "method": "native",
+          "quality": "native_text",
+          "native_characters": 1481,
+          "text_characters": 1481,
+          "indexed": true,
+          "chunks": 2,
+          "search_probe": "Wichtig Die Wochen und Monatskarten Ausbildung gelten nur zusammen mit einer ausgefüllten und geprüf ten Kundenkarte FRITZ bringt",
+          "searchable": true
+        },
+        {
+          "page": 12,
+          "method": "native",
+          "quality": "native_text",
+          "native_characters": 1325,
+          "text_characters": 1325,
+          "indexed": true,
+          "chunks": 2,
+          "search_probe": "Das RNN SemesterTicket gilt in allen Bussen Straßenbahnen und Nahverkehrszügen RE RB S Bahn in der 2 Klasse",
+          "searchable": true
+        },
+        {
+          "page": 13,
+          "method": "native",
+          "quality": "native_text",
+          "native_characters": 2410,
+          "text_characters": 2410,
+          "indexed": true,
+          "chunks": 3,
+          "search_probe": "Für alle die schon eine Zeitkarte der Nachbarverbünde RMV oder VRN haben ab und zu aber mal weiter",
+          "searchable": true
+        },
+        {
+          "page": 14,
+          "method": "native",
+          "quality": "native_text",
+          "native_characters": 2725,
+          "text_characters": 2725,
+          "indexed": true,
+          "chunks": 3,
+          "search_probe": "Öffnungszeiten Die aktuellen Öffnungszeiten erfahren Sie unter www rnn info beim jeweiligen Verkehrsunter nehmen oder bei der RNN",
+          "searchable": true
+        },
+        {
+          "page": 15,
+          "method": "native",
+          "quality": "native_text",
+          "native_characters": 370,
+          "text_characters": 370,
+          "indexed": true,
+          "chunks": 1,
+          "search_probe": "Rhein Nahe Nahverkehrsverbund GmbH Bahnhofstraße 2 55218 Ingelheim Tel 0 61 32 78 96 22 service rnn info",
+          "searchable": true
+        }
+      ],
+      "extraction": "native",
+      "retrieval_pass": true,
+      "citation_pass": true,
+      "answer_pass": true,
+      "all_pages_searchable": true,
+      "factual_tests_passed": 16,
+      "factual_tests_total": 16,
+      "answer_tests_passed": 16,
+      "in_overview": true,
+      "status": "PASS"
+    },
+    {
+      "filename": "DOC-20260920-WA0006.pdf",
+      "source_error": null,
+      "pages": 1,
+      "original_matches": true,
+      "processed": true,
+      "chunks": 6,
+      "page_details": [
+        {
+          "page": 1,
+          "method": "native+ocr_reviewed",
+          "quality": "ocr_confidence_checked_and_reviewed",
+          "native_characters": 1905,
+          "text_characters": 8513,
+          "indexed": true,
+          "chunks": 6,
+          "search_probe": "RNN Wabenplan Stand 1 August 2026 Der Plan nennt Sondertarifgebiete sowie die Übergangsbereiche Mainz Wiesbaden und Alzey Worms",
+          "searchable": true
+        }
+      ],
+      "extraction": "OCR reviewed",
+      "retrieval_pass": true,
+      "citation_pass": true,
+      "answer_pass": true,
+      "all_pages_searchable": true,
+      "factual_tests_passed": 1,
+      "factual_tests_total": 1,
+      "answer_tests_passed": 1,
+      "in_overview": true,
+      "status": "PASS"
+    }
+  ],
+  "tests": [
+    {
+      "id": "J01",
+      "query": "Fuer wen gilt die Betriebsvereinbarung zu Jubilaeen?",
+      "filenames": [
+        "BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf"
+      ],
+      "pages": [
+        3
+      ],
+      "must_contain": [
+        "beschaeftigten",
+        "geringfuegig",
+        "werkstudierende"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Die Betriebsvereinbarung gilt für alle Beschäftigten der KRN-Kommunalverkehr Rhein-Nahe GmbH. Ausgenommen sind geringfügig Beschäftigte, kurzfristig Beschäftigte und Werkstudierende. [Quelle: BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf, Seite 3]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf"
+      ]
+    },
+    {
+      "id": "J02",
+      "query": "Was bekomme ich bei 10 Jahren Betriebszugehoerigkeit?",
+      "filenames": [
+        "BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf"
+      ],
+      "pages": [
+        3
+      ],
+      "must_contain": [
+        "100",
+        "25"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Bei 10 Jahren ununterbrochener Betriebszugehörigkeit erhältst du 100 Euro Jubiläumsprämie sowie ein Sachgeschenk im Wert von 25 Euro. Die Auszahlung erfolgt im Folgemonat nach Vollendung des Jubiläums. [Quelle: BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf, Seite 3]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf"
+      ]
+    },
+    {
+      "id": "J03",
+      "query": "Was bekomme ich bei 25 Jahren Betriebszugehoerigkeit?",
+      "filenames": [
+        "BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf"
+      ],
+      "pages": [
+        3
+      ],
+      "must_contain": [
+        "250",
+        "25"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Bei 25 Jahren ununterbrochener Betriebszugehörigkeit erhältst du 250 Euro Jubiläumsprämie sowie ein Sachgeschenk im Wert von 25 Euro. Die Auszahlung erfolgt im Folgemonat nach Vollendung des Jubiläums. [Quelle: BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf, Seite 3]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf"
+      ]
+    },
+    {
+      "id": "J04",
+      "query": "Was bekomme ich bei 40 Jahren Betriebszugehoerigkeit?",
+      "filenames": [
+        "BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf"
+      ],
+      "pages": [
+        3
+      ],
+      "must_contain": [
+        "400",
+        "freier tag"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Bei 40 Jahren ununterbrochener Betriebszugehörigkeit erhältst du 400 Euro Jubiläumsprämie sowie ein Sachgeschenk im Wert von 25 Euro. Die Auszahlung erfolgt im Folgemonat nach Vollendung des Jubiläums. Dazu kommt ein zusätzlicher freier Tag unter Fortzahlung des Arbeitsentgelts. [Quelle: BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf, Seite 3]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf"
+      ]
+    },
+    {
+      "id": "J05",
+      "query": "Was bekomme ich bei 50 Jahren Betriebszugehoerigkeit?",
+      "filenames": [
+        "BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf"
+      ],
+      "pages": [
+        3
+      ],
+      "must_contain": [
+        "500",
+        "zwei"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Bei 50 Jahren ununterbrochener Betriebszugehörigkeit erhältst du 500 Euro Jubiläumsprämie sowie ein Sachgeschenk im Wert von 25 Euro. Die Auszahlung erfolgt im Folgemonat nach Vollendung des Jubiläums. Dazu kommen zwei zusätzliche freie Tage unter Fortzahlung des Arbeitsentgelts. [Quelle: BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf, Seite 3]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf"
+      ]
+    },
+    {
+      "id": "J06",
+      "query": "Zu welchen runden Geburtstagen gibt es ein Geschenk?",
+      "filenames": [
+        "BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf"
+      ],
+      "pages": [
+        3,
+        4
+      ],
+      "must_contain": [
+        "20",
+        "30",
+        "80",
+        "25"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Zum 20., 30., 40., 50., 60., 70. und 80. Geburtstag erhalten Mitarbeitende eine Gratulation und ein Sachgeschenk im Wert von 25 Euro. [Quelle: BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf, Seite 3] [Quelle: BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf, Seite 4]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf"
+      ]
+    },
+    {
+      "id": "J07",
+      "query": "Wann gibt es ein Genesungspaket?",
+      "filenames": [
+        "BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf"
+      ],
+      "pages": [
+        4
+      ],
+      "must_contain": [
+        "acht wochen",
+        "25"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Bei einer Erkrankung von mehr als acht Wochen gibt es einmalig pro Krankheitsfall ein Genesungspaket mit einem Sachgeschenk im Wert von 25 Euro. Es wird grundsätzlich an die Privatadresse versendet. Die Geschäftsleitung kann es in begründeten Einzelfällen schon früher gewähren. [Quelle: BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf, Seite 4]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf"
+      ]
+    },
+    {
+      "id": "J08",
+      "query": "Wohin wird das Genesungspaket geschickt?",
+      "filenames": [
+        "BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf"
+      ],
+      "pages": [
+        4
+      ],
+      "must_contain": [
+        "privatadresse"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Bei einer Erkrankung von mehr als acht Wochen gibt es einmalig pro Krankheitsfall ein Genesungspaket mit einem Sachgeschenk im Wert von 25 Euro. Es wird grundsätzlich an die Privatadresse versendet. Die Geschäftsleitung kann es in begründeten Einzelfällen schon früher gewähren. [Quelle: BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf, Seite 4]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf"
+      ]
+    },
+    {
+      "id": "J09",
+      "query": "Was gibt es bei einem alters- oder krankheitsbedingten Austritt?",
+      "filenames": [
+        "BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf"
+      ],
+      "pages": [
+        4
+      ],
+      "must_contain": [
+        "25",
+        "karte"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Bei alters- oder krankheitsbedingtem Unternehmensaustritt gibt es ein Sachgeschenk im Wert von 25 Euro sowie eine persönliche Karte. [Quelle: BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf, Seite 4]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf"
+      ]
+    },
+    {
+      "id": "J10",
+      "query": "Seit wann gilt diese Betriebsvereinbarung zu Jubilaeen?",
+      "filenames": [
+        "BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf"
+      ],
+      "pages": [
+        4
+      ],
+      "must_contain": [
+        "01.07.2026"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Die Betriebsvereinbarung zu Jubiläen gilt ab 01.07.2026 auf unbestimmte Zeit. Sie ist mit einer Frist von 12 Monaten zum Jahresende kündbar, frühestens zum 31.12.2028; die Kündigung muss schriftlich erfolgen. [Quelle: BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf, Seite 4]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf"
+      ]
+    },
+    {
+      "id": "V01",
+      "query": "Fuer wen gilt die Regelung zu Fahrzeugverspaetungen?",
+      "filenames": [
+        "BV_Regelung von Fahrzeugverspätungen.pdf"
+      ],
+      "pages": [
+        3
+      ],
+      "must_contain": [
+        "kommunalverkehr",
+        "rhein-nahe"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Die Regelung gilt für alle Beschäftigten der KRN-Kommunalverkehr Rhein-Nahe GmbH seit 01.07.2026. Fahrzeugverspätungen von 0 bis einschließlich 30 Minuten werden minutengenau als Arbeitszeit vergütet. Bei mehr als 30 Minuten wird jede angefangene halbe Stunde als halbe Stunde gemäß § 6 Abs. 3 BezTV-N RP vergütet. Unverzüglich bei Dienstende an die Leitstelle melden; nachträglich gemeldete Verspätungen werden nicht berücksichtigt. [Quelle: BV_Regelung von Fahrzeugverspätungen.pdf, Seite 3]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "BV_Regelung von Fahrzeugverspätungen.pdf"
+      ]
+    },
+    {
+      "id": "V02",
+      "query": "Wie wird eine Fahrzeugverspaetung von 20 Minuten verguetet?",
+      "filenames": [
+        "BV_Regelung von Fahrzeugverspätungen.pdf"
+      ],
+      "pages": [
+        3
+      ],
+      "must_contain": [
+        "minutengenau",
+        "arbeitszeit"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Die Regelung gilt für alle Beschäftigten der KRN-Kommunalverkehr Rhein-Nahe GmbH seit 01.07.2026. Fahrzeugverspätungen von 0 bis einschließlich 30 Minuten werden minutengenau als Arbeitszeit vergütet. Bei mehr als 30 Minuten wird jede angefangene halbe Stunde als halbe Stunde gemäß § 6 Abs. 3 BezTV-N RP vergütet. Unverzüglich bei Dienstende an die Leitstelle melden; nachträglich gemeldete Verspätungen werden nicht berücksichtigt. [Quelle: BV_Regelung von Fahrzeugverspätungen.pdf, Seite 3]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "BV_Regelung von Fahrzeugverspätungen.pdf"
+      ]
+    },
+    {
+      "id": "V03",
+      "query": "Wie werden Verspaetungen bis einschliesslich 30 Minuten verguetet?",
+      "filenames": [
+        "BV_Regelung von Fahrzeugverspätungen.pdf"
+      ],
+      "pages": [
+        3
+      ],
+      "must_contain": [
+        "30",
+        "minutengenau"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Die Regelung gilt für alle Beschäftigten der KRN-Kommunalverkehr Rhein-Nahe GmbH seit 01.07.2026. Fahrzeugverspätungen von 0 bis einschließlich 30 Minuten werden minutengenau als Arbeitszeit vergütet. Bei mehr als 30 Minuten wird jede angefangene halbe Stunde als halbe Stunde gemäß § 6 Abs. 3 BezTV-N RP vergütet. Unverzüglich bei Dienstende an die Leitstelle melden; nachträglich gemeldete Verspätungen werden nicht berücksichtigt. [Quelle: BV_Regelung von Fahrzeugverspätungen.pdf, Seite 3]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "BV_Regelung von Fahrzeugverspätungen.pdf"
+      ]
+    },
+    {
+      "id": "V04",
+      "query": "Wie werden Verspaetungen von mehr als 30 Minuten verguetet?",
+      "filenames": [
+        "BV_Regelung von Fahrzeugverspätungen.pdf"
+      ],
+      "pages": [
+        3
+      ],
+      "must_contain": [
+        "halbe stunde",
+        "beztv"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Die Regelung gilt für alle Beschäftigten der KRN-Kommunalverkehr Rhein-Nahe GmbH seit 01.07.2026. Fahrzeugverspätungen von 0 bis einschließlich 30 Minuten werden minutengenau als Arbeitszeit vergütet. Bei mehr als 30 Minuten wird jede angefangene halbe Stunde als halbe Stunde gemäß § 6 Abs. 3 BezTV-N RP vergütet. Unverzüglich bei Dienstende an die Leitstelle melden; nachträglich gemeldete Verspätungen werden nicht berücksichtigt. [Quelle: BV_Regelung von Fahrzeugverspätungen.pdf, Seite 3]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "BV_Regelung von Fahrzeugverspätungen.pdf"
+      ]
+    },
+    {
+      "id": "V05",
+      "query": "Wann und wo muss ich die Verspaetung melden?",
+      "filenames": [
+        "BV_Regelung von Fahrzeugverspätungen.pdf"
+      ],
+      "pages": [
+        3
+      ],
+      "must_contain": [
+        "dienstende",
+        "leitstelle"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Die Regelung gilt für alle Beschäftigten der KRN-Kommunalverkehr Rhein-Nahe GmbH seit 01.07.2026. Fahrzeugverspätungen von 0 bis einschließlich 30 Minuten werden minutengenau als Arbeitszeit vergütet. Bei mehr als 30 Minuten wird jede angefangene halbe Stunde als halbe Stunde gemäß § 6 Abs. 3 BezTV-N RP vergütet. Unverzüglich bei Dienstende an die Leitstelle melden; nachträglich gemeldete Verspätungen werden nicht berücksichtigt. [Quelle: BV_Regelung von Fahrzeugverspätungen.pdf, Seite 3]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "BV_Regelung von Fahrzeugverspätungen.pdf"
+      ]
+    },
+    {
+      "id": "V06",
+      "query": "Wird eine spaeter nachgemeldete Verspaetung beruecksichtigt?",
+      "filenames": [
+        "BV_Regelung von Fahrzeugverspätungen.pdf"
+      ],
+      "pages": [
+        3
+      ],
+      "must_contain": [
+        "nicht beruecksichtigt"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Die Regelung gilt für alle Beschäftigten der KRN-Kommunalverkehr Rhein-Nahe GmbH seit 01.07.2026. Fahrzeugverspätungen von 0 bis einschließlich 30 Minuten werden minutengenau als Arbeitszeit vergütet. Bei mehr als 30 Minuten wird jede angefangene halbe Stunde als halbe Stunde gemäß § 6 Abs. 3 BezTV-N RP vergütet. Unverzüglich bei Dienstende an die Leitstelle melden; nachträglich gemeldete Verspätungen werden nicht berücksichtigt. [Quelle: BV_Regelung von Fahrzeugverspätungen.pdf, Seite 3]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "BV_Regelung von Fahrzeugverspätungen.pdf"
+      ]
+    },
+    {
+      "id": "V07",
+      "query": "Seit wann gilt die Betriebsvereinbarung zu Fahrzeugverspaetungen?",
+      "filenames": [
+        "BV_Regelung von Fahrzeugverspätungen.pdf"
+      ],
+      "pages": [
+        3
+      ],
+      "must_contain": [
+        "01.07.2026"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Die Regelung gilt für alle Beschäftigten der KRN-Kommunalverkehr Rhein-Nahe GmbH seit 01.07.2026. Fahrzeugverspätungen von 0 bis einschließlich 30 Minuten werden minutengenau als Arbeitszeit vergütet. Bei mehr als 30 Minuten wird jede angefangene halbe Stunde als halbe Stunde gemäß § 6 Abs. 3 BezTV-N RP vergütet. Unverzüglich bei Dienstende an die Leitstelle melden; nachträglich gemeldete Verspätungen werden nicht berücksichtigt. [Quelle: BV_Regelung von Fahrzeugverspätungen.pdf, Seite 3]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "BV_Regelung von Fahrzeugverspätungen.pdf"
+      ]
+    },
+    {
+      "id": "S01",
+      "query": "Was mache ich, wenn ein Schueler auf dem Schulweg kein gueltiges Ticket hat?",
+      "filenames": [
+        "DA001-2026 Schülerbeförderung.pdf"
+      ],
+      "pages": [
+        1
+      ],
+      "must_contain": [
+        "name",
+        "schule",
+        "qualitaetsmanagement"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Nach DA001-2026, gültig ab 13.01.2026: Auf dem Schulweg ist beim Einstieg das Ticket zu kontrollieren. Ohne gültiges Ticket Name und Schule notieren; die Beförderung zur Schule und zurück hat dennoch zu erfolgen. Den Vorfall danach schriftlich an das Qualitätsmanagement melden. Außerhalb der Schulzeiten und Ferien gilt eine besondere Fürsorgepflicht: Kinder dürfen insbesondere bei Dunkelheit, schlechter Witterung oder in abgelegenen Bereichen nicht zurückgelassen werden. Eine generell kostenfreie Beförderung erfolgt ausdrücklich nicht. [Quelle: DA001-2026 Schülerbeförderung.pdf, Seite 1]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DA001-2026 Schülerbeförderung.pdf"
+      ]
+    },
+    {
+      "id": "S02",
+      "query": "Muss ich das Ticket eines Schuelers beim Einstieg kontrollieren?",
+      "filenames": [
+        "DA001-2026 Schülerbeförderung.pdf"
+      ],
+      "pages": [
+        1
+      ],
+      "must_contain": [
+        "einstieg",
+        "kontrollieren"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Nach DA001-2026, gültig ab 13.01.2026: Auf dem Schulweg ist beim Einstieg das Ticket zu kontrollieren. Ohne gültiges Ticket Name und Schule notieren; die Beförderung zur Schule und zurück hat dennoch zu erfolgen. Den Vorfall danach schriftlich an das Qualitätsmanagement melden. Außerhalb der Schulzeiten und Ferien gilt eine besondere Fürsorgepflicht: Kinder dürfen insbesondere bei Dunkelheit, schlechter Witterung oder in abgelegenen Bereichen nicht zurückgelassen werden. Eine generell kostenfreie Beförderung erfolgt ausdrücklich nicht. [Quelle: DA001-2026 Schülerbeförderung.pdf, Seite 1]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DA001-2026 Schülerbeförderung.pdf"
+      ]
+    },
+    {
+      "id": "S03",
+      "query": "Darf ich einen Grundschueler ohne Ticket auf dem Schulweg stehen lassen?",
+      "filenames": [
+        "DA001-2026 Schülerbeförderung.pdf"
+      ],
+      "pages": [
+        1
+      ],
+      "must_contain": [
+        "dennoch",
+        "befoerderung"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Nach DA001-2026, gültig ab 13.01.2026: Auf dem Schulweg ist beim Einstieg das Ticket zu kontrollieren. Ohne gültiges Ticket Name und Schule notieren; die Beförderung zur Schule und zurück hat dennoch zu erfolgen. Den Vorfall danach schriftlich an das Qualitätsmanagement melden. Außerhalb der Schulzeiten und Ferien gilt eine besondere Fürsorgepflicht: Kinder dürfen insbesondere bei Dunkelheit, schlechter Witterung oder in abgelegenen Bereichen nicht zurückgelassen werden. Eine generell kostenfreie Beförderung erfolgt ausdrücklich nicht. [Quelle: DA001-2026 Schülerbeförderung.pdf, Seite 1]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DA001-2026 Schülerbeförderung.pdf"
+      ]
+    },
+    {
+      "id": "S04",
+      "query": "Welche Daten soll ich bei einem Kind ohne gueltiges Ticket notieren?",
+      "filenames": [
+        "DA001-2026 Schülerbeförderung.pdf"
+      ],
+      "pages": [
+        1
+      ],
+      "must_contain": [
+        "name",
+        "schule"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Nach DA001-2026, gültig ab 13.01.2026: Auf dem Schulweg ist beim Einstieg das Ticket zu kontrollieren. Ohne gültiges Ticket Name und Schule notieren; die Beförderung zur Schule und zurück hat dennoch zu erfolgen. Den Vorfall danach schriftlich an das Qualitätsmanagement melden. Außerhalb der Schulzeiten und Ferien gilt eine besondere Fürsorgepflicht: Kinder dürfen insbesondere bei Dunkelheit, schlechter Witterung oder in abgelegenen Bereichen nicht zurückgelassen werden. Eine generell kostenfreie Beförderung erfolgt ausdrücklich nicht. [Quelle: DA001-2026 Schülerbeförderung.pdf, Seite 1]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DA001-2026 Schülerbeförderung.pdf"
+      ]
+    },
+    {
+      "id": "S05",
+      "query": "Wohin muss der Vorfall eines Kindes ohne Ticket gemeldet werden?",
+      "filenames": [
+        "DA001-2026 Schülerbeförderung.pdf"
+      ],
+      "pages": [
+        1
+      ],
+      "must_contain": [
+        "qualitaetsmanagement"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Nach DA001-2026, gültig ab 13.01.2026: Auf dem Schulweg ist beim Einstieg das Ticket zu kontrollieren. Ohne gültiges Ticket Name und Schule notieren; die Beförderung zur Schule und zurück hat dennoch zu erfolgen. Den Vorfall danach schriftlich an das Qualitätsmanagement melden. Außerhalb der Schulzeiten und Ferien gilt eine besondere Fürsorgepflicht: Kinder dürfen insbesondere bei Dunkelheit, schlechter Witterung oder in abgelegenen Bereichen nicht zurückgelassen werden. Eine generell kostenfreie Beförderung erfolgt ausdrücklich nicht. [Quelle: DA001-2026 Schülerbeförderung.pdf, Seite 1]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DA001-2026 Schülerbeförderung.pdf"
+      ]
+    },
+    {
+      "id": "S06",
+      "query": "Fahren ausserhalb der Schulzeiten alle Kinder generell kostenlos?",
+      "filenames": [
+        "DA001-2026 Schülerbeförderung.pdf"
+      ],
+      "pages": [
+        1
+      ],
+      "must_contain": [
+        "ausdruecklich nicht"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Nach DA001-2026, gültig ab 13.01.2026: Auf dem Schulweg ist beim Einstieg das Ticket zu kontrollieren. Ohne gültiges Ticket Name und Schule notieren; die Beförderung zur Schule und zurück hat dennoch zu erfolgen. Den Vorfall danach schriftlich an das Qualitätsmanagement melden. Außerhalb der Schulzeiten und Ferien gilt eine besondere Fürsorgepflicht: Kinder dürfen insbesondere bei Dunkelheit, schlechter Witterung oder in abgelegenen Bereichen nicht zurückgelassen werden. Eine generell kostenfreie Beförderung erfolgt ausdrücklich nicht. [Quelle: DA001-2026 Schülerbeförderung.pdf, Seite 1]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DA001-2026 Schülerbeförderung.pdf"
+      ]
+    },
+    {
+      "id": "S07",
+      "query": "Was gilt bei Dunkelheit, schlechtem Wetter oder in abgelegenen Bereichen?",
+      "filenames": [
+        "DA001-2026 Schülerbeförderung.pdf"
+      ],
+      "pages": [
+        1
+      ],
+      "must_contain": [
+        "nicht zurueckgelassen",
+        "fuersorgepflicht"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Nach DA001-2026, gültig ab 13.01.2026: Auf dem Schulweg ist beim Einstieg das Ticket zu kontrollieren. Ohne gültiges Ticket Name und Schule notieren; die Beförderung zur Schule und zurück hat dennoch zu erfolgen. Den Vorfall danach schriftlich an das Qualitätsmanagement melden. Außerhalb der Schulzeiten und Ferien gilt eine besondere Fürsorgepflicht: Kinder dürfen insbesondere bei Dunkelheit, schlechter Witterung oder in abgelegenen Bereichen nicht zurückgelassen werden. Eine generell kostenfreie Beförderung erfolgt ausdrücklich nicht. [Quelle: DA001-2026 Schülerbeförderung.pdf, Seite 1]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DA001-2026 Schülerbeförderung.pdf"
+      ]
+    },
+    {
+      "id": "S08",
+      "query": "Seit wann gilt die Dienstanweisung DA001-2026?",
+      "filenames": [
+        "DA001-2026 Schülerbeförderung.pdf"
+      ],
+      "pages": [
+        1
+      ],
+      "must_contain": [
+        "13.01.2026"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Nach DA001-2026, gültig ab 13.01.2026: Auf dem Schulweg ist beim Einstieg das Ticket zu kontrollieren. Ohne gültiges Ticket Name und Schule notieren; die Beförderung zur Schule und zurück hat dennoch zu erfolgen. Den Vorfall danach schriftlich an das Qualitätsmanagement melden. Außerhalb der Schulzeiten und Ferien gilt eine besondere Fürsorgepflicht: Kinder dürfen insbesondere bei Dunkelheit, schlechter Witterung oder in abgelegenen Bereichen nicht zurückgelassen werden. Eine generell kostenfreie Beförderung erfolgt ausdrücklich nicht. [Quelle: DA001-2026 Schülerbeförderung.pdf, Seite 1]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DA001-2026 Schülerbeförderung.pdf"
+      ]
+    },
+    {
+      "id": "E01",
+      "query": "Hat ein Fahrgast Anspruch auf Kartenzahlung?",
+      "filenames": [
+        "DA003-2026_KRN_Umgang_mit_defekten_EC-Geräten_Alternative 2.pdf"
+      ],
+      "pages": [
+        1
+      ],
+      "must_contain": [
+        "anspruch",
+        "nicht"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Nach Dienstanweisung 003-2026, gültig ab 01.06.2026, besteht kein Anspruch auf bargeldlose Zahlung. Bei einem Defekt informieren, dass keine Kartenzahlung möglich ist; der Fahrpreis ist bar zu entrichten. Ohne Barzahlung gilt dies als Fahrt ohne gültigen Fahrschein; es gelten die Beförderungsbedingungen, deren weitere Schritte diese Anweisung nicht festlegt. Den Defekt unverzüglich der Leitstelle melden. Gespräche sachlich und ruhig führen, freundlich, aber bestimmt auf die Regeln hinweisen. [Quelle: DA003-2026_KRN_Umgang_mit_defekten_EC-Geräten_Alternative 2.pdf, Seite 1]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DA003-2026_KRN_Umgang_mit_defekten_EC-Geräten_Alternative 2.pdf"
+      ]
+    },
+    {
+      "id": "E02",
+      "query": "Was muss ich einem Fahrgast sagen, wenn das EC-Geraet defekt ist?",
+      "filenames": [
+        "DA003-2026_KRN_Umgang_mit_defekten_EC-Geräten_Alternative 2.pdf"
+      ],
+      "pages": [
+        1
+      ],
+      "must_contain": [
+        "keine kartenzahlung"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Nach Dienstanweisung 003-2026, gültig ab 01.06.2026, besteht kein Anspruch auf bargeldlose Zahlung. Bei einem Defekt informieren, dass keine Kartenzahlung möglich ist; der Fahrpreis ist bar zu entrichten. Ohne Barzahlung gilt dies als Fahrt ohne gültigen Fahrschein; es gelten die Beförderungsbedingungen, deren weitere Schritte diese Anweisung nicht festlegt. Den Defekt unverzüglich der Leitstelle melden. Gespräche sachlich und ruhig führen, freundlich, aber bestimmt auf die Regeln hinweisen. [Quelle: DA003-2026_KRN_Umgang_mit_defekten_EC-Geräten_Alternative 2.pdf, Seite 1]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DA003-2026_KRN_Umgang_mit_defekten_EC-Geräten_Alternative 2.pdf"
+      ]
+    },
+    {
+      "id": "E03",
+      "query": "Wie ist der Fahrpreis bei defektem EC-Geraet zu bezahlen?",
+      "filenames": [
+        "DA003-2026_KRN_Umgang_mit_defekten_EC-Geräten_Alternative 2.pdf"
+      ],
+      "pages": [
+        1
+      ],
+      "must_contain": [
+        "bar"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Nach Dienstanweisung 003-2026, gültig ab 01.06.2026, besteht kein Anspruch auf bargeldlose Zahlung. Bei einem Defekt informieren, dass keine Kartenzahlung möglich ist; der Fahrpreis ist bar zu entrichten. Ohne Barzahlung gilt dies als Fahrt ohne gültigen Fahrschein; es gelten die Beförderungsbedingungen, deren weitere Schritte diese Anweisung nicht festlegt. Den Defekt unverzüglich der Leitstelle melden. Gespräche sachlich und ruhig führen, freundlich, aber bestimmt auf die Regeln hinweisen. [Quelle: DA003-2026_KRN_Umgang_mit_defekten_EC-Geräten_Alternative 2.pdf, Seite 1]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DA003-2026_KRN_Umgang_mit_defekten_EC-Geräten_Alternative 2.pdf"
+      ]
+    },
+    {
+      "id": "E04",
+      "query": "Was gilt, wenn der Fahrgast nicht bar bezahlen kann?",
+      "filenames": [
+        "DA003-2026_KRN_Umgang_mit_defekten_EC-Geräten_Alternative 2.pdf"
+      ],
+      "pages": [
+        1
+      ],
+      "must_contain": [
+        "ohne gueltigen fahrschein",
+        "befoerderungsbedingungen"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Nach Dienstanweisung 003-2026, gültig ab 01.06.2026, besteht kein Anspruch auf bargeldlose Zahlung. Bei einem Defekt informieren, dass keine Kartenzahlung möglich ist; der Fahrpreis ist bar zu entrichten. Ohne Barzahlung gilt dies als Fahrt ohne gültigen Fahrschein; es gelten die Beförderungsbedingungen, deren weitere Schritte diese Anweisung nicht festlegt. Den Defekt unverzüglich der Leitstelle melden. Gespräche sachlich und ruhig führen, freundlich, aber bestimmt auf die Regeln hinweisen. [Quelle: DA003-2026_KRN_Umgang_mit_defekten_EC-Geräten_Alternative 2.pdf, Seite 1]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DA003-2026_KRN_Umgang_mit_defekten_EC-Geräten_Alternative 2.pdf"
+      ]
+    },
+    {
+      "id": "E05",
+      "query": "Wem muss ich den Defekt des EC-Geraets melden?",
+      "filenames": [
+        "DA003-2026_KRN_Umgang_mit_defekten_EC-Geräten_Alternative 2.pdf"
+      ],
+      "pages": [
+        1
+      ],
+      "must_contain": [
+        "leitstelle"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Nach Dienstanweisung 003-2026, gültig ab 01.06.2026, besteht kein Anspruch auf bargeldlose Zahlung. Bei einem Defekt informieren, dass keine Kartenzahlung möglich ist; der Fahrpreis ist bar zu entrichten. Ohne Barzahlung gilt dies als Fahrt ohne gültigen Fahrschein; es gelten die Beförderungsbedingungen, deren weitere Schritte diese Anweisung nicht festlegt. Den Defekt unverzüglich der Leitstelle melden. Gespräche sachlich und ruhig führen, freundlich, aber bestimmt auf die Regeln hinweisen. [Quelle: DA003-2026_KRN_Umgang_mit_defekten_EC-Geräten_Alternative 2.pdf, Seite 1]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DA003-2026_KRN_Umgang_mit_defekten_EC-Geräten_Alternative 2.pdf"
+      ]
+    },
+    {
+      "id": "E06",
+      "query": "Wie soll ich mit Fahrgaesten ueber den Ausfall sprechen?",
+      "filenames": [
+        "DA003-2026_KRN_Umgang_mit_defekten_EC-Geräten_Alternative 2.pdf"
+      ],
+      "pages": [
+        1
+      ],
+      "must_contain": [
+        "sachlich",
+        "ruhig"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Nach Dienstanweisung 003-2026, gültig ab 01.06.2026, besteht kein Anspruch auf bargeldlose Zahlung. Bei einem Defekt informieren, dass keine Kartenzahlung möglich ist; der Fahrpreis ist bar zu entrichten. Ohne Barzahlung gilt dies als Fahrt ohne gültigen Fahrschein; es gelten die Beförderungsbedingungen, deren weitere Schritte diese Anweisung nicht festlegt. Den Defekt unverzüglich der Leitstelle melden. Gespräche sachlich und ruhig führen, freundlich, aber bestimmt auf die Regeln hinweisen. [Quelle: DA003-2026_KRN_Umgang_mit_defekten_EC-Geräten_Alternative 2.pdf, Seite 1]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DA003-2026_KRN_Umgang_mit_defekten_EC-Geräten_Alternative 2.pdf"
+      ]
+    },
+    {
+      "id": "E07",
+      "query": "Seit wann gilt die Dienstanweisung 003-2026?",
+      "filenames": [
+        "DA003-2026_KRN_Umgang_mit_defekten_EC-Geräten_Alternative 2.pdf"
+      ],
+      "pages": [
+        1
+      ],
+      "must_contain": [
+        "01.06.2026"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Nach Dienstanweisung 003-2026, gültig ab 01.06.2026, besteht kein Anspruch auf bargeldlose Zahlung. Bei einem Defekt informieren, dass keine Kartenzahlung möglich ist; der Fahrpreis ist bar zu entrichten. Ohne Barzahlung gilt dies als Fahrt ohne gültigen Fahrschein; es gelten die Beförderungsbedingungen, deren weitere Schritte diese Anweisung nicht festlegt. Den Defekt unverzüglich der Leitstelle melden. Gespräche sachlich und ruhig führen, freundlich, aber bestimmt auf die Regeln hinweisen. [Quelle: DA003-2026_KRN_Umgang_mit_defekten_EC-Geräten_Alternative 2.pdf, Seite 1]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DA003-2026_KRN_Umgang_mit_defekten_EC-Geräten_Alternative 2.pdf"
+      ]
+    },
+    {
+      "id": "T01",
+      "query": "Wie ermittle ich die Preisstufe?",
+      "filenames": [
+        "DOC-20260920-WA0004.pdf",
+        "DOC-20260920-WA0005.pdf"
+      ],
+      "pages": [
+        1,
+        3
+      ],
+      "must_contain": [
+        "waben",
+        "preisstufe",
+        "300"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Zähle die durchfahrenen Waben von Start bis Ziel. Die Wabenanzahl ergibt die Preisstufe. Die Großwabe Mainz/Wiesbaden (300) zählt als zwei Waben. Die höchste Preisstufe ist 10 für das gesamte RNN-Netz; Sonderpreisstufen sind zu beachten. [Quelle: DOC-20260920-WA0004.pdf, Seite 1]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DOC-20260920-WA0004.pdf"
+      ]
+    },
+    {
+      "id": "T02",
+      "query": "Was ist die hoechste Preisstufe im RNN?",
+      "filenames": [
+        "DOC-20260920-WA0004.pdf"
+      ],
+      "pages": [
+        1
+      ],
+      "must_contain": [
+        "preisstufe 10"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Die höchste reguläre Preisstufe ist Preisstufe 10; sie gilt für das gesamte RNN-Netz. [Quelle: DOC-20260920-WA0004.pdf, Seite 1]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DOC-20260920-WA0004.pdf"
+      ]
+    },
+    {
+      "id": "T03",
+      "query": "Was kostet eine Einzelfahrkarte fuer Erwachsene in Preisstufe 1?",
+      "filenames": [
+        "DOC-20260920-WA0004.pdf"
+      ],
+      "pages": [
+        1
+      ],
+      "must_contain": [
+        "2,60"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Preisstufe 1, laut Preistafel ab 1. August 2026: Einzelfahrkarte Erwachsene: 2,60 Euro; Einzelfahrkarte Kinder: 1,55 Euro; Mehrfahrtenkarte Erwachsene (Preis pro Fahrkarte, Verkauf von fünf): 2,30 Euro; Mehrfahrtenkarte Kinder (Preis pro Fahrkarte, Verkauf von fünf): 1,40 Euro; Single-Tageskarte: 5,20 Euro; Gruppen-Tageskarte bis 5 Personen: 11,10 Euro. [Quelle: DOC-20260920-WA0004.pdf, Seite 1]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DOC-20260920-WA0004.pdf"
+      ]
+    },
+    {
+      "id": "T04",
+      "query": "Was kostet eine Einzelfahrkarte fuer Erwachsene im gesamten RNN-Netz?",
+      "filenames": [
+        "DOC-20260920-WA0004.pdf"
+      ],
+      "pages": [
+        1
+      ],
+      "must_contain": [
+        "17,40"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Die Einzelfahrkarte für Erwachsene im gesamten RNN-Netz, Preisstufe 10, kostet laut Preistafel ab 1. August 2026 17,40 Euro. [Quelle: DOC-20260920-WA0004.pdf, Seite 1]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DOC-20260920-WA0004.pdf"
+      ]
+    },
+    {
+      "id": "T05",
+      "query": "Was kostet das Deutschland-Ticket?",
+      "filenames": [
+        "DOC-20260920-WA0005.pdf",
+        "DOC-20260920-WA0004.pdf"
+      ],
+      "pages": [
+        1,
+        7
+      ],
+      "must_contain": [
+        "63"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Laut Broschüre ab 1. August 2026 kostet das Deutschland-Ticket 63 Euro pro Monat. Es gilt nur in der 2. Klasse; für die 1. Klasse im RNN-Gebiet ist ein Zuschlag für die entsprechende Verbindung erforderlich. Es können keine weiteren Personen mitgenommen werden; Kinder unter 6 Jahren fahren generell kostenlos. [Quelle: DOC-20260920-WA0005.pdf, Seite 7]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DOC-20260920-WA0005.pdf"
+      ]
+    },
+    {
+      "id": "T06",
+      "query": "Darf ich mit dem Deutschland-Ticket jemanden mitnehmen?",
+      "filenames": [
+        "DOC-20260920-WA0005.pdf"
+      ],
+      "pages": [
+        7
+      ],
+      "must_contain": [
+        "keine weiteren personen",
+        "unter 6"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Laut Broschüre ab 1. August 2026 kostet das Deutschland-Ticket 63 Euro pro Monat. Es gilt nur in der 2. Klasse; für die 1. Klasse im RNN-Gebiet ist ein Zuschlag für die entsprechende Verbindung erforderlich. Es können keine weiteren Personen mitgenommen werden; Kinder unter 6 Jahren fahren generell kostenlos. [Quelle: DOC-20260920-WA0005.pdf, Seite 7]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DOC-20260920-WA0005.pdf"
+      ]
+    },
+    {
+      "id": "T07",
+      "query": "Gilt das Deutschland-Ticket in der 1. Klasse?",
+      "filenames": [
+        "DOC-20260920-WA0005.pdf"
+      ],
+      "pages": [
+        7
+      ],
+      "must_contain": [
+        "2. klasse",
+        "zuschlag"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Laut Broschüre ab 1. August 2026 kostet das Deutschland-Ticket 63 Euro pro Monat. Es gilt nur in der 2. Klasse; für die 1. Klasse im RNN-Gebiet ist ein Zuschlag für die entsprechende Verbindung erforderlich. Es können keine weiteren Personen mitgenommen werden; Kinder unter 6 Jahren fahren generell kostenlos. [Quelle: DOC-20260920-WA0005.pdf, Seite 7]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DOC-20260920-WA0005.pdf"
+      ]
+    },
+    {
+      "id": "T08",
+      "query": "Wann ist die Fahrradmitnahme kostenpflichtig?",
+      "filenames": [
+        "DOC-20260920-WA0004.pdf",
+        "DOC-20260920-WA0005.pdf"
+      ],
+      "pages": [
+        1,
+        13
+      ],
+      "must_contain": [
+        "6",
+        "9"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Die Fahrradmitnahme im RNN-Tarif ist montags bis freitags zwischen 6 und 9 Uhr kostenpflichtig: Einzelfahrkarte Fahrrad für die Verbindung oder Monatskarte Fahrrad kaufen. Vor 6 Uhr und nach 9 Uhr sowie samstags, sonntags und feiertags ganztägig ist sie zu RNN-Fahrkarten kostenlos. [Quelle: DOC-20260920-WA0005.pdf, Seite 13]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DOC-20260920-WA0005.pdf"
+      ]
+    },
+    {
+      "id": "T09",
+      "query": "Was kostet das Rheinland-Pfalz-Ticket fuer drei Personen?",
+      "filenames": [
+        "DOC-20260920-WA0005.pdf"
+      ],
+      "pages": [
+        6
+      ],
+      "must_contain": [
+        "50",
+        "30",
+        "10"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Das Rheinland-Pfalz-Ticket kostet 30 Euro für eine Person und 10 Euro je weitere Person: drei Personen zahlen 50 Euro, maximal fünf Personen 70 Euro. Es gilt werktags ab 9 Uhr bis 3 Uhr des Folgetags, an Wochenenden und gesetzlichen Feiertagen ganztägig. [Quelle: DOC-20260920-WA0005.pdf, Seite 6]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DOC-20260920-WA0005.pdf"
+      ]
+    },
+    {
+      "id": "T10",
+      "query": "Wie lange gilt eine Tageskarte?",
+      "filenames": [
+        "DOC-20260920-WA0005.pdf"
+      ],
+      "pages": [
+        5
+      ],
+      "must_contain": [
+        "4 uhr"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Die Single-Tageskarte gilt für eine Person, die Gruppen-Tageskarte für bis zu 5 Personen. Sie gelten ab Betriebsbeginn bis 4 Uhr des Folgetags. Als nachgewiesene Kindergartengruppe dürfen bis zu 15 Personen mitfahren, davon bis zu 5 erwachsene Betreuer; erforderlich ist eine formlose Bestätigung mit Ausflugsdatum, Kindergartenanschrift und Unterschrift der Leitung. [Quelle: DOC-20260920-WA0005.pdf, Seite 5]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DOC-20260920-WA0005.pdf"
+      ]
+    },
+    {
+      "id": "T11",
+      "query": "Wie viele Personen duerfen mit einer Gruppen-Tageskarte fahren?",
+      "filenames": [
+        "DOC-20260920-WA0005.pdf"
+      ],
+      "pages": [
+        5
+      ],
+      "must_contain": [
+        "5 personen"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Die Single-Tageskarte gilt für eine Person, die Gruppen-Tageskarte für bis zu 5 Personen. Sie gelten ab Betriebsbeginn bis 4 Uhr des Folgetags. Als nachgewiesene Kindergartengruppe dürfen bis zu 15 Personen mitfahren, davon bis zu 5 erwachsene Betreuer; erforderlich ist eine formlose Bestätigung mit Ausflugsdatum, Kindergartenanschrift und Unterschrift der Leitung. [Quelle: DOC-20260920-WA0005.pdf, Seite 5]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DOC-20260920-WA0005.pdf"
+      ]
+    },
+    {
+      "id": "T12",
+      "query": "Wie viele Personen duerfen als Kindergartengruppe mit der Gruppen-Tageskarte fahren?",
+      "filenames": [
+        "DOC-20260920-WA0005.pdf"
+      ],
+      "pages": [
+        5
+      ],
+      "must_contain": [
+        "15",
+        "5"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Die Single-Tageskarte gilt für eine Person, die Gruppen-Tageskarte für bis zu 5 Personen. Sie gelten ab Betriebsbeginn bis 4 Uhr des Folgetags. Als nachgewiesene Kindergartengruppe dürfen bis zu 15 Personen mitfahren, davon bis zu 5 erwachsene Betreuer; erforderlich ist eine formlose Bestätigung mit Ausflugsdatum, Kindergartenanschrift und Unterschrift der Leitung. [Quelle: DOC-20260920-WA0005.pdf, Seite 5]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DOC-20260920-WA0005.pdf"
+      ]
+    },
+    {
+      "id": "T13",
+      "query": "Was passiert beim Kauf einer Mehrfahrtenkarte?",
+      "filenames": [
+        "DOC-20260920-WA0005.pdf"
+      ],
+      "pages": [
+        4
+      ],
+      "must_contain": [
+        "entwertet"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Beim Kauf der Mehrfahrtenkarte wird die erste Fahrkarte sofort automatisch entwertet. Die Karte enthält fünf Fahrkarten derselben Preisstufe, bis zu 10 Prozent günstiger als fünf entsprechende Einzelfahrkarten. Pro Kunde und Fahrt ist eine Fahrkarte zu entwerten. [Quelle: DOC-20260920-WA0005.pdf, Seite 4]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DOC-20260920-WA0005.pdf"
+      ]
+    },
+    {
+      "id": "T14",
+      "query": "Gelten Zeitkarten ab August 2026 nur fuer bestimmte Waben?",
+      "filenames": [
+        "DOC-20260920-WA0005.pdf"
+      ],
+      "pages": [
+        3,
+        9
+      ],
+      "must_contain": [
+        "gesamten",
+        "1.8.2026"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Alle Zeitkarten gelten ab 1.8.2026 im gesamten RNN-Verbundgebiet, unabhängig von einzelnen Strecken oder Tarifzonen. [Quelle: DOC-20260920-WA0005.pdf, Seite 9]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DOC-20260920-WA0005.pdf"
+      ]
+    },
+    {
+      "id": "T15",
+      "query": "Ab wann gilt die 9-Uhr-Zeitkarte?",
+      "filenames": [
+        "DOC-20260920-WA0005.pdf"
+      ],
+      "pages": [
+        10
+      ],
+      "must_contain": [
+        "9 uhr",
+        "wochenende"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Die 9-Uhr-Zeitkarte gilt montags bis freitags ab 9 Uhr; am Wochenende darfst du schon vor 9 Uhr fahren. Sie gilt im gesamten Verbundgebiet. [Quelle: DOC-20260920-WA0005.pdf, Seite 10]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DOC-20260920-WA0005.pdf"
+      ]
+    },
+    {
+      "id": "T16",
+      "query": "Was passiert, wenn ich meine persoenliche Jahreskarte Jedermann vergessen habe?",
+      "filenames": [
+        "DOC-20260920-WA0005.pdf"
+      ],
+      "pages": [
+        9
+      ],
+      "must_contain": [
+        "7",
+        "60"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Wenn du die persönliche Jahreskarte Jedermann vergessen hast, zahlst du bei einer Kontrolle laut Broschüre nur 7 statt 60 Euro. Das gilt für die persönliche Jahreskarte Jedermann. [Quelle: DOC-20260920-WA0005.pdf, Seite 9]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DOC-20260920-WA0005.pdf"
+      ]
+    },
+    {
+      "id": "T17",
+      "query": "Was ist ein RNN-KombiTicket?",
+      "filenames": [
+        "DOC-20260920-WA0005.pdf"
+      ],
+      "pages": [
+        14
+      ],
+      "must_contain": [
+        "eintrittskarte",
+        "4 uhr"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Beim RNN-KombiTicket ist die entsprechend gekennzeichnete Eintrittskarte zugleich Fahrkarte für Hin- und Rückfahrt zur Partnerveranstaltung. Die Gültigkeit endet spätestens um 4 Uhr des Folgetages. Auf Linien der Mainzer Mobilität und ESWE gilt sie jeweils drei Stunden vor beziehungsweise nach der Veranstaltung. [Quelle: DOC-20260920-WA0005.pdf, Seite 14]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DOC-20260920-WA0005.pdf"
+      ]
+    },
+    {
+      "id": "T18",
+      "query": "Wann soll ein Gruppenausflug angemeldet werden?",
+      "filenames": [
+        "DOC-20260920-WA0005.pdf"
+      ],
+      "pages": [
+        5
+      ],
+      "must_contain": [
+        "eine woche"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Den Gruppenausflug mindestens eine Woche vorher bei den jeweiligen Verkehrsunternehmen anmelden. [Quelle: DOC-20260920-WA0005.pdf, Seite 5]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DOC-20260920-WA0005.pdf"
+      ]
+    },
+    {
+      "id": "F01",
+      "query": "Welche Strecke zeigt der Fahrplan der Linie 216?",
+      "filenames": [
+        "DOC-20260920-WA0002.pdf"
+      ],
+      "pages": [
+        1
+      ],
+      "must_contain": [
+        "bad kreuznach",
+        "michelin",
+        "bosenheim"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Linie 216 verbindet Bad Kreuznach Bahnhof, Michelin, Planig Industriegebiet und Bosenheim Sportplatz/Ippesheim sowie die Gegenrichtung. Fahrt 125 fährt montags bis freitags um 5:32 Uhr am Bad Kreuznacher Bahnhof ab und ist um 5:39 Uhr bei Michelin. S bedeutet nur an Schultagen in Rheinland-Pfalz. Am 24. und 31. Dezember gilt Verkehr wie an Samstagen; an Rosenmontag, Fastnachtsdienstag und den Freitagen nach Christi Himmelfahrt und Fronleichnam wie in den Ferien. [Quelle: DOC-20260920-WA0002.pdf, Seite 1]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DOC-20260920-WA0002.pdf"
+      ]
+    },
+    {
+      "id": "F02",
+      "query": "Was bedeutet das S im Fahrplan der Linie 216?",
+      "filenames": [
+        "DOC-20260920-WA0002.pdf"
+      ],
+      "pages": [
+        1
+      ],
+      "must_contain": [
+        "schultagen"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Linie 216 verbindet Bad Kreuznach Bahnhof, Michelin, Planig Industriegebiet und Bosenheim Sportplatz/Ippesheim sowie die Gegenrichtung. Fahrt 125 fährt montags bis freitags um 5:32 Uhr am Bad Kreuznacher Bahnhof ab und ist um 5:39 Uhr bei Michelin. S bedeutet nur an Schultagen in Rheinland-Pfalz. Am 24. und 31. Dezember gilt Verkehr wie an Samstagen; an Rosenmontag, Fastnachtsdienstag und den Freitagen nach Christi Himmelfahrt und Fronleichnam wie in den Ferien. [Quelle: DOC-20260920-WA0002.pdf, Seite 1]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DOC-20260920-WA0002.pdf"
+      ]
+    },
+    {
+      "id": "F03",
+      "query": "Wann faehrt Fahrt 125 montags bis freitags am Bad Kreuznacher Bahnhof ab und wann ist sie bei Michelin?",
+      "filenames": [
+        "DOC-20260920-WA0002.pdf"
+      ],
+      "pages": [
+        1
+      ],
+      "must_contain": [
+        "5:32",
+        "5:39"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Linie 216, Fahrt 125, Richtung Bosenheim/Ippesheim, montags bis freitags: Bad Kreuznach, Bahnhof: 5:32; Bad Kreuznach, Gensinger Straße: 5:33; Bad Kreuznach, Heidenmauer: 5:34; Bad Kreuznach, Seitz-Werke: 5:35; Bad Kreuznach, Sandweg: 5:36; Bad Kreuznach, Otto-Meffert-Str./oddAG: 5:37; Bad Kreuznach, Michelin: 5:39. Es gelten die im Fahrplan genannten Feiertags- und Ferienausnahmen. [Quelle: DOC-20260920-WA0002.pdf, Seite 1]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DOC-20260920-WA0002.pdf"
+      ]
+    },
+    {
+      "id": "F04",
+      "query": "Was gilt am 24. und 31. Dezember fuer die Linie 216?",
+      "filenames": [
+        "DOC-20260920-WA0002.pdf"
+      ],
+      "pages": [
+        1
+      ],
+      "must_contain": [
+        "samstag"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Linie 216 verbindet Bad Kreuznach Bahnhof, Michelin, Planig Industriegebiet und Bosenheim Sportplatz/Ippesheim sowie die Gegenrichtung. Fahrt 125 fährt montags bis freitags um 5:32 Uhr am Bad Kreuznacher Bahnhof ab und ist um 5:39 Uhr bei Michelin. S bedeutet nur an Schultagen in Rheinland-Pfalz. Am 24. und 31. Dezember gilt Verkehr wie an Samstagen; an Rosenmontag, Fastnachtsdienstag und den Freitagen nach Christi Himmelfahrt und Fronleichnam wie in den Ferien. [Quelle: DOC-20260920-WA0002.pdf, Seite 1]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DOC-20260920-WA0002.pdf"
+      ]
+    },
+    {
+      "id": "F05",
+      "query": "Seit wann gilt der RNN-Gesamtnetzplan 2025?",
+      "filenames": [
+        "DOC-20260920-WA0003.pdf"
+      ],
+      "pages": [
+        1
+      ],
+      "must_contain": [
+        "15.12.2024"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Der RNN-Gesamtnetzplan 2025 ist gültig ab 15.12.2024. Er enthält keine Echtzeitdaten. [Quelle: DOC-20260920-WA0003.pdf, Seite 1]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DOC-20260920-WA0003.pdf"
+      ]
+    },
+    {
+      "id": "F06",
+      "query": "Kannst du mir aus dem Netzplan die aktuelle Verspaetung nennen?",
+      "filenames": [
+        "DOC-20260920-WA0003.pdf"
+      ],
+      "pages": [
+        1
+      ],
+      "must_contain": [],
+      "refusal": true,
+      "retrieval_pass": true,
+      "answer": "Das steht in den verfügbaren KRN-Dokumenten nicht.",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": []
+    },
+    {
+      "id": "M01",
+      "query": "EC cihazi bozuksa ne yapmaliyim?",
+      "filenames": [
+        "DA003-2026_KRN_Umgang_mit_defekten_EC-Geräten_Alternative 2.pdf"
+      ],
+      "pages": [
+        1
+      ],
+      "must_contain": [
+        "kartenzahlung",
+        "leitstelle"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Nach Dienstanweisung 003-2026, gültig ab 01.06.2026, besteht kein Anspruch auf bargeldlose Zahlung. Bei einem Defekt informieren, dass keine Kartenzahlung möglich ist; der Fahrpreis ist bar zu entrichten. Ohne Barzahlung gilt dies als Fahrt ohne gültigen Fahrschein; es gelten die Beförderungsbedingungen, deren weitere Schritte diese Anweisung nicht festlegt. Den Defekt unverzüglich der Leitstelle melden. Gespräche sachlich und ruhig führen, freundlich, aber bestimmt auf die Regeln hinweisen. [Quelle: DA003-2026_KRN_Umgang_mit_defekten_EC-Geräten_Alternative 2.pdf, Seite 1]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DA003-2026_KRN_Umgang_mit_defekten_EC-Geräten_Alternative 2.pdf"
+      ]
+    },
+    {
+      "id": "M02",
+      "query": "Sekiz haftadan uzun suredir hastaysam iyilesme paketi alir miyim?",
+      "filenames": [
+        "BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf"
+      ],
+      "pages": [
+        4
+      ],
+      "must_contain": [
+        "acht wochen",
+        "25"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Bei einer Erkrankung von mehr als acht Wochen gibt es einmalig pro Krankheitsfall ein Genesungspaket mit einem Sachgeschenk im Wert von 25 Euro. Es wird grundsätzlich an die Privatadresse versendet. Die Geschäftsleitung kann es in begründeten Einzelfällen schon früher gewähren. [Quelle: BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf, Seite 4]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf"
+      ]
+    },
+    {
+      "id": "M03",
+      "query": "How is a 20-minute vehicle delay compensated?",
+      "filenames": [
+        "BV_Regelung von Fahrzeugverspätungen.pdf"
+      ],
+      "pages": [
+        3
+      ],
+      "must_contain": [
+        "minutengenau",
+        "arbeitszeit"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "The rule covers all KRN employees from 01.07.2026. Delays up to 30 minutes are paid minute by minute as working time. Above 30 minutes, each started half-hour is paid as half an hour under § 6(3) BezTV-N RP. Report the delay to the control centre immediately at the end of duty; late reports are not accepted. [Source: BV_Regelung von Fahrzeugverspätungen.pdf, page 3]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "BV_Regelung von Fahrzeugverspätungen.pdf"
+      ]
+    },
+    {
+      "id": "M04",
+      "query": "Can I take another adult with me on the Deutschland-Ticket?",
+      "filenames": [
+        "DOC-20260920-WA0005.pdf"
+      ],
+      "pages": [
+        7
+      ],
+      "must_contain": [
+        "keine weiteren personen"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "The brochure effective 1 August 2026 lists the Deutschland-Ticket at 63 euros per month. It is valid in second class; first-class travel within RNN requires a supplement for the connection. No additional people may travel on it; children under 6 travel free. [Source: DOC-20260920-WA0005.pdf, page 7]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DOC-20260920-WA0005.pdf"
+      ]
+    },
+    {
+      "id": "M05",
+      "query": "Ce trebuie sa fac daca un elev nu are bilet valabil in drum spre scoala?",
+      "filenames": [
+        "DA001-2026 Schülerbeförderung.pdf"
+      ],
+      "pages": [
+        1
+      ],
+      "must_contain": [
+        "name",
+        "schule",
+        "qualitaetsmanagement"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Nach DA001-2026, gültig ab 13.01.2026: Auf dem Schulweg ist beim Einstieg das Ticket zu kontrollieren. Ohne gültiges Ticket Name und Schule notieren; die Beförderung zur Schule und zurück hat dennoch zu erfolgen. Den Vorfall danach schriftlich an das Qualitätsmanagement melden. Außerhalb der Schulzeiten und Ferien gilt eine besondere Fürsorgepflicht: Kinder dürfen insbesondere bei Dunkelheit, schlechter Witterung oder in abgelegenen Bereichen nicht zurückgelassen werden. Eine generell kostenfreie Beförderung erfolgt ausdrücklich nicht. [Quelle: DA001-2026 Schülerbeförderung.pdf, Seite 1]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DA001-2026 Schülerbeförderung.pdf"
+      ]
+    },
+    {
+      "id": "M06",
+      "query": "Czy Deutschland-Ticket jest wazny w pierwszej klasie?",
+      "filenames": [
+        "DOC-20260920-WA0005.pdf"
+      ],
+      "pages": [
+        7
+      ],
+      "must_contain": [
+        "2. klasse"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Laut Broschüre ab 1. August 2026 kostet das Deutschland-Ticket 63 Euro pro Monat. Es gilt nur in der 2. Klasse; für die 1. Klasse im RNN-Gebiet ist ein Zuschlag für die entsprechende Verbindung erforderlich. Es können keine weiteren Personen mitgenommen werden; Kinder unter 6 Jahren fahren generell kostenlos. [Quelle: DOC-20260920-WA0005.pdf, Seite 7]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DOC-20260920-WA0005.pdf"
+      ]
+    },
+    {
+      "id": "M07",
+      "query": "Що я отримаю за 40 років роботи в компанії?",
+      "filenames": [
+        "BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf"
+      ],
+      "pages": [
+        3
+      ],
+      "must_contain": [
+        "400"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Bei 40 Jahren ununterbrochener Betriebszugehörigkeit erhältst du 400 Euro Jubiläumsprämie sowie ein Sachgeschenk im Wert von 25 Euro. Die Auszahlung erfolgt im Folgemonat nach Vollendung des Jubiläums. Dazu kommt ein zusätzlicher freier Tag unter Fortzahlung des Arbeitsentgelts. [Quelle: BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf, Seite 3]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf"
+      ]
+    },
+    {
+      "id": "M08",
+      "query": "ماذا أفعل إذا كان جهاز الدفع بالبطاقة معطلاً؟",
+      "filenames": [
+        "DA003-2026_KRN_Umgang_mit_defekten_EC-Geräten_Alternative 2.pdf"
+      ],
+      "pages": [
+        1
+      ],
+      "must_contain": [
+        "kartenzahlung",
+        "leitstelle"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Nach Dienstanweisung 003-2026, gültig ab 01.06.2026, besteht kein Anspruch auf bargeldlose Zahlung. Bei einem Defekt informieren, dass keine Kartenzahlung möglich ist; der Fahrpreis ist bar zu entrichten. Ohne Barzahlung gilt dies als Fahrt ohne gültigen Fahrschein; es gelten die Beförderungsbedingungen, deren weitere Schritte diese Anweisung nicht festlegt. Den Defekt unverzüglich der Leitstelle melden. Gespräche sachlich und ruhig führen, freundlich, aber bestimmt auf die Regeln hinweisen. [Quelle: DA003-2026_KRN_Umgang_mit_defekten_EC-Geräten_Alternative 2.pdf, Seite 1]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DA003-2026_KRN_Umgang_mit_defekten_EC-Geräten_Alternative 2.pdf"
+      ]
+    },
+    {
+      "id": "N01",
+      "query": "Wie ist die aktuelle Verkehrslage auf meiner Linie?",
+      "filenames": [],
+      "pages": [],
+      "must_contain": [],
+      "refusal": true,
+      "retrieval_pass": true,
+      "answer": "Das steht in den verfügbaren KRN-Dokumenten nicht.",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": []
+    },
+    {
+      "id": "N02",
+      "query": "Hat der Bus heute 15 Minuten Verspaetung?",
+      "filenames": [],
+      "pages": [],
+      "must_contain": [],
+      "refusal": true,
+      "retrieval_pass": true,
+      "answer": "Das steht in den verfügbaren KRN-Dokumenten nicht.",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": []
+    },
+    {
+      "id": "N03",
+      "query": "Welche arbeitsrechtlichen Ansprueche habe ich ausserhalb dieser Betriebsvereinbarungen?",
+      "filenames": [
+        "BV_Regelung von Betriebsjubiläen, Ehrungen und Genesungspaketen.pdf",
+        "BV_Regelung von Fahrzeugverspätungen.pdf"
+      ],
+      "pages": [
+        3,
+        4
+      ],
+      "must_contain": [],
+      "refusal": true,
+      "retrieval_pass": true,
+      "answer": "Das steht in den verfügbaren KRN-Dokumenten nicht.",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": []
+    },
+    {
+      "id": "N04",
+      "query": "Was genau passiert mit dem Fahrgast ohne Bargeld bei defektem EC-Geraet?",
+      "filenames": [
+        "DA003-2026_KRN_Umgang_mit_defekten_EC-Geräten_Alternative 2.pdf"
+      ],
+      "pages": [
+        1
+      ],
+      "must_contain": [
+        "befoerderungsbedingungen"
+      ],
+      "refusal": true,
+      "retrieval_pass": true,
+      "answer": "Nach Dienstanweisung 003-2026, gültig ab 01.06.2026, besteht kein Anspruch auf bargeldlose Zahlung. Bei einem Defekt informieren, dass keine Kartenzahlung möglich ist; der Fahrpreis ist bar zu entrichten. Ohne Barzahlung gilt dies als Fahrt ohne gültigen Fahrschein; es gelten die Beförderungsbedingungen, deren weitere Schritte diese Anweisung nicht festlegt. Den Defekt unverzüglich der Leitstelle melden. Gespräche sachlich und ruhig führen, freundlich, aber bestimmt auf die Regeln hinweisen. [Quelle: DA003-2026_KRN_Umgang_mit_defekten_EC-Geräten_Alternative 2.pdf, Seite 1]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DA003-2026_KRN_Umgang_mit_defekten_EC-Geräten_Alternative 2.pdf"
+      ]
+    },
+    {
+      "id": "W01",
+      "query": "Welche Preisstufe gilt innerhalb Bingen laut Wabenplan?",
+      "filenames": [
+        "DOC-20260920-WA0006.pdf"
+      ],
+      "pages": [
+        1
+      ],
+      "must_contain": [
+        "preisstufe 31"
+      ],
+      "refusal": false,
+      "retrieval_pass": true,
+      "answer": "Für Fahrkarten innerhalb Bingen gilt laut Wabenplan Preisstufe 31. [Quelle: DOC-20260920-WA0006.pdf, Seite 1]",
+      "answer_fact_check": true,
+      "citation_metadata_pass": true,
+      "cited_filenames": [
+        "DOC-20260920-WA0006.pdf"
+      ]
+    }
+  ],
+  "performance_ms": {
+    "mean": 9.788068116134694,
+    "p50": 9.475099999690428,
+    "p95": 17.06199999898672,
+    "searches": 345
+  },
+  "limitations": [
+    "Timetable: all 25 numbered trips normalized; unnumbered repeat service is retained as a 60-minute interval note, without invented trip IDs.",
+    "Map labels searchable; geometric connections cannot be inferred from label order.",
+    "Final answers checked locally for required facts and actual filename/page citations. This is not live Gemini or microphone evaluation.",
+    "Live voice stability requires manual verification."
+  ]
+}

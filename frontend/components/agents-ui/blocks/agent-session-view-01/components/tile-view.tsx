@@ -31,24 +31,38 @@ const tileViewClassNames = {
   // hasSecondTile: true
   // layout: Column 1 / Row 1
   // align: x-end y-center
-  agentChatOpenWithSecondTile: ['col-start-1 row-start-1', 'self-center justify-self-end'],
+  agentChatOpenWithSecondTile: [
+    'col-start-1 row-start-1',
+    'self-center justify-self-end',
+  ],
   // Agent
   // chatOpen: true,
   // hasSecondTile: false
   // layout: Column 1 / Row 1 / Column-Span 2
   // align: x-center y-center
-  agentChatOpenWithoutSecondTile: ['col-start-1 row-start-1', 'col-span-2', 'place-content-center'],
+  agentChatOpenWithoutSecondTile: [
+    'col-start-1 row-start-1',
+    'col-span-2',
+    'place-content-center',
+  ],
   // Agent
   // chatOpen: false
   // layout: Column 1 / Row 1 / Column-Span 2 / Row-Span 3
   // align: x-center y-center
-  agentChatClosed: ['col-start-1 row-start-1', 'col-span-2 row-span-3', 'place-content-center'],
+  agentChatClosed: [
+    'col-start-1 row-start-1',
+    'col-span-2 row-span-3',
+    'place-content-center',
+  ],
   // Second tile
   // chatOpen: true,
   // hasSecondTile: true
   // layout: Column 2 / Row 1
   // align: x-start y-center
-  secondTileChatOpen: ['col-start-2 row-start-1', 'self-center justify-self-start'],
+  secondTileChatOpen: [
+    'col-start-2 row-start-1',
+    'self-center justify-self-start',
+  ],
   // Second tile
   // chatOpen: false,
   // hasSecondTile: false
@@ -61,7 +75,10 @@ export function useLocalTrackRef(source: Track.Source) {
   const { localParticipant } = useLocalParticipant();
   const publication = localParticipant.getTrackPublication(source);
   const trackRef = useMemo<TrackReference | undefined>(
-    () => (publication ? { source, participant: localParticipant, publication } : undefined),
+    () =>
+      publication
+        ? { source, participant: localParticipant, publication }
+        : undefined,
     [source, publication, localParticipant]
   );
   return trackRef;
@@ -96,10 +113,13 @@ export function TileLayout({
 }: TileLayoutProps) {
   const { videoTrack: agentVideoTrack } = useVoiceAssistant();
   const [screenShareTrack] = useTracks([Track.Source.ScreenShare]);
-  const cameraTrack: TrackReference | undefined = useLocalTrackRef(Track.Source.Camera);
+  const cameraTrack: TrackReference | undefined = useLocalTrackRef(
+    Track.Source.Camera
+  );
 
   const isCameraEnabled = cameraTrack && !cameraTrack.publication.isMuted;
-  const isScreenShareEnabled = screenShareTrack && !screenShareTrack.publication.isMuted;
+  const isScreenShareEnabled =
+    screenShareTrack && !screenShareTrack.publication.isMuted;
   const hasSecondTile = isCameraEnabled || isScreenShareEnabled;
 
   const animationDelay = isChatOpen ? 0 : 0.15;
@@ -116,8 +136,12 @@ export function TileLayout({
             className={cn([
               'grid',
               !isChatOpen && tileViewClassNames.agentChatClosed,
-              isChatOpen && hasSecondTile && tileViewClassNames.agentChatOpenWithSecondTile,
-              isChatOpen && !hasSecondTile && tileViewClassNames.agentChatOpenWithoutSecondTile,
+              isChatOpen &&
+                hasSecondTile &&
+                tileViewClassNames.agentChatOpenWithSecondTile,
+              isChatOpen &&
+                !hasSecondTile &&
+                tileViewClassNames.agentChatOpenWithoutSecondTile,
             ])}
           >
             <AnimatePresence mode="popLayout">
@@ -146,10 +170,14 @@ export function TileLayout({
                     audioVisualizerColor={audioVisualizerColor}
                     audioVisualizerColorShift={audioVisualizerColorShift}
                     audioVisualizerBarCount={audioVisualizerBarCount}
-                    audioVisualizerRadialBarCount={audioVisualizerRadialBarCount}
+                    audioVisualizerRadialBarCount={
+                      audioVisualizerRadialBarCount
+                    }
                     audioVisualizerRadialRadius={audioVisualizerRadialRadius}
                     audioVisualizerGridRowCount={audioVisualizerGridRowCount}
-                    audioVisualizerGridColumnCount={audioVisualizerGridColumnCount}
+                    audioVisualizerGridColumnCount={
+                      audioVisualizerGridColumnCount
+                    }
                     audioVisualizerWaveLineWidth={audioVisualizerWaveLineWidth}
                     themeMode={themeMode}
                     isChatOpen={isChatOpen}
@@ -216,7 +244,8 @@ export function TileLayout({
           >
             {/* Camera & Screen Share */}
             <AnimatePresence>
-              {((cameraTrack && isCameraEnabled) || (screenShareTrack && isScreenShareEnabled)) && (
+              {((cameraTrack && isCameraEnabled) ||
+                (screenShareTrack && isScreenShareEnabled)) && (
                 <motion.div
                   key="camera"
                   layout="position"
@@ -241,8 +270,14 @@ export function TileLayout({
                 >
                   <VideoTrack
                     trackRef={cameraTrack || screenShareTrack}
-                    width={(cameraTrack || screenShareTrack)?.publication.dimensions?.width ?? 0}
-                    height={(cameraTrack || screenShareTrack)?.publication.dimensions?.height ?? 0}
+                    width={
+                      (cameraTrack || screenShareTrack)?.publication.dimensions
+                        ?.width ?? 0
+                    }
+                    height={
+                      (cameraTrack || screenShareTrack)?.publication.dimensions
+                        ?.height ?? 0
+                    }
                     className="bg-muted aspect-square size-[90px] rounded-md object-cover"
                   />
                 </motion.div>

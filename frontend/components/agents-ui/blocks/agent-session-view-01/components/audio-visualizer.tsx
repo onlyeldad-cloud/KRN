@@ -13,7 +13,9 @@ import { cn } from '@/lib/shadcn/utils';
 const MotionAgentAudioVisualizerAura = motion.create(AgentAudioVisualizerAura);
 const MotionAgentAudioVisualizerBar = motion.create(AgentAudioVisualizerBar);
 const MotionAgentAudioVisualizerGrid = motion.create(AgentAudioVisualizerGrid);
-const MotionAgentAudioVisualizerRadial = motion.create(AgentAudioVisualizerRadial);
+const MotionAgentAudioVisualizerRadial = motion.create(
+  AgentAudioVisualizerRadial
+);
 const MotionAgentAudioVisualizerWave = motion.create(AgentAudioVisualizerWave);
 
 interface AudioVisualizerProps extends MotionProps {
@@ -70,14 +72,19 @@ export function AudioVisualizer({
             audioTrack={audioTrack}
             color={audioVisualizerColor}
             colorShift={audioVisualizerColorShift}
-            lineWidth={isChatOpen ? audioVisualizerWaveLineWidth * 2 : audioVisualizerWaveLineWidth}
+            lineWidth={
+              isChatOpen
+                ? audioVisualizerWaveLineWidth * 2
+                : audioVisualizerWaveLineWidth
+            }
             className="size-[300px] md:size-[450px]"
           />
         </motion.div>
       );
     }
     case 'grid': {
-      const totalCount = audioVisualizerGridRowCount * audioVisualizerGridColumnCount;
+      const totalCount =
+        audioVisualizerGridRowCount * audioVisualizerGridColumnCount;
 
       let size: 'icon' | 'sm' | 'md' | 'lg' | 'xl' = 'sm';
       if (totalCount < 100) {
@@ -97,9 +104,15 @@ export function AudioVisualizer({
           rowCount={audioVisualizerGridRowCount}
           columnCount={audioVisualizerGridColumnCount}
           radius={Math.round(
-            Math.min(audioVisualizerGridRowCount, audioVisualizerGridColumnCount) / 4
+            Math.min(
+              audioVisualizerGridRowCount,
+              audioVisualizerGridColumnCount
+            ) / 4
           )}
-          className={cn('size-[350px] gap-0 p-8 *:place-self-center md:size-[450px]', className)}
+          className={cn(
+            'size-[350px] gap-0 p-8 *:place-self-center md:size-[450px]',
+            className
+          )}
           {...props}
         />
       );
@@ -125,7 +138,10 @@ export function AudioVisualizer({
 
       if (audioVisualizerBarCount <= 5) {
         size = 'xl';
-        sizedClassName = cn('size-[450px] *:min-h-[64px] *:w-[64px] gap-4', className);
+        sizedClassName = cn(
+          'size-[450px] *:min-h-[64px] *:w-[64px] gap-4',
+          className
+        );
       } else if (audioVisualizerBarCount <= 10) {
         size = 'lg';
         sizedClassName = cn('size-[450px]', className);

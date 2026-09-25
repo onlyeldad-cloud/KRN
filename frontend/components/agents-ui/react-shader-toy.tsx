@@ -32,10 +32,18 @@ function isMatrixType(t: string, v: number[] | number): v is number[] {
   return t.includes('Matrix') && Array.isArray(v);
 }
 function isVectorListType(t: string, v: number[] | number): v is number[] {
-  return t.includes('v') && Array.isArray(v) && v.length > Number.parseInt(t.charAt(0));
+  return (
+    t.includes('v') &&
+    Array.isArray(v) &&
+    v.length > Number.parseInt(t.charAt(0))
+  );
 }
 function isVectorType(t: string, v: number[] | number): v is Vector4 {
-  return !t.includes('v') && Array.isArray(v) && v.length > Number.parseInt(t.charAt(0));
+  return (
+    !t.includes('v') &&
+    Array.isArray(v) &&
+    v.length > Number.parseInt(t.charAt(0))
+  );
 }
 const processUniform = <T extends UniformType>(
   gl: WebGLRenderingContext,
@@ -135,7 +143,9 @@ const uniformTypeToGLSLType = (t: string) => {
       return 'mat4';
     default:
       console.error(
-        log(`The uniform type "${t}" is not valid, please make sure your uniform type is valid`)
+        log(
+          `The uniform type "${t}" is not valid, please make sure your uniform type is valid`
+        )
       );
   }
 };
@@ -164,7 +174,11 @@ class Texture {
   constructor(gl: WebGLRenderingContext) {
     this.gl = gl;
   }
-  updateTexture = (texture: WebGLTexture, video: HTMLVideoElement, flipY: number) => {
+  updateTexture = (
+    texture: WebGLTexture,
+    video: HTMLVideoElement,
+    flipY: number
+  ) => {
     const { gl } = this;
     const level = 0;
     const internalFormat = gl.RGBA;
@@ -172,7 +186,14 @@ class Texture {
     const srcType = gl.UNSIGNED_BYTE;
     gl.bindTexture(gl.TEXTURE_2D, texture);
     gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, flipY);
-    gl.texImage2D(gl.TEXTURE_2D, level, internalFormat, srcFormat, srcType, video);
+    gl.texImage2D(
+      gl.TEXTURE_2D,
+      level,
+      internalFormat,
+      srcFormat,
+      srcType,
+      video
+    );
   };
   setupVideo = (url: string) => {
     const video = document.createElement('video');
@@ -208,17 +229,27 @@ class Texture {
     video.src = url;
     return video;
   };
-  makePowerOf2 = <T extends HTMLCanvasElement | HTMLImageElement | ImageBitmap>(image: T): T => {
+  makePowerOf2 = <T extends HTMLCanvasElement | HTMLImageElement | ImageBitmap>(
+    image: T
+  ): T => {
     if (
       image instanceof HTMLImageElement ||
       image instanceof HTMLCanvasElement ||
       image instanceof ImageBitmap
     ) {
-      if (this.pow2canvas === undefined) this.pow2canvas = document.createElement('canvas');
+      if (this.pow2canvas === undefined)
+        this.pow2canvas = document.createElement('canvas');
       this.pow2canvas.width = 2 ** Math.floor(Math.log(image.width) / Math.LN2);
-      this.pow2canvas.height = 2 ** Math.floor(Math.log(image.height) / Math.LN2);
+      this.pow2canvas.height =
+        2 ** Math.floor(Math.log(image.height) / Math.LN2);
       const context = this.pow2canvas.getContext('2d');
-      context?.drawImage(image, 0, 0, this.pow2canvas.width, this.pow2canvas.height);
+      context?.drawImage(
+        image,
+        0,
+        0,
+        this.pow2canvas.width,
+        this.pow2canvas.height
+      );
       console.warn(
         log(
           `Image is not power of two ${image.width} x ${image.height}. Resized to ${this.pow2canvas.width} x ${this.pow2canvas.height};`
@@ -230,17 +261,32 @@ class Texture {
   };
   load = async (textureArgs: TextureParams) => {
     const { gl } = this;
-    const { url, wrapS, wrapT, minFilter, magFilter, flipY = -1 }: TextureParams = textureArgs;
+    const {
+      url,
+      wrapS,
+      wrapT,
+      minFilter,
+      magFilter,
+      flipY = -1,
+    }: TextureParams = textureArgs;
     if (!url) {
       return Promise.reject(
-        new Error(log('Missing url, please make sure to pass the url of your texture { url: ... }'))
+        new Error(
+          log(
+            'Missing url, please make sure to pass the url of your texture { url: ... }'
+          )
+        )
       );
     }
     const isImage = /(\.jpg|\.jpeg|\.png|\.gif|\.bmp)$/i.exec(url);
     const isVideo = /(\.mp4|\.3gp|\.webm|\.ogv)$/i.exec(url);
     if (isImage === null && isVideo === null) {
       return Promise.reject(
-        new Error(log(`Please upload a video or an image with a valid format (url: ${url})`))
+        new Error(
+          log(
+            `Please upload a video or an image with a valid format (url: ${url})`
+          )
+        )
       );
     }
     Object.assign(this, { url, wrapS, wrapT, minFilter, magFilter, flipY });
@@ -290,11 +336,13 @@ class Texture {
     }
     let image = (await loadImage()) as HTMLImageElement;
     let isPowerOf2 =
-      (image.width & (image.width - 1)) === 0 && (image.height & (image.height - 1)) === 0;
+      (image.width & (image.width - 1)) === 0 &&
+      (image.height & (image.height - 1)) === 0;
     if (
       (textureArgs.wrapS !== ClampToEdgeWrapping ||
         textureArgs.wrapT !== ClampToEdgeWrapping ||
-        (textureArgs.minFilter !== NearestFilter && textureArgs.minFilter !== LinearFilter)) &&
+        (textureArgs.minFilter !== NearestFilter &&
+          textureArgs.minFilter !== LinearFilter)) &&
       !isPowerOf2
     ) {
       image = this.makePowerOf2(image);
@@ -302,7 +350,14 @@ class Texture {
     }
     gl.bindTexture(gl.TEXTURE_2D, texture);
     gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, flipY);
-    gl.texImage2D(gl.TEXTURE_2D, level, internalFormat, srcFormat, srcType, image);
+    gl.texImage2D(
+      gl.TEXTURE_2D,
+      level,
+      internalFormat,
+      srcFormat,
+      srcType,
+      image
+    );
     if (
       isPowerOf2 &&
       textureArgs.minFilter !== NearestFilter &&
@@ -310,14 +365,26 @@ class Texture {
     ) {
       gl.generateMipmap(gl.TEXTURE_2D);
     }
-    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, this.wrapS || RepeatWrapping);
-    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, this.wrapT || RepeatWrapping);
+    gl.texParameteri(
+      gl.TEXTURE_2D,
+      gl.TEXTURE_WRAP_S,
+      this.wrapS || RepeatWrapping
+    );
+    gl.texParameteri(
+      gl.TEXTURE_2D,
+      gl.TEXTURE_WRAP_T,
+      this.wrapT || RepeatWrapping
+    );
     gl.texParameteri(
       gl.TEXTURE_2D,
       gl.TEXTURE_MIN_FILTER,
       this.minFilter || LinearMipMapLinearFilter
     );
-    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, this.magFilter || LinearFilter);
+    gl.texParameteri(
+      gl.TEXTURE_2D,
+      gl.TEXTURE_MAG_FILTER,
+      this.magFilter || LinearFilter
+    );
     this._webglTexture = texture;
     this.source = image;
     this.isVideo = false;
@@ -339,7 +406,11 @@ const latestPointerClientCoords = (e: MouseEvent | TouchEvent) => {
 };
 
 const lerpVal = (v0: number, v1: number, t: number) => v0 * (1 - t) + v1 * t;
-const insertStringAtIndex = (currentString: string, string: string, index: number) =>
+const insertStringAtIndex = (
+  currentString: string,
+  string: string,
+  index: number
+) =>
   index > 0
     ? currentString.substring(0, index) +
       string +
@@ -477,7 +548,12 @@ export function ReactShaderToy({
   const uniformsRef = useRef<
     Record<
       string,
-      { type: string; isNeeded: boolean; value?: number[] | number; arraySize?: string }
+      {
+        type: string;
+        isNeeded: boolean;
+        value?: number[] | number;
+        arraySize?: string;
+      }
     >
   >({
     [UNIFORM_TIME]: { type: 'float', isNeeded: false, value: 0 },
@@ -486,10 +562,16 @@ export function ReactShaderToy({
     [UNIFORM_MOUSE]: { type: 'vec4', isNeeded: false, value: [0, 0, 0, 0] },
     [UNIFORM_RESOLUTION]: { type: 'vec2', isNeeded: false, value: [0, 0] },
     [UNIFORM_FRAME]: { type: 'int', isNeeded: false, value: 0 },
-    [UNIFORM_DEVICEORIENTATION]: { type: 'vec4', isNeeded: false, value: [0, 0, 0, 0] },
+    [UNIFORM_DEVICEORIENTATION]: {
+      type: 'vec4',
+      isNeeded: false,
+      value: [0, 0, 0, 0],
+    },
   });
   const propsUniformsRef = useRef<Uniforms | undefined>(propUniforms);
-  const uniformLocationsRef = useRef(new Map<string, WebGLUniformLocation | null>());
+  const uniformLocationsRef = useRef(
+    new Map<string, WebGLUniformLocation | null>()
+  );
 
   const getUniformLocation = (name: string) => {
     const gl = glRef.current;
@@ -497,7 +579,10 @@ export function ReactShaderToy({
     if (!gl || !program) return null;
 
     if (!uniformLocationsRef.current.has(name)) {
-      uniformLocationsRef.current.set(name, gl.getUniformLocation(program, name));
+      uniformLocationsRef.current.set(
+        name,
+        gl.getUniformLocation(program, name)
+      );
     }
 
     return uniformLocationsRef.current.get(name) ?? null;
@@ -531,11 +616,17 @@ export function ReactShaderToy({
     const gl = glRef.current;
     squareVerticesBufferRef.current = gl?.createBuffer() ?? null;
     gl?.bindBuffer(gl.ARRAY_BUFFER, squareVerticesBufferRef.current);
-    const vertices = [1.0, 1.0, 0.0, -1.0, 1.0, 0.0, 1.0, -1.0, 0.0, -1.0, -1.0, 0.0];
+    const vertices = [
+      1.0, 1.0, 0.0, -1.0, 1.0, 0.0, 1.0, -1.0, 0.0, -1.0, -1.0, 0.0,
+    ];
     gl?.bufferData(gl.ARRAY_BUFFER, new Float32Array(vertices), gl.STATIC_DRAW);
   };
 
-  const onDeviceOrientationChange = ({ alpha, beta, gamma }: DeviceOrientationEvent) => {
+  const onDeviceOrientationChange = ({
+    alpha,
+    beta,
+    gamma,
+  }: DeviceOrientationEvent) => {
     uniformsRef.current.iDeviceOrientation!.value = [
       alpha ?? 0,
       beta ?? 0,
@@ -546,7 +637,8 @@ export function ReactShaderToy({
 
   const mouseDown = (e: MouseEvent | TouchEvent) => {
     const [clientX = 0, clientY = 0] = latestPointerClientCoords(e);
-    const mouseX = clientX - (canvasPositionRef.current?.left ?? 0) - window.pageXOffset;
+    const mouseX =
+      clientX - (canvasPositionRef.current?.left ?? 0) - window.pageXOffset;
     const mouseY =
       (canvasPositionRef.current?.height ?? 0) -
       clientY -
@@ -569,7 +661,9 @@ export function ReactShaderToy({
     const [clientX = 0, clientY = 0] = latestPointerClientCoords(e);
     const mouseX = clientX - (canvasPositionRef.current?.left ?? 0);
     const mouseY =
-      (canvasPositionRef.current?.height ?? 0) - clientY - (canvasPositionRef.current?.top ?? 0);
+      (canvasPositionRef.current?.height ?? 0) -
+      clientY -
+      (canvasPositionRef.current?.top ?? 0);
     if (lerp !== 1) {
       lastMouseArrRef.current[0] = mouseX;
       lastMouseArrRef.current[1] = mouseY;
@@ -600,8 +694,12 @@ export function ReactShaderToy({
     canvasPositionRef.current = canvasRef.current?.getBoundingClientRect();
     // Force pixel ratio to be one to avoid expensive calculus on retina display.
     const realToCSSPixels = devicePixelRatio;
-    const displayWidth = Math.floor((canvasPositionRef.current?.width ?? 1) * realToCSSPixels);
-    const displayHeight = Math.floor((canvasPositionRef.current?.height ?? 1) * realToCSSPixels);
+    const displayWidth = Math.floor(
+      (canvasPositionRef.current?.width ?? 1) * realToCSSPixels
+    );
+    const displayHeight = Math.floor(
+      (canvasPositionRef.current?.height ?? 1) * realToCSSPixels
+    );
     gl.canvas.width = displayWidth;
     gl.canvas.height = displayHeight;
     if (uniformsRef.current.iResolution?.isNeeded && shaderProgramRef.current) {
@@ -632,7 +730,8 @@ export function ReactShaderToy({
     const fragmentShaderObj = createShader(gl.FRAGMENT_SHADER, fragmentShader);
     const vertexShaderObj = createShader(gl.VERTEX_SHADER, vertexShader);
     shaderProgramRef.current = gl.createProgram();
-    if (!shaderProgramRef.current || !vertexShaderObj || !fragmentShaderObj) return;
+    if (!shaderProgramRef.current || !vertexShaderObj || !fragmentShaderObj)
+      return;
     gl.attachShader(shaderProgramRef.current, vertexShaderObj);
     gl.attachShader(shaderProgramRef.current, fragmentShaderObj);
     gl.linkProgram(shaderProgramRef.current);
@@ -665,11 +764,17 @@ export function ReactShaderToy({
           const arrayLength = type.length;
           const val = Number.parseInt(type.charAt(arrayLength - 3));
           const numberOfMatrices = Math.floor(value.length / (val * val));
-          if (value.length > val * val) tempObject.arraySize = `[${numberOfMatrices}]`;
+          if (value.length > val * val)
+            tempObject.arraySize = `[${numberOfMatrices}]`;
         } else if (isVectorListType(type, value)) {
           tempObject.arraySize = `[${Math.floor(value.length / Number.parseInt(type.charAt(0)))}]`;
         }
-        uniformsRef.current[name] = { type: glslType, isNeeded: false, value, ...tempObject };
+        uniformsRef.current[name] = {
+          type: glslType,
+          isNeeded: false,
+          value,
+          ...tempObject,
+        };
       }
     }
   };
@@ -684,18 +789,22 @@ export function ReactShaderToy({
         arraySize: `[${textures.length}]`,
         value: [],
       };
-      const texturePromisesArr = textures.map((texture: TextureParams, id: number) => {
-        // Dynamically add textures uniforms.
-        uniformsRef.current[`${UNIFORM_CHANNEL}${id}`] = {
-          type: 'sampler2D',
-          isNeeded: false,
-        };
-        setupChannelRes(texture, id);
-        texturesArrRef.current[id] = new Texture(gl);
-        return texturesArrRef.current[id]?.load(texture).then((t: Texture) => {
-          setupChannelRes(t, id);
-        });
-      });
+      const texturePromisesArr = textures.map(
+        (texture: TextureParams, id: number) => {
+          // Dynamically add textures uniforms.
+          uniformsRef.current[`${UNIFORM_CHANNEL}${id}`] = {
+            type: 'sampler2D',
+            isNeeded: false,
+          };
+          setupChannelRes(texture, id);
+          texturesArrRef.current[id] = new Texture(gl);
+          return texturesArrRef.current[id]
+            ?.load(texture)
+            .then((t: Texture) => {
+              setupChannelRes(t, id);
+            });
+        }
+      );
       Promise.all(texturePromisesArr)
         .then(() => {
           if (onDoneLoadingTextures) onDoneLoadingTextures();
@@ -740,7 +849,9 @@ export function ReactShaderToy({
   const setUniforms = (timestamp: number) => {
     const gl = glRef.current;
     if (!gl || !shaderProgramRef.current) return;
-    const delta = lastTimeRef.current ? (timestamp - lastTimeRef.current) / 1000 : 0;
+    const delta = lastTimeRef.current
+      ? (timestamp - lastTimeRef.current) / 1000
+      : 0;
     lastTimeRef.current = timestamp;
     const propUniforms = propsUniformsRef.current;
     if (propUniforms) {
@@ -766,10 +877,15 @@ export function ReactShaderToy({
     }
     if (uniformsRef.current.iChannelResolution?.isNeeded) {
       const channelResUniform = getUniformLocation(UNIFORM_CHANNELRESOLUTION);
-      gl.uniform3fv(channelResUniform, uniformsRef.current.iChannelResolution.value as number[]);
+      gl.uniform3fv(
+        channelResUniform,
+        uniformsRef.current.iChannelResolution.value as number[]
+      );
     }
     if (uniformsRef.current.iDeviceOrientation?.isNeeded) {
-      const deviceOrientationUniform = getUniformLocation(UNIFORM_DEVICEORIENTATION);
+      const deviceOrientationUniform = getUniformLocation(
+        UNIFORM_DEVICEORIENTATION
+      );
       gl.uniform4fv(
         deviceOrientationUniform,
         uniformsRef.current.iDeviceOrientation.value as number[]
@@ -789,7 +905,10 @@ export function ReactShaderToy({
       const day = d.getDate();
       const year = d.getFullYear();
       const time =
-        d.getHours() * 60 * 60 + d.getMinutes() * 60 + d.getSeconds() + d.getMilliseconds() * 0.001;
+        d.getHours() * 60 * 60 +
+        d.getMinutes() * 60 +
+        d.getSeconds() +
+        d.getMilliseconds() * 0.001;
       const dateUniform = getUniformLocation(UNIFORM_DATE);
       gl.uniform4fv(dateUniform, [year, month, day, time]);
     }
@@ -812,7 +931,11 @@ export function ReactShaderToy({
           gl.bindTexture(gl.TEXTURE_2D, _webglTexture);
           gl.uniform1i(iChannel, index);
           if (isVideo) {
-            texture.updateTexture(_webglTexture, source as HTMLVideoElement, flipY);
+            texture.updateTexture(
+              _webglTexture,
+              source as HTMLVideoElement,
+              flipY
+            );
           }
         }
       }
@@ -835,11 +958,22 @@ export function ReactShaderToy({
     gl.viewport(0, 0, gl.drawingBufferWidth, gl.drawingBufferHeight);
     gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
     gl.bindBuffer(gl.ARRAY_BUFFER, squareVerticesBufferRef.current);
-    gl.vertexAttribPointer(vertexPositionAttributeRef.current ?? 0, 3, gl.FLOAT, false, 0, 0);
+    gl.vertexAttribPointer(
+      vertexPositionAttributeRef.current ?? 0,
+      3,
+      gl.FLOAT,
+      false,
+      0,
+      0
+    );
     setUniforms(timestamp);
     gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
     const mouseValue = uniformsRef.current.iMouse?.value;
-    if (uniformsRef.current.iMouse?.isNeeded && lerp !== 1 && Array.isArray(mouseValue)) {
+    if (
+      uniformsRef.current.iMouse?.isNeeded &&
+      lerp !== 1 &&
+      Array.isArray(mouseValue)
+    ) {
       const currentX = mouseValue[0] ?? 0;
       const currentY = mouseValue[1] ?? 0;
       mouseValue[0] = lerpVal(currentX, lastMouseArrRef.current[0] ?? 0, lerp);
@@ -862,7 +996,11 @@ export function ReactShaderToy({
       canvasRef.current.addEventListener('touchstart', mouseDown, options);
     }
     if (uniformsRef.current.iDeviceOrientation?.isNeeded) {
-      window.addEventListener('deviceorientation', onDeviceOrientationChange, options);
+      window.addEventListener(
+        'deviceorientation',
+        onDeviceOrientationChange,
+        options
+      );
     }
     if (canvasRef.current) {
       resizeObserverRef.current = new ResizeObserver(onResize);
@@ -883,7 +1021,11 @@ export function ReactShaderToy({
       canvasRef.current.removeEventListener('touchstart', mouseDown, options);
     }
     if (uniformsRef.current.iDeviceOrientation?.isNeeded) {
-      window.removeEventListener('deviceorientation', onDeviceOrientationChange, options);
+      window.removeEventListener(
+        'deviceorientation',
+        onDeviceOrientationChange,
+        options
+      );
     }
     if (resizeObserverRef.current) {
       resizeObserverRef.current.disconnect();
@@ -974,6 +1116,10 @@ export function ReactShaderToy({
   }, []); // Empty dependency array to run only once on mount
 
   return (
-    <canvas ref={canvasRef} style={{ height: '100%', width: '100%', ...style }} {...canvasProps} />
+    <canvas
+      ref={canvasRef}
+      style={{ height: '100%', width: '100%', ...style }}
+      {...canvasProps}
+    />
   );
 }
