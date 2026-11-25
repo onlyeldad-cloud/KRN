@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="theme-color" content="#161d36">
-<meta name="description" content="Learn German step by step: 1,000 der/die/das nouns, 28 grammar lessons, quizzes, flashcards, pronunciation and saved progress.">
+<meta name="description" content="Learn German step by step: 1,000 der/die/das nouns, 20 grammar lessons, quizzes, flashcards, pronunciation and saved progress.">
 <meta name="color-scheme" content="light">
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2218%22%20fill%3D%22%236254df%22/%3E%3Ctext%20x%3D%2232%22%20y%3D%2245%22%20text-anchor%3D%22middle%22%20font-size%3D%2236%22%20font-family%3D%22sans-serif%22%20font-weight%3D%22bold%22%20fill%3D%22white%22%3EAa%3C/text%3E%3C/svg%3E">
 <title>DeutschFlow · German learning made simple</title>
@@ -75,6 +75,75 @@
  .df-mobilebar label{color:#53617d;font-size:.82rem;font-weight:700;display:flex;align-items:center;gap:6px}
  .df-mobilebar label input{accent-color:#5d4ce8;width:18px;height:18px}
 }
+</style>
+<style>
+
+/* Restored three-stage learning design, added without removing the original theme. */
+.df-dashboard-goal,.df-goal{background:linear-gradient(122deg,#eae8ff 0%,#f7f6ff 66%,#fff 100%);border:1px solid #d9d5ff;border-radius:22px;padding:25px;display:flex;gap:25px;justify-content:space-between;align-items:center;margin:0 0 20px}
+.df-dashboard-goal h2,.df-goal h2{font-size:clamp(1.35rem,2.5vw,2rem);margin:7px 0}
+.df-dashboard-goal p,.df-goal p{color:#5f6b82;max-width:660px}
+.df-dashboard-metric{min-width:170px;background:#fff;border-radius:18px;padding:17px;text-align:center;box-shadow:0 6px 20px #2019610b}
+.df-dashboard-metric strong{display:block;font-size:1.65rem;color:#5848d5}
+.df-dashboard-metric small{font-size:.77rem;color:#718096}
+.df-dashboard-metric .df-qprogress{margin:13px 0 0}
+.df-goal{margin:16px 0 22px}
+.df-goal-label{font-size:.76rem;font-weight:800;letter-spacing:.15em;color:#5749db}
+.df-goal-stats{display:flex;gap:13px;flex-shrink:0}
+.df-goal-stats>div{min-width:112px;border-radius:13px;padding:14px;background:white;text-align:center;border:1px solid #e3e1ff}
+.df-goal-stats strong{display:block;font-size:1.45rem;color:#5749db}
+.df-goal-stats span{color:#718096;font-size:.76rem}
+.df-steps{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 5px;margin-bottom:12px}
+.df-step{display:flex;align-items:center;gap:10px;color:#8290a7;font-weight:800;font-size:.9rem;white-space:nowrap}
+.df-step span{display:grid;place-items:center;flex-shrink:0;width:36px;height:36px;background:#eff1f9;border-radius:50%;color:#7584a0}
+.df-step.active{color:#4637ce}.df-step.active span{background:#604fe9;color:#fff}
+.df-step.finished span{background:#dff8ef;color:#008666}
+.df-steps i{font-style:normal;color:#a1aec3}
+.df-lesson-band{display:flex;flex-wrap:wrap;gap:6px 15px;align-items:center;justify-content:space-between;border:1px solid #e3e4ff;background:#f8f8ff;padding:15px 17px;border-radius:15px;color:#4e5781}
+.df-lesson-band b{color:#4d3fcf}
+.df-study-action{display:flex;align-items:center;justify-content:space-between;gap:20px;background:#fff;border:1px solid #dedff1;padding:20px;border-radius:18px;margin:20px 0 30px;box-shadow:0 10px 20px #1b2b5008}
+.df-study-action p{margin:5px 0 0;color:#718096}
+.df-word-main{font-size:1.06rem}
+.df-word em{font-size:.86rem;line-height:1.5}
+.df-study-panel{background:#fff;border:1px solid #e1e6f1;border-radius:20px;padding:22px;margin:18px 0}
+.df-study-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:22px}
+.df-study-heading h2{margin:7px 0}
+.df-study-heading p{color:#718096;max-width:670px}
+.df-mem-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.df-mem-card{padding:17px;background:#fafaff;border:1px solid #e5e4f6;border-radius:16px;min-width:0}
+.df-mem-card.seen{background:#f7fff9;border-color:#bee8d4}
+.df-mem-card-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.df-mem-card-top strong{font-size:1.32rem;overflow-wrap:anywhere}
+.df-translation{color:#73819b;font-size:.86rem;margin:5px 0 16px}
+.df-icon-speak{background:white;border:1px solid #dfe4f2;border-radius:10px;color:#5c4fdf;padding:7px 10px}
+.df-revealed{font-weight:800;font-size:1.03rem;background:#fff;border-radius:10px;padding:9px}
+.df-reveal-btn{border:1px dashed #776bdc;color:#5b4dd7;background:white;border-radius:10px;padding:9px 12px;font-weight:700;width:100%}
+.df-mem-controls{display:flex;gap:9px;flex-wrap:wrap;margin:20px 0}
+.df-confirm{margin:15px 0}
+.df-confirm small{display:block;color:#77839c;margin-top:4px}
+.df-full-action{width:100%;min-height:52px}
+.df-result{text-align:center;background:white;border:1px solid #e1e6f1;border-radius:22px;padding:30px;margin:20px 0}
+.df-result-number{font-size:4rem;font-family:'Outfit',sans-serif;font-weight:800;color:#5b4cd6}
+.df-result>p{color:#70809a;max-width:550px;margin:10px auto 25px}
+.df-result-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.df-study-first-banner{padding:17px;background:#eeedff;border:1px solid #dcd6ff;border-radius:16px;margin-bottom:18px;display:flex;align-items:center;justify-content:space-between;gap:17px}
+.df-study-first-banner p{font-size:.85rem;color:#66758c;margin:4px 0 0}
+.df-study-first-banner button{flex-shrink:0}
+.df-test-active .df-steps{margin-bottom:0}
+@media(max-width:850px){.df-goal,.df-dashboard-goal{flex-direction:column;align-items:stretch}.df-goal-stats{width:100%}.df-goal-stats>div{flex:1}.df-mem-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){
+ .df-guided{max-width:100%;min-width:0}.df-steps{gap:4px;padding:12px 0}.df-steps i{font-size:.8rem}
+ .df-step{font-size:.66rem;gap:6px;white-space:normal;line-height:1.1}.df-step span{width:29px;height:29px;font-size:.85rem}.df-step b{max-width:80px}
+ .df-goal,.df-dashboard-goal{padding:18px;margin-bottom:16px}.df-goal-stats strong{font-size:1.22rem}.df-goal-stats>div{min-width:0}
+ .df-intro h1{font-size:1.55rem}.df-toolrow{gap:10px}.df-selectors label{width:100%;justify-content:space-between}
+ .df-study-action,.df-study-first-banner{flex-direction:column;align-items:stretch}.df-study-action button,.df-study-first-banner button{width:100%}
+ .df-study-panel{padding:14px}.df-study-heading{display:block}.df-study-heading .pill{display:inline-block;margin-top:6px}
+ .df-mem-grid{grid-template-columns:1fr}.df-mem-card{padding:12px 15px}
+ .df-mem-controls button{flex:1;min-width:135px}
+ .df-test-active .df-steps{display:none}.df-test-active .df-qcard{margin-top:0}
+ .df-test-active .df-qword{padding:3px 0 17px}.df-test-active .df-qword strong{font-size:clamp(2.7rem,10vw,4.4rem)}
+ .df-test-active .df-feedback{margin-top:12px;padding:11px}
+}
+
 </style>
 </head>
 <body>
@@ -283,75 +352,108 @@ function clickAction(target){const action=target.dataset.action;
  default:break;
  }}
 
-// Standalone addon: original DeutschFlow storage version and word IDs remain unchanged.
+// DeutschFlow 3: Study first, memorize thoroughly, then test the same exact set.
+// Preserve the existing localStorage key, word IDs, and historic practice scores.
 const DF_GROUPS=['der','die','das'];
 function dfGuided(){
-  const defaults={size:30,set:0,phase:'read',ready:false,q:0,answer:null,correct:0,wrong:0,auto:false};
-  if(!db.guided || typeof db.guided!=='object')db.guided={...defaults};
-  const g=db.guided;
-  if(![30,50].includes(g.size))g.size=30;
-  const count=Math.ceil(NOUNS.length/g.size);
-  g.set=Math.max(0,Math.min(count-1,Number(g.set)||0));
-  if(!['read','test','done'].includes(g.phase))g.phase='read';
-  return g;
+ const defaults={size:30,set:0,phase:'read',ready:false,q:0,answer:null,correct:0,wrong:0,auto:false,revealed:[],completedSets:{}};
+ if(!db.guided||typeof db.guided!=='object')db.guided={...defaults};
+ const g=db.guided;
+ if(![30,50].includes(g.size))g.size=30;
+ g.set=Math.max(0,Math.min(Math.ceil(NOUNS.length/g.size)-1,Number(g.set)||0));
+ if(!['read','memorize','test','done'].includes(g.phase))g.phase='read';
+ if(!Array.isArray(g.revealed))g.revealed=[];
+ if(!g.completedSets||typeof g.completedSets!=='object')g.completedSets={};
+ if(!Number.isFinite(g.q)||g.q<0)g.q=0;
+ return g;
 }
 function dfCurrentWords(){const g=dfGuided();return NOUNS.slice(g.set*g.size,(g.set+1)*g.size)}
 function dfSave(){persist()}
+function dfSpeak(id){const n=byId[id];if(n)pronounce(n.article+' '+n.word)}
 function dfFocus(){requestAnimationFrame(()=>requestAnimationFrame(()=>{
  const q=document.getElementById('df-qcard');if(!q)return;
- const y=Math.max(0,window.scrollY+q.getBoundingClientRect().top-12);
- window.scrollTo({top:y,behavior:'instant'});
+ const top=Math.max(0,window.scrollY+q.getBoundingClientRect().top-(window.innerWidth<650?12:20));
+ window.scrollTo({top,behavior:'instant'});
 }))}
 let dfAutonextTimer=null;
-function dfCancelTimer(){if(dfAutonextTimer){clearTimeout(dfAutonextTimer);dfAutonextTimer=null}}
+function dfCancelTimer(){if(dfAutonextTimer!==null){clearTimeout(dfAutonextTimer);dfAutonextTimer=null}}
+function dfBeginReading(){const g=dfGuided();dfCancelTimer();g.phase='read';g.ready=false;g.revealed=[];g.q=0;g.answer=null;g.correct=0;g.wrong=0;dfSave();render();window.scrollTo({top:0,behavior:'instant'})}
+function dfBeginMemorizing(){const g=dfGuided();if(g.phase!=='read')return;g.phase='memorize';g.ready=false;g.revealed=[];dfSave();render();window.scrollTo({top:0,behavior:'instant'})}
+function dfBeginTest(){const g=dfGuided();if(g.phase!=='memorize'||!g.ready)return;g.phase='test';g.q=0;g.answer=null;g.correct=0;g.wrong=0;dfSave();render();dfFocus()}
 function dfMoveNext(){dfCancelTimer();const g=dfGuided(),a=dfCurrentWords();if(g.phase!=='test'||g.answer===null)return;
- g.q+=1;g.answer=null;
- if(g.q>=a.length)g.phase='done';
+ g.q++;g.answer=null;
+ if(g.q>=a.length){g.phase='done';g.completedSets[g.size+':'+g.set]={completedAt:Date.now(),score:g.correct,total:a.length};}
  dfSave();render();if(g.phase==='test')dfFocus();else window.scrollTo({top:0,behavior:'instant'});
 }
 function dfAnswer(article){const g=dfGuided(),a=dfCurrentWords(),n=a[g.q];if(g.phase!=='test'||g.answer!==null||!n)return;
- const good=article===n.article;
- g.answer=article;g.correct+=good?1:0;g.wrong+=good?0:1;
+ const good=article===n.article;g.answer=article;g.correct+=good?1:0;g.wrong+=good?0:1;
  wordUpdate(n.id,good);dfSave();render();dfFocus();
- if(good&&g.auto){const q=g.q;dfAutonextTimer=setTimeout(()=>{if(dfGuided().phase==='test'&&dfGuided().q===q&&dfGuided().answer!==null)dfMoveNext()},1050)}
+ if(good&&g.auto){const q=g.q;dfAutonextTimer=setTimeout(()=>{const gg=dfGuided();if(gg.phase==='test'&&gg.q===q&&gg.answer!==null)dfMoveNext()},950)}
 }
-function dfSpeak(id){const n=byId[id];if(n)pronounce(n.article+' '+n.word)}
+function dfStepStrip(phase){const steps=[['read','1','Read all words'],['memorize','2','Memorize'],['test','3','Answer quiz']];
+ const current=phase==='done'?3:Math.max(0,steps.findIndex(s=>s[0]===phase));
+ return `<div class="df-steps" aria-label="Learning steps">${steps.map((s,i)=>`<div class="df-step ${i===current?'active':i<current?'finished':''}"><span>${i<current?'✓':s[1]}</span><b>${s[2]}</b></div>`).join('<i aria-hidden="true">→</i>')}</div>`;
+}
+function dfGoalCard(g,words){const completed=Object.keys(g.completedSets).filter(k=>k.startsWith(g.size+':')).length,total=Math.ceil(NOUNS.length/g.size),done=Math.min(total,completed);
+ const learned=Object.values(g.completedSets).filter(Boolean).reduce((sum,x)=>sum+(x.total||0),0);
+ return `<div class="df-goal"><div><div class="df-goal-label">YOUR LEARNING GOAL</div><h2>Learn ${g.size} words. Remember them. Then test yourself.</h2><p>Don't rush to answer. First understand each noun with its article and meaning.</p></div><div class="df-goal-stats"><div><strong>${done} / ${total}</strong><span>Sets completed</span></div><div><strong>${Math.min(learned,NOUNS.length)}</strong><span>Words studied in finished tests</span></div></div></div>`;
+}
+function dfToolRow(g,total){return `<div class="df-toolrow df-selectors"><label>Words in this lesson <select aria-label="Words per lesson" data-df="size"><option value="30" ${g.size===30?'selected':''}>30 words</option><option value="50" ${g.size===50?'selected':''}>50 words</option></select></label><label>Learning set <select aria-label="Choose learning set" data-df="set">${Array.from({length:total},(_,i)=>`<option value="${i}" ${g.set===i?'selected':''}>Set ${i+1} of ${total}${g.completedSets[g.size+':'+i]?' ✓':''}</option>`).join('')}</select></label></div>`}
+function dfReadCard(n){return `<div class="df-word"><button type="button" title="Listen to German pronunciation" aria-label="Listen to ${htmlEscape(n.word)}" data-df="speak" data-id="${n.id}">♪</button><div class="df-word-main"><b class="${n.article}text">${n.article}</b> <b>${htmlEscape(n.word)}</b></div><em>${htmlEscape(n.meaning)}${n.plural?' · plural: '+htmlEscape(n.plural):''}</em></div>`}
 function renderGuided(){const g=dfGuided(),words=dfCurrentWords(),totalSets=Math.ceil(NOUNS.length/g.size),at=g.set+1;
- const tool='<div class="df-toolrow"><label>Words per set <select data-df="size">'+[30,50].map(n=>'<option '+(g.size===n?'selected':'')+' value="'+n+'">'+n+' words</option>').join('')+'</select></label><label>Choose set <select data-df="set">'+Array.from({length:totalSets},(_,i)=>'<option value="'+i+'" '+(g.set===i?'selected':'')+'>Set '+(i+1)+' / '+totalSets+'</option>').join('')+'</select></label></div>';
- if(g.phase==='read'){
-  const groups=DF_GROUPS.map(art=>{
-   const a=words.filter(n=>n.article===art);
-   return '<section class="df-group"><h2><span class="'+art+'text">'+art.toUpperCase()+' · '+(art==='der'?'Masculine':art==='die'?'Feminine':'Neuter')+'</span><small>'+a.length+' words</small></h2><div class="df-group-grid">'+a.map(n=>'<div class="df-word"><button type="button" title="Listen" aria-label="Listen" data-df="speak" data-id="'+n.id+'">♪</button><b class="'+art+'text">'+art+'</b> <b>'+htmlEscape(n.word)+'</b><em>'+htmlEscape(n.meaning)+(n.plural?' · pl. '+htmlEscape(n.plural):'')+'</em></div>').join('')+'</div></section>';
-  }).join('');
-  return '<section class="df-guided"><div class="df-intro"><div class="eyebrow">GUIDED ARTICLE MEMORY · 2,000 WORDS</div><h1>Read → Memorize → Test</h1><p>First study all '+words.length+' words below, organized by article. Then test your memory on the <strong>same words</strong>.</p></div>'+tool+'<p class="df-muted"><strong>Set '+at+' of '+totalSets+'</strong> · Read and say the complete pair aloud, e.g. <em>das Buch</em>.</p>'+groups+'<label class="df-confirm"><input type="checkbox" data-df="ready" '+(g.ready?'checked':'')+'><span><b>I have read and memorized these '+words.length+' words.</b><br><small>Tick when you are ready for the test.</small></span></label><div class="df-nextinline"><button class="btn" data-df="start" '+(g.ready?'':'disabled')+'>Start '+words.length+'-question quiz →</button></div></section>';
+ const inRead=g.phase==='read',inMem=g.phase==='memorize',inTest=g.phase==='test',completed=g.phase==='done';
+ const heading=inRead?'Read and understand every word':inMem?'Memorize the words before the test':inTest?'Now test what you learned':'Great work — set completed!';
+ const subtitle=inRead?'All words and their correct articles are shown below. Scroll through DER, DIE and DAS; say each word out loud.':inMem?'Try to recall the correct article before revealing it. The words are mixed now so the group cannot give away the answer.':inTest?'Choose the correct article for each word from the same set you studied.':'Your answers have been saved. Repeat the set or continue learning.';
+ const top=`<section class="df-guided ${inTest?'df-test-active':''}"><div class="df-intro ${inTest?'df-quiz-intro':''}"><div class="eyebrow">DER · DIE · DAS · YOUR PERSONAL LEARNING PATH</div><h1>${heading}</h1><p>${subtitle}</p></div>${dfStepStrip(g.phase)}`;
+ if(inRead){const groups=DF_GROUPS.map(a=>{const group=words.filter(n=>n.article===a);return `<section class="df-group"><h2><span class="${a}text">${a.toUpperCase()} <span class="df-gender">${a==='der'?'· Masculine':a==='die'?'· Feminine':'· Neuter'}</span></span><small>${group.length} words</small></h2><div class="df-group-grid">${group.map(dfReadCard).join('')}</div></section>`}).join('');
+ return `${top}${dfGoalCard(g,words)}${dfToolRow(g,totalSets)}<div class="df-lesson-band"><b>Lesson ${at} of ${totalSets} · ${words.length} words</b><span>First read and memorize, then take the test.</span></div>${groups}<div class="df-study-action"><div><b>Finished reading your ${words.length} words?</b><p>You can come back to this list any time.</p></div><button class="btn" type="button" data-df="memorize">Continue to memorization →</button></div></section>`;
  }
- if(g.phase==='done'){
-  return '<section class="df-guided"><div class="df-intro"><div class="eyebrow">STUDY SESSION FINISHED</div><h1>Set '+at+' complete! 🎉</h1><p>Your results are saved in your browser, including words to review.</p></div><div class="df-shortstats"><div><b>'+words.length+'</b>Words</div><div><b>'+g.correct+'</b>Correct</div><div><b>'+g.wrong+'</b>To review</div></div><div class="df-toolrow"><button class="btn" data-df="next-set">Study next set →</button><button class="btn gray" data-df="retry">Repeat this set</button><button class="btn gray" data-action="nav" data-route="review">Review mistakes</button></div></section>';
+ if(inMem){const recalled=new Set(g.revealed.map(Number)),seen=recalled.size;
+ return `${top}<div class="df-study-panel"><div class="df-study-heading"><div><div class="eyebrow">STEP 2 OF 3 · RETRIEVAL PRACTICE</div><h2>Can you remember the article?</h2><p>Read the German noun and English meaning. Say <b>der, die,</b> or <b>das</b> in your head, then tap <b>Show article</b>. Practice until you feel ready.</p></div><span class="pill purple">${seen}/${words.length} revealed</span></div><div class="df-mem-grid">${words.map(n=>`<div class="df-mem-card ${recalled.has(n.id)?'seen':''}"><div class="df-mem-card-top"><strong>${htmlEscape(n.word)}</strong><button class="df-icon-speak" type="button" data-df="speak" data-id="${n.id}" aria-label="Listen to ${htmlEscape(n.word)}">♪</button></div><div class="df-translation">${htmlEscape(n.meaning)}</div>${recalled.has(n.id)?`<div class="df-revealed ${n.article}text">${n.article} ${htmlEscape(n.word)}</div>`:`<button class="df-reveal-btn" type="button" data-df="reveal" data-id="${n.id}">Show article</button>`}</div>`).join('')}</div><div class="df-mem-controls"><button type="button" class="btn gray" data-df="back-read">← Return to word list</button><button type="button" class="btn gray" data-df="reveal-all">Reveal all articles</button><button type="button" class="btn gray" data-df="hide-all">Hide articles</button></div><label class="df-confirm"><input type="checkbox" data-df="ready" ${g.ready?'checked':''}><span><b>I have memorized these ${words.length} words and I'm ready.</b><small>The test will use exactly the same words, without article hints.</small></span></label><button class="btn df-full-action" data-df="start" ${g.ready?'':'disabled'}>Start ${words.length}-word test →</button></div></section>`;
  }
- const n=words[g.q],answered=g.answer!==null,good=answered&&g.answer===n.article;
- const feedback=answered?'<div class="df-feedback '+(good?'correct':'wrong')+'">'+(good?'✓ Correct! ':'Not quite. ')+'<b class="'+n.article+'text">'+n.article+' '+htmlEscape(n.word)+'</b> — '+htmlEscape(n.meaning)+'.</div>':'';
- const choices=DF_GROUPS.map(a=>'<button class="df-choice '+(answered&&a===n.article?'correct':answered&&a===g.answer?'wrong':'')+'" type="button" data-df="answer" data-article="'+a+'" '+(answered?'disabled':'')+'>'+a+'</button>').join('');
- return '<section class="df-guided df-test-active"><div class="df-intro"><h1>Memory Test</h1><p>Choose the correct German article.</p></div><div class="df-qcard" id="df-qcard"><div class="df-qhead"><span>Set '+at+' / '+totalSets+'</span><span>Question '+(g.q+1)+' of '+words.length+'</span></div><div class="df-qprogress"><span style="width:'+((g.q+(answered?1:0))/words.length*100)+'%"></span></div><div class="df-qword"><div class="eyebrow">WHICH ARTICLE DID YOU MEMORIZE?</div><strong>'+htmlEscape(n.word)+'</strong><div class="df-meaning">'+htmlEscape(n.meaning)+'</div><button type="button" data-df="speak" data-id="'+n.id+'" title="Listen to pronunciation">♪ Listen</button></div><div class="df-choices">'+choices+'</div>'+feedback+'<div class="df-nextinline"><button class="btn" data-df="next" '+(answered?'':'disabled')+'>'+(g.q===words.length-1?'See results →':'Next word →')+'</button></div></div><div class="df-mobilebar"><label><input data-df="auto" type="checkbox" '+(g.auto?'checked':'')+'>Auto-next ✓</label><button type="button" data-df="next" '+(answered?'':'disabled')+'>'+(g.q===words.length-1?'See results →':'Next word →')+'</button></div></section>';
+ if(completed){const pct=Math.round(g.correct/Math.max(1,words.length)*100);return `${top}<div class="df-result"><div class="df-result-number">${pct}%</div><h2>${g.correct} correct out of ${words.length}</h2><p>${g.wrong?`You have ${g.wrong} word${g.wrong===1?'':'s'} to review.`:'Excellent! You answered every word correctly.'} It's fine to study the same set again until it feels natural.</p><div class="df-shortstats"><div><b>${words.length}</b>Words studied</div><div><b>${g.correct}</b>Correct</div><div><b>${g.wrong}</b>To review</div></div><div class="df-result-actions"><button class="btn" data-df="next-set">Study the next ${g.size} words →</button><button class="btn gray" data-df="retry">Study these words again</button><button class="btn gray" data-action="nav" data-route="review">Review mistakes</button></div></div></section>`;}
+ const n=words[Math.min(g.q,words.length-1)],answered=g.answer!==null,good=answered&&g.answer===n.article;
+ const choices=DF_GROUPS.map(a=>`<button class="df-choice ${answered&&a===n.article?'correct':answered&&a===g.answer?'wrong':''}" type="button" data-df="answer" data-article="${a}" ${answered?'disabled':''}>${a}</button>`).join('');
+ const feedback=answered?`<div class="df-feedback ${good?'correct':'wrong'}" role="status"><b>${good?'✓ Correct!':'Not quite.'}</b> <span class="${n.article}text">${n.article} ${htmlEscape(n.word)}</span> means “${htmlEscape(n.meaning)}”. ${!good?'Review this one again after the set.':''}</div>`:'';
+ return `${top}<div class="df-qcard" id="df-qcard"><div class="df-qhead"><span>Set ${at} of ${totalSets}</span><span>Question ${g.q+1} of ${words.length}</span></div><div class="df-qprogress"><span style="width:${(g.q+(answered?1:0))/words.length*100}%"></span></div><div class="df-qword"><div class="eyebrow">WHICH ARTICLE DID YOU MEMORIZE?</div><strong>${htmlEscape(n.word)}</strong><div class="df-meaning">${htmlEscape(n.meaning)}</div><button data-df="speak" data-id="${n.id}" title="Listen">♪ Listen</button></div><div class="df-choices">${choices}</div>${feedback}<div class="df-nextinline"><button class="btn" data-df="next" ${answered?'':'disabled'}>${g.q===words.length-1?'See my results →':'Next word →'}</button></div></div><div class="df-mobilebar"><label><input type="checkbox" data-df="auto" ${g.auto?'checked':''}> Auto-next ✓</label><button type="button" data-df="next" ${answered?'':'disabled'}>${g.q===words.length-1?'See results →':'Next word →'}</button></div></section>`;
 }
+// User actions for each stage; the main site's other event handlers remain intact.
 document.addEventListener('click',e=>{
- const btn=e.target.closest('[data-df]');if(!btn || btn.tagName==='INPUT' || btn.tagName==='SELECT')return;
+ const btn=e.target.closest('[data-df]');if(!btn||btn.tagName==='INPUT'||btn.tagName==='SELECT')return;
  const action=btn.dataset.df,g=dfGuided();
- if(action==='answer')dfAnswer(btn.dataset.article);
+ if(action==='speak')dfSpeak(btn.dataset.id);
+ else if(action==='memorize')dfBeginMemorizing();
+ else if(action==='back-read'){g.phase='read';g.ready=false;dfSave();render();window.scrollTo({top:0,behavior:'instant'})}
+ else if(action==='reveal'){const id=Number(btn.dataset.id);if(!g.revealed.includes(id))g.revealed.push(id);dfSave();render();const item=Array.from(document.querySelectorAll('.df-mem-card')).find(c=>c.textContent?.includes(byId[id]?.word));if(item)item.scrollIntoView({block:'nearest'});}
+ else if(action==='reveal-all'){g.revealed=dfCurrentWords().map(n=>n.id);dfSave();render()}
+ else if(action==='hide-all'){g.revealed=[];dfSave();render()}
+ else if(action==='start')dfBeginTest();
+ else if(action==='answer')dfAnswer(btn.dataset.article);
  else if(action==='next')dfMoveNext();
- else if(action==='start'){if(!g.ready)return;g.phase='test';g.q=0;g.answer=null;g.correct=0;g.wrong=0;dfSave();render();dfFocus()}
- else if(action==='retry'){g.phase='read';g.ready=false;g.q=0;g.answer=null;g.correct=0;g.wrong=0;dfSave();render();window.scrollTo(0,0)}
- else if(action==='next-set'){g.set=(g.set+1)%Math.ceil(NOUNS.length/g.size);g.phase='read';g.ready=false;g.q=0;g.answer=null;g.correct=0;g.wrong=0;dfSave();render();window.scrollTo(0,0)}
- else if(action==='speak')dfSpeak(btn.dataset.id);
+ else if(action==='retry')dfBeginReading();
+ else if(action==='next-set'){g.set=(g.set+1)%Math.ceil(NOUNS.length/g.size);dfBeginReading();}
 });
-document.addEventListener('change',e=>{
- const t=e.target,g=dfGuided();
- if(!t.dataset.df)return;
- if(t.dataset.df==='size'){dfCancelTimer();g.size=Number(t.value)===50?50:30;g.set=0;g.phase='read';g.ready=false;g.q=0;g.answer=null;dfSave();render();}
- if(t.dataset.df==='set'){dfCancelTimer();g.set=Math.max(0,Number(t.value)||0);g.phase='read';g.ready=false;g.q=0;g.answer=null;dfSave();render();}
- if(t.dataset.df==='ready'){g.ready=t.checked;dfSave();const b=document.querySelector('[data-df="start"]');if(b)b.disabled=!g.ready;}
- if(t.dataset.df==='auto'){g.auto=t.checked;dfSave();if(!g.auto)dfCancelTimer();}
+document.addEventListener('change',e=>{const t=e.target,g=dfGuided();if(!t.dataset.df)return;
+ if(t.dataset.df==='size'){dfCancelTimer();g.size=Number(t.value)===50?50:30;g.set=0;dfBeginReading();}
+ else if(t.dataset.df==='set'){dfCancelTimer();g.set=Math.max(0,Number(t.value)||0);dfBeginReading();}
+ else if(t.dataset.df==='ready'){g.ready=t.checked;dfSave();const b=document.querySelector('[data-df="start"]');if(b)b.disabled=!g.ready;}
+ else if(t.dataset.df==='auto'){g.auto=t.checked;dfSave();if(!g.auto)dfCancelTimer();}
 });
-// Supplementary B1 units beyond the original PDF-based 28 lessons.
+document.addEventListener('keydown',e=>{
+ if(ui.route!=='guided'||dfGuided().phase!=='test'||/^(INPUT|TEXTAREA|SELECT)$/.test(e.target?.tagName)||e.metaKey||e.altKey||e.ctrlKey)return;
+ if(['1','2','3'].includes(e.key)&&dfGuided().answer===null){dfAnswer(DF_GROUPS[Number(e.key)-1]);e.preventDefault();}
+ else if(e.key==='Enter'&&dfGuided().answer!==null){dfMoveNext();e.preventDefault();}
+});
+// Restore the guided learning journey as the main entry point, without removing the old dashboard.
+const dfOriginalDashboard=renderDashboard;
+renderDashboard=function(){const g=dfGuided(),today=db.days[dateKey()]||0,goal=Math.max(1,db.dailyGoal||20);
+ const greeting=`<section class="df-dashboard-goal"><div><div class="eyebrow">START HERE · YOUR DAILY LEARNING GOAL</div><h2>Learn the words first. Test yourself after.</h2><p>Choose 30 or 50 new nouns, read their articles and meanings, memorize them, and then practise exactly what you learned.</p><button class="btn" data-action="nav" data-route="guided">${g.phase==='test'?'Resume my quiz':g.phase==='memorize'?'Continue memorizing':'Start reading my '+g.size+' words'} →</button></div><div class="df-dashboard-metric"><strong>${Math.min(today,goal)} / ${goal}</strong><small>Today's practice answers</small><div class="df-qprogress"><span style="width:${Math.min(100,today/goal*100)}%"></span></div></div></section>`;
+ return greeting+dfOriginalDashboard();};
+const dfOriginalArticles=renderArticles;
+renderArticles=function(){return `<div class="df-study-first-banner"><div><b>New to this set? Learn before you test.</b><p>Read 30 or 50 words grouped by der, die and das, memorize them, then answer a quiz on the same words.</p></div><button class="btn" data-action="nav" data-route="guided">Study words first →</button></div>`+dfOriginalArticles();};
+const dfOriginalUpdateNav=updateNav;
+updateNav=function(){dfOriginalUpdateNav();if(ui.route==='guided')el('breadcrumb').textContent='Learn / Read · Memorize · Test';};
+// Supplementary B1 units beyond the original PDF-based 20 lessons.
 const DF_B1_TOPICS=[
  ['Subordinate clauses: weil, dass, obwohl','Put the conjugated verb at the end','Ich bleibe zu Hause, weil ich krank bin.','I stay home because I am ill.',[['Ich lerne, weil ich Deutsch ___ .',['lerne','lernen','lernt'],0],['Er sagt, dass er morgen ___ .',['kommt','kommen','kommst'],0],['Obwohl sie müde ___, arbeitet sie.',['ist','sein','sind'],0]]],
  ['When: wenn and als','Use als for one-time past events, wenn for repetition or condition','Als ich klein war, wohnte ich in Kigali.','When I was little, I lived in Kigali.',[['___ ich klein war, spielte ich oft.',['Als','Wenn','Weil'],0],['___ es regnet, bleibe ich zu Hause.',['Wenn','Als','Trotz'],0],['___ ich Zeit habe, lese ich.',['Wenn','Als','Denn'],0]]],
